@@ -1,0 +1,66 @@
+body
+{
+	width: 900px;
+	margin: 0 auto;
+	font-size: 1em;
+	font-family: sans-serif;
+	background-color: #ffffeb;
+	color: #a64b00;
+}
+
+section
+{
+	clear: both;
+	margin-top: 2em;
+	overflow: auto;
+}
+
+section p
+{
+	width: 60%;
+	word-spacing: 0.2em;
+	text-align: left;
+	line-height: 1.4;
+}
+
+section figure
+{
+	margin: 0px;
+	width: 25%;
+}
+
+section figure img
+{
+	width: 100%;
+}
+
+section figure figcaption
+{
+	font-size: 0.7em;
+	text-align: justify;
+}
+
+em.devscola
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	color:#94542a;
+	font-style: normal;
+}
+
+a
+{
+	color: #a64b00;
+}
+
+abbr {
+  letter-spacing: 0.1em;
+}
+
+.kerning{
+	letter-spacing: -0.1em;
+}
+
+.kern{
+	letter-spacing: -0.08em;
+}
