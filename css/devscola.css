@@ -1,9 +1,6 @@
 body
 {
-	width: 900px;
-	margin: 0 auto;
 	font-size: 1em;
-	font-family: sans-serif;
 	background-color: #ffffeb;
 	color: #a64b00;
 }
@@ -42,11 +39,17 @@ section figure figcaption
 
 em.devscola
 {
+	font-family: 'Quicksand';
 	font-size: 1.2em;
 	font-weight: bold;
 	color:#94542a;
 	font-style: normal;
 }
+
+.headline > .container > h1 {
+	font-family: 'Quicksand';
+}
+
 
 a
 {
@@ -63,4 +66,40 @@ abbr {
 
 .kern{
 	letter-spacing: -0.08em;
+}
+
+.header-image {
+	background: none;
+	background-color: #ffb273;
+}
+
+.navbar-inverse{
+	background-color: #ffffeb;
+	color: #a64b00;
+}
+
+.lead {
+	font-size: 1.4em;
+	word-spacing: 0.2em;
+	text-align: left;
+	line-height: 1.4;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color:#a64b00;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color:#a64b00;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #a64b00;
+}
+
+.text-muted {
+color: #ff9640;
+}
+
+footer ul{
+	font-size: 1.4em;
 }
