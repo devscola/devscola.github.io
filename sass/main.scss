@@ -1,0 +1,564 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/base";
+@import "normalize";
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    height:100%;
+}
+body{
+    @include margin(0, 0, 0, 0, 0);
+    @include font-properties( 400, 1em, white);
+    background-color: $dark-grey;
+    width:100%;
+    height:100%;
+}
+input, select, textarea{
+    width:195px;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+}
+
+.headsection{
+    width:100%;
+    height:100%;
+        @include bg-img-head("header.jpg");
+        img{
+            @include centerimg(29%);
+            @include padding ($m0, 56px, auto, auto, auto);
+            position:relative;
+            @media #{$small-devices-portrait}{
+                width:25%;
+                padding-top:5px;
+            }
+            @media #{$small-devices-landscape}{
+                width:25%;
+                padding-top:5px;
+            }
+        }
+        ul{
+            list-style:none;
+            width: 1140px;
+            margin: $m0;
+            @media #{$small-devices-portrait}{
+                text-align: center;
+                width:100%;
+                padding-top: 6%;
+            }
+            @media #{$small-devices-landscape}{
+                text-align: center;
+                width:100%;
+                padding-top: 7%;
+            }
+            @include padding (0, 15%, 0, 0, 0);
+                li{
+                    display:inline-block;
+                    @include margin (0, auto, 5px, 5px, auto);
+                    @media #{$small-devices-portrait}{
+                        margin-top: 5px;
+                        padding-bottom: 5px;
+                        display: block;
+                        width:280px;
+                        margin:0 auto;
+                    }
+                    @media #{$small-devices-landscape}{
+                        margin-top: 21px;
+                        margin-right: 2px;
+                        margin-left: 2px;
+                    }
+                }
+        }
+        a{
+            @extend .navfix-buttons;
+            @media #{$small-devices-portrait}{
+                display:block;
+            }
+            @media #{$small-devices-landscape}{
+                font-size:0.6em;
+            }
+            &:hover{
+                background-color:$dark-a-grey;
+            }
+        }
+        .botoncall{
+            width: 221px;
+            margin: 0 auto;
+            position: relative;
+            top: 8%;
+            z-index: 999999;
+            @media #{$small-devices-portrait}{
+                width: 280px;
+                top: 3%;
+                text-align: center;
+            }
+            a{
+                @extend .navfix-buttons;
+                background-color: $vibrant-orange;
+                &:hover{
+                    background: $dark-grey;
+                }
+            }
+        }
+        .navhead{
+            z-index:4;
+            position:relative;
+        }
+        .slide{
+            background: rgba(0, 0, 0, 0.57);
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+                p{
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    margin: 0;
+                    position: relative;
+                }
+        }
+}
+#expand{
+    @media #{$small-devices-portrait}{
+        height:0;
+        overflow:hidden;
+    }
+    @media #{$small-devices-landscape}{
+        height:0;
+        overflow:hidden;
+    }
+}
+.expand{
+    height:auto !important;
+}
+.contentsection{
+        .navfixed{
+            height:51px;
+            background: black;
+            opacity:0;
+            z-index: 999999999;
+            width:100%;
+            @media #{$small-devices-portrait}{
+                    padding-bottom:2px;
+            }
+            @media #{$small-devices-landscape}{
+                    padding-bottom:2px;
+            }
+            .menunavtr{
+                display:none;
+                    @media #{$small-devices-portrait}{
+                    text-align: right;
+                    margin-right: 5%;
+                    display:block;
+                    }
+                    @media #{$small-devices-landscape}{
+                    text-align: right;
+                    margin-right: 5%;
+                    display:block;
+                    }
+            }
+        img{
+            width: 73px;
+            position:relative;
+            float:left;
+        }
+        ul{
+            float:right;
+            list-style:none;
+            position:relative;
+            margin: $m0;
+            padding-right: 3%;
+            padding-top:14px;
+            @media #{$small-devices-portrait}{
+                padding:0;
+                background: black;
+            }
+            @media #{$small-devices-landscape}{
+                padding:0;
+                background: black;
+            }
+                li{
+                    display:inline-block;
+                    @include margin (0, auto, 5px, 5px, auto);
+                    @media #{$small-devices-portrait}{
+                        text-align: right;
+                        margin-right: 0;
+                        margin-bottom: 7px;
+                    }
+                    @media #{$small-devices-landscape}{
+                        text-align: right;
+                        margin-right: 0;
+                        margin-bottom: 7px;
+                    }
+                }
+        }
+            a{
+                @extend .navfix-buttons;
+                font-size:$fsmin - 0.1;
+                @media #{$small-devices-portrait}{
+                    display:block;
+                    width:270px;
+                    text-align: left;
+                }
+                @media #{$small-devices-landscape}{
+                    display:block;
+                    width:initial;
+                    text-align: left;
+                }
+                &:hover{
+                    background-color:$dark-a-grey;
+                    border: 1px solid white;
+            }
+        }
+    }
+}
+.navfixedappear{
+    @include transition (All, 300ms, linear);
+    opacity: 1 !important;
+}
+.orange-line{
+    height:2px;
+    background-color:$vibrant-orange;
+    width: 90%;
+    margin: $m0;
+    margin-bottom: 5%;
+}
+#aprende {
+    @extend .sectionpaddings;
+    @media #{$small-devices-portrait}{
+                margin-bottom: 17%;
+            }
+    h2{
+        @include font-properties($fwlight, $fsmax + 0.8, white);
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-weight: $fwregular;
+        width:80%;
+        @include margin ($m0, auto, auto, auto, auto)
+    }
+    a{
+        color:$vibrant-orange;
+        &:hover{
+            color:darken( $vibrant-orange, 20);
+        }
+    }
+}
+#queaprendo {
+    @extend .sectionpaddings;
+    .ol-h2{
+        @include font-properties($fwlight, $fsmax + 0.8, white);
+        @include loh2 (47%);
+    }
+    span{
+        font-weight: $fwbold;
+    }
+    p{
+        text-align: center;
+        font-weight: $fwregular;
+        width:80%;
+        @include margin ($m0, auto, auto, auto, auto)
+    }
+    ul{
+        text-align: center;
+        padding:0;
+        li{
+            display:inline-block;
+            width:35%;
+            @include margin (0px,30px,10px,10px,30px);
+            vertical-align: top;
+            min-width: 300px;
+            img{
+                @include centerimg(80%);
+                margin-bottom: 20px;
+            }
+            p{
+                font:{
+                    weight:$fwlight;
+                    size:$fsmax - 0.8;
+                }
+            }
+            h3{
+
+            }
+        }
+    }
+}
+#dirigido{
+    @extend .sectionpaddings;
+    text-align: center;
+    .ol-h2{
+        @include font-properties($fwlight, $fsmax + 0.8, white);
+        @include loh2 (47%);
+    }
+    p{
+        text-align: center;
+        font-weight: $fwregular;
+        width:80%;
+        @include margin ($m0, auto, auto, auto, auto)
+    }
+    .e3sect{
+        text-align: center;
+        width: 20%;
+        margin-top: 3em;
+        display: inline-block;
+        vertical-align: top;
+        @media #{$small-devices-portrait}{
+            width:80%;
+        }
+        @media #{$small-devices-landscape}{
+            width: 30%;
+            font-size: 0.8em;
+        }
+        img{
+            width:40%;
+        }
+    }
+}
+
+#testimonios{
+    @extend .sectionpaddings;
+    .ol-h2{
+        @include font-properties($fwlight, $fsmax + 0.8, white);
+        @include loh2 (30%);
+    }
+    ul{
+        list-style:none;
+        width: 80%;
+        margin: $m0;
+        padding:0;
+        li{
+            display: inline-block;
+            width: 450px;
+            margin: 20px;
+            @media #{$small-devices-portrait}{
+                width:220px;
+            }
+            .photo-circle{
+                @extend .photocircle-ext;
+            }
+            #photo-1{
+                @include photocircle ("tipo.png");
+            }
+            #photo-2{
+                @include photocircle ("tipa.jpeg");
+            }
+            #photo-3{
+                @include photocircle ("tipo.png");
+            }
+            #photo-4{
+                @include photocircle ("tipo.png");
+            }
+            #photo-5{
+                @include photocircle ("tipo.png");
+            }
+            #photo-6{
+                @include photocircle ("tipo.png");
+            }
+
+            img{
+                position: relative;
+                top: -0.8em;
+                left: 0.5em;
+            }
+            h4{
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 1em;
+                margin-top: 0.7em;
+            }
+            p{
+                width: 67%;
+                position: relative;
+                left: 25%;
+                margin-top: -4%;
+            }
+            span{
+                font-size:$fsmin;
+                font-weight: $fwlight;
+            }
+        }
+    }
+
+}
+#mentores{
+    @extend .sectionpaddings;
+    .ol-h2{
+        @include font-properties($fwlight, $fsmax + 0.8, white);
+        @include loh2 (30%);
+    }
+    .mentorcontainer{
+        margin: $m0;
+        text-align: center;
+    }
+    .mentorbox{
+        width: 16%;
+        text-align: center;
+        display: inline-block;
+        margin: 3% 5%;
+        @media #{$small-devices-portrait}{
+                width:80%;
+        }
+        @media #{$small-devices-landscape}{
+            width: 36%;
+        }
+    }
+    .geeksadvice{
+        img{
+            @media #{$small-devices-portrait}{
+                width:70%;
+            }
+            @media #{$small-devices-landscape}{
+            width: 66%;
+            }
+        }
+    }
+}
+#siguenos{
+    @extend .sectionpaddings;
+    .ol-h2{
+        @include font-properties($fwlight, $fsmax + 0.8, white);
+        @include loh2 (30%);
+    }
+    .social{
+        width: 74.2%;
+        margin: $m0;
+        text-align: center;
+        @media #{ $small-devices-portrait}{
+            width:100%;
+        }
+        img{
+            float:left;
+            position: relative;
+            top: 11px;
+            left: 21px;
+        }
+        p{
+            float: right;
+            @include font-properties ($fwregular, $fsmin, white);
+            margin-right: 15px;
+            margin-top: 19px;
+        }
+    }
+    .socialblock{
+        display:inline-block;
+        vertical-align: top;
+        background-color: $vibrant-orange;
+        border-bottom: 3px solid darken($vibrant-orange, 10);
+        height: 55px;
+        width: 280px;
+        margin: 15px;
+    }
+    .socialblockhover{
+        background-color: darken($vibrant-orange, 10);
+        border-bottom: 3px solid darken($vibrant-orange, 30);
+    }
+    #twitterblock{
+        @extend .socialblock;
+        &:hover{
+            @extend .socialblockhover;
+        }
+    }
+    #youtubeblock{
+        @extend .socialblock;
+        &:hover{
+            @extend .socialblockhover;
+        }
+    }
+    #blogblock{
+        @extend .socialblock;
+        &:hover{
+            @extend .socialblockhover;
+        }
+    }
+    #twitter-timeline{
+        width:100%;
+        text-align: center;
+    }
+}
+#contacto{
+    @extend .sectionpaddings;
+    .ol-h2{
+        @include font-properties($fwlight, $fsmax + 0.8, white);
+        @include loh2 (28%);
+    }
+    p{
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 60px;
+    }
+    form{
+        .formbuttons-ext{
+    border: 1px solid #ff4214;
+    background-color: #4E4B4B;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    outline-style:none;
+    margin-bottom: 18px;
+    padding: 12px 8px;
+}
+        width: 213px;
+        margin: 0 auto;
+        #name{
+            @extend .formbuttons-ext;
+            background-color: white;
+            border-radius: 0;
+            color:$dark-grey;
+            font-size: $fsmin;
+        }
+        #email{
+            @extend .formbuttons-ext;
+            background-color: white;
+            border-radius: 0;
+            color:$dark-grey;
+            font-size: $fsmin;
+        }
+        #city{
+            @extend .formbuttons-ext;
+            background-color: white;
+            border-radius: 0;
+            color:$dark-grey;
+            font-size: $fsmin;
+        }
+        #submit{
+            @extend .formbuttons-ext;
+            font-size: $fsstandard;
+            margin: $m0;
+            width: 300px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: $vibrant-orange;
+            border:2px solid #e02c00 !important;
+        }
+    }
+}
+.copyright{
+        font-size:$fsmin - 0.2em;
+        padding-top: 24px;
+    }
+footer{
+    height: 180px;
+    background: $vibrant-orange;
+    color:white;
+    text-align: center;
+    .foodata{
+        position: relative;
+        bottom: -39%;
+    }
+    a{
+        color:white;
+    }
+    p{font-size:$fsstandard}
+}
