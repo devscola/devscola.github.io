@@ -47,11 +47,7 @@ input, select, textarea{
         }
         ul{
             list-style:none;
-<<<<<<< HEAD
             width: 1070px;
-=======
-            width: 1140px;
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
             margin: $m0;
             @media #{$small-devices-portrait}{
                 text-align: center;
@@ -83,10 +79,7 @@ input, select, textarea{
         }
         a{
             @extend .navfix-buttons;
-<<<<<<< HEAD
             @include padding (auto, 9px, 10px, 10px, 9px);
-=======
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
             @media #{$small-devices-portrait}{
                 display:block;
             }
@@ -98,11 +91,7 @@ input, select, textarea{
             }
         }
         .botoncall{
-<<<<<<< HEAD
             width: 144px;
-=======
-            width: 221px;
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
             margin: 0 auto;
             position: relative;
             top: 8%;
@@ -350,10 +339,7 @@ input, select, textarea{
         padding:0;
         li{
             display: inline-block;
-<<<<<<< HEAD
             vertical-align: top;
-=======
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
             width: 450px;
             margin: 20px;
             @media #{$small-devices-portrait}{
@@ -363,7 +349,6 @@ input, select, textarea{
                 @extend .photocircle-ext;
             }
             #photo-1{
-<<<<<<< HEAD
                 @include photocircle ("maximo.png");
             }
             #photo-2{
@@ -375,26 +360,6 @@ input, select, textarea{
             #photo-4{
                 @include photocircle ("salva.png");
             }
-=======
-                @include photocircle ("tipo.png");
-            }
-            #photo-2{
-                @include photocircle ("tipa.jpeg");
-            }
-            #photo-3{
-                @include photocircle ("tipo.png");
-            }
-            #photo-4{
-                @include photocircle ("tipo.png");
-            }
-            #photo-5{
-                @include photocircle ("tipo.png");
-            }
-            #photo-6{
-                @include photocircle ("tipo.png");
-            }
-
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
             img{
                 position: relative;
                 top: -0.8em;
@@ -434,10 +399,7 @@ input, select, textarea{
         width: 16%;
         text-align: center;
         display: inline-block;
-<<<<<<< HEAD
         vertical-align: top;
-=======
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
         margin: 3% 5%;
         @media #{$small-devices-portrait}{
                 width:80%;
@@ -517,12 +479,9 @@ input, select, textarea{
     #twitter-timeline{
         width:100%;
         text-align: center;
-<<<<<<< HEAD
         iframe{
             width:90% !important;
         }
-=======
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
     }
 }
 #contacto{
@@ -571,7 +530,6 @@ input, select, textarea{
             color:$dark-grey;
             font-size: $fsmin;
         }
-<<<<<<< HEAD
         #textarea{
             @extend .formbuttons-ext;
             background-color: white;
@@ -579,21 +537,13 @@ input, select, textarea{
             color:$dark-grey;
             font-size: $fsmin;
         }
-=======
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
         #submit{
             @extend .formbuttons-ext;
             font-size: $fsstandard;
             margin: $m0;
             width: 300px;
-<<<<<<< HEAD
             position: relative;
             left: -25%;
-=======
-            position: absolute;
-            left: 0;
-            right: 0;
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
             background-color: $vibrant-orange;
             border:2px solid #e02c00 !important;
         }
