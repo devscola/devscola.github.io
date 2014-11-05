@@ -1,0 +1,46 @@
+/*
+Default CSS Styles for the Latest Posts Widget plugin
+Version: 1.0
+*/
+.latest-posts-widget * {
+	margin: 0;
+	padding:0;
+}
+.latest-posts-widget {
+	font-size: 12px;	
+	line-height: 18px;
+}
+.latest-posts-widget p {
+	margin-bottom: 0;
+}
+.latest-posts-widget .post-title {
+	font-size: 15px;	
+	font-weight: bold;
+}
+.latest-posts-widget .post-date {
+	font-style: italic;
+	margin-bottom: 0;
+}
+.latest-posts-widget img {
+	float: left;
+	margin: 5px 10px 0 0;
+}
+.latest-posts-widget ul li {
+	list-style: none;
+	list-style-type: none;
+	margin: 3px 0;
+	padding: 3px 0;
+	border-bottom: 1px solid #ccc;
+}
+.latest-posts-widget ul li:last-child {
+	border-bottom: none;
+}
+.latest-posts-widget .more-link {
+	display: inline;
+}
+.latest-posts-widget .post-entry { 
+   padding: 0 0 5px 0;
+   overflow: hidden;
+}
+.latest-posts-widget .comment-num {
+}

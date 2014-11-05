@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+$fwlight: 300;
+$fwregular: 400;
+$fwbold: 700;
+$fsmin: 0.8em;
+$fsstandard: 1em;
+$fsmax: 2.2em;
+$ffamily: 'Lato', sans-serif;
+
+
+@mixin font-properties ($fweight, $fsize, $fcolor){
+    font-weight:$fweight;
+    font-size:$fsize;
+    color:$fcolor;
+    font-family: $ffamily;
+}
+/*Extend classes
+.standardfont{
+    font-weight:$fwregular;
+    font-size:$fsstandard;
+    font-family: $ffamily;
+}
+.minfont{
+    font-weight:$fwregular;
+    font-size:$fsmin;
+    font-family: $ffamily;
+}
+.midfont{
+    font-weight:$fwregular;
+    font-size:$fsmid;
+    font-family: $ffamily;
+}
+.maxfont{
+    font-weight:$fwregular;
+    font-size:$fsmax;
+    font-family: $ffamily;
+}*/
