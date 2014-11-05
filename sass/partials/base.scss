@@ -105,7 +105,11 @@ $imgdirtestimonials: "../img/testimonials/";
     text-transform: uppercase;
     font-weight: $fwbold;
     font-size: $fsmin;
+<<<<<<< HEAD
     @include padding (auto, 9px, 10px, 10px, 9px);
+=======
+    @include padding (auto, 9px, 20px, 20px, 9px);
+>>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
     @include bd-radius (7px);
     border: 1px solid $vibrant-orange;
 }
