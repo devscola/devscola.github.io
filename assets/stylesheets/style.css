@@ -29,3 +29,25 @@ p {
 font-size: 0.9rem;
 line-height: 1.5rem;
 }
+
+
+/*top bar*/
+
+.logo p{
+	color: #fff;
+	margin: 0.7rem 0 0 0.8rem;
+	font-size: 1.2rem;
+}
+
+.top-bar-section .divider,
+.top-bar-section [role="separator"] {
+ border-right: solid 1px #ff4214 !important;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background: #ff4214;
+}
+
+.top-bar-section ul li > a {
+font-family: 'dejavu_sansextralight';
+}
