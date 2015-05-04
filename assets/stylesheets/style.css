@@ -6,6 +6,11 @@ body {
 	color: #292929;
 }
 
+
 .row {
 	margin-top: 5rem;
+}
+
+h2 {
+	font-family: 'dejavu_sansextralight';
 }
