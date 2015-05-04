@@ -1,6 +1,11 @@
 
 /*content area*/
 
+body {
+	background: #FFF7F5;
+	color: #292929;
+}
+
 .row {
 	margin-top: 5rem;
 }
