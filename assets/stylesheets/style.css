@@ -1,5 +1,5 @@
 
-/*content area*/
+/*typography*/
 
 body {
 	background: #FFF7F5;
@@ -28,6 +28,21 @@ h3 {
 p {
 font-size: 0.9rem;
 line-height: 1.5rem;
+}
+
+#claim {
+font-family: 'dejavu_sansbold';
+font-size: 4rem;
+line-height: 3.5rem;
+color: #ff4214;
+margin-top: 2.1rem;
+
+
+}
+/*grid*/
+
+.align-left {
+  padding-left: 0px;
 }
 
 
