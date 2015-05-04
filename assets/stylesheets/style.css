@@ -4,6 +4,7 @@
 body {
 	background: #FFF7F5;
 	color: #292929;
+	font-family: 'dejavu_sansbook';	
 }
 
 
@@ -13,4 +14,18 @@ body {
 
 h2 {
 	font-family: 'dejavu_sansextralight';
+	font-size: 5rem;
+	margin-top: 5rem;
+	line-height: 7rem;
+}
+
+h3 {
+	font-family: 'dejavu_sansbold';
+	font-size: 1.1rem;
+	line-height: 1rem;
+}
+
+p {
+font-size: 0.9rem;
+line-height: 1.5rem;
 }
