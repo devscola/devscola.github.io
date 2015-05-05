@@ -130,3 +130,10 @@ img.foot_logo  {
 	margin: 01.2rem 0 0.3rem 0 ;
 	width: auto !important;
 }
+
+p.footer_text, a.footer_text, .footer_text{
+
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	color:#fff;
+}
