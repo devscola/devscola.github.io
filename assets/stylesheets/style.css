@@ -47,6 +47,10 @@ word-spacing: -0.2rem;
 
 /*grid*/
 
+.row {
+	margin-top: 5rem;
+}
+
 #inicio {
 margin: 13rem 0 45rem 0;
 }
@@ -55,9 +59,16 @@ margin: 13rem 0 45rem 0;
   padding-left: 0px;
 }
 
-.row {
-	margin-top: 5rem;
+.columns.left_column {
+    padding-left: 0px ;
+    padding-right: 1%
 }
+
+.columns.right_column {
+    padding-right: 0px;
+    padding-left: 1%
+  }
+
 
 img {
 	height: 100%;
