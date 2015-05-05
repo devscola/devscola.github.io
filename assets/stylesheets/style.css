@@ -81,6 +81,15 @@ img {
 	width: 100%;
 }
 
+.flex-video {
+	padding-bottom: 25%;
+}
+
+.flex-video.center_video {
+
+	margin: 0 0.5px 0 0.5px;
+}
+
 .logo-track {
 	margin: 5rem 0 2rem 0;
 
