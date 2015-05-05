@@ -24,6 +24,12 @@ h3 {
 	word-spacing: -0.03rem;
 }
 
+h4 {
+	font-family: 'dejavu_sansextralight';
+	font-size: 4rem;
+	
+}
+
 p {
 font-size: 0.9rem;
 line-height: 1.5rem;
@@ -51,6 +57,16 @@ margin: 13rem 0 45rem 0;
 
 .row {
 	margin-top: 5rem;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+.logo-track {
+	margin: 5rem 0 2rem 0;
+
 }
 
 
