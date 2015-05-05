@@ -20,6 +20,8 @@ h3 {
 	font-family: 'dejavu_sansbold';
 	font-size: 1.1rem;
 	line-height: 1rem;
+	letter-spacing: -0.05rem;
+	word-spacing: -0.03rem;
 }
 
 p {
