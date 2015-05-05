@@ -119,9 +119,14 @@ font-family: 'dejavu_sansextralight';
 
 /*footer*/
 
- footer {
+footer {
 	background: #ff4214;
 	height: 5rem;
 	margin-top: 3rem;
 
+}
+
+img.foot_logo  {
+	margin: 01.2rem 0 0.3rem 0 ;
+	width: auto !important;
 }
