@@ -8,9 +8,6 @@ body {
 }
 
 
-.row {
-	margin-top: 5rem;
-}
 
 h2 {
 	font-family: 'dejavu_sansextralight';
@@ -32,17 +29,26 @@ line-height: 1.5rem;
 
 #claim {
 font-family: 'dejavu_sansbold';
-font-size: 4rem;
-line-height: 3.5rem;
+font-size: 4.2rem;
+line-height: 3.8rem;
 color: #ff4214;
-margin-top: 2.1rem;
-
-
+margin: 1.4rem 0 0rem 0;
+letter-spacing: -0.2rem;
+word-spacing: -0.2rem;
 }
+
 /*grid*/
+
+#inicio {
+margin: 13rem 0 45rem 0;
+}
 
 .align-left {
   padding-left: 0px;
+}
+
+.row {
+	margin-top: 5rem;
 }
 
 
@@ -65,4 +71,13 @@ margin-top: 2.1rem;
 
 .top-bar-section ul li > a {
 font-family: 'dejavu_sansextralight';
+}
+
+/*footer*/
+
+ footer {
+	background: #ff4214;
+	height: 5rem;
+	margin-top: 3rem;
+
 }
