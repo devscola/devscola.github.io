@@ -121,19 +121,33 @@ font-family: 'dejavu_sansextralight';
 
 footer {
 	background: #ff4214;
-	height: 5rem;
+	height: 7rem;
 	margin-top: 3rem;
 
 }
 
 img.foot_logo  {
-	margin: 01.2rem 0 0.3rem 0 ;
+	margin: 2.2rem 0 0.3rem 0;
 	width: auto !important;
 }
 
-p.footer_text, a.footer_text, .footer_text{
+.foot_text p, .foot_text a {
 
-	font-size: 0.9rem;
-	line-height: 1.5rem;
+	line-height: 0.2rem;
 	color:#fff;
+	margin: 2.2rem 0 0 0 ;
+
+}
+
+.foot_text p {
+
+	font-size:0.75rem;
+	font-family: 'dejavu_sansextralight'
+}
+
+.foot_text a {
+	font-family: 'dejavu_sansbold';
+	line-height: 0.2rem;
+	font-size: 0.9rem;
+
 }
