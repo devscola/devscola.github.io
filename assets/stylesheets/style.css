@@ -79,8 +79,8 @@ margin: 13rem 0 45rem 0;
 
 
 img {
-	height: 75%;
-	width: 75%;
+	height: 100%;
+	width: 100%;
 }
 
 .flex-video {
@@ -94,6 +94,8 @@ img {
 
 .logo-track {
 	margin-bottom: 0.5rem;
+	height: 75%;
+	width: 75%;
 }
 
 
