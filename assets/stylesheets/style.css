@@ -12,7 +12,7 @@ body {
 h2 {
 	font-family: 'dejavu_sansextralight';
 	font-size: 5rem;
-	margin-top: 5rem;
+	margin: 5rem 0 2rem p0;
 	line-height: 7rem;
 }
 
@@ -26,13 +26,15 @@ h3 {
 
 h4 {
 	font-family: 'dejavu_sansextralight';
-	font-size: 4rem;
+	font-size: 3rem;
+	margin-bottom: 0.3rem;
 	
 }
 
 p {
 font-size: 0.9rem;
 line-height: 1.5rem;
+margin-bottom: 3rem
 }
 
 #claim {
@@ -61,24 +63,24 @@ margin: 13rem 0 45rem 0;
 
 .columns.left_column {
     padding-left: 0px ;
-    padding-right: 1%
+    padding-right: 2%
 }
 
 .columns.right_column {
     padding-right: 0px;
-    padding-left: 1%
+    padding-left: 2%
   }
 
 .columns.center_column {
-    padding-right: 0.5%;
-    padding-left: 0.5%;
+    padding-right: 1%;
+    padding-left: 1%;
   }
 
 
 
 img {
-	height: 100%;
-	width: 100%;
+	height: 75%;
+	width: 75%;
 }
 
 .flex-video {
@@ -91,8 +93,7 @@ img {
 }
 
 .logo-track {
-	margin: 5rem 0 2rem 0;
-
+	margin-bottom: 0.5rem;
 }
 
 
@@ -149,5 +150,7 @@ img.foot_logo  {
 	font-family: 'dejavu_sansbold';
 	line-height: 0.2rem;
 	font-size: 0.9rem;
+	letter-spacing: -0.025rem;
+	word-spacing: -0.025rem;
 
 }
