@@ -57,7 +57,6 @@
 
 	<div class="row">
 
-		<!--content area-->
 		<div id="inicio">
 			<div class="large-3 columns align-left"> 
 				<img src="assets/images/Logotipo-01.png" alt="El logotipo de Devscola">
@@ -115,11 +114,22 @@
 			<h2 class=>MENTORING</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. 
 			</p>
-			<div class="your-class">
-			  <div>your content</div>
-			  <div>your content</div>
-			  <div>your content</div>
+
+			<!--carousel-->
+
+
+			<div class="mycarousel">
+
+			  <div><img src="assets/images/B8_93neIMAA779n.jpg" alt="Devscola en Geekshubs"></div>
+			  <div><img src="assets/images/B9lKLjjIYAAm67Q.jpg" alt="Devscola en Geekshubs"></div>
+			  <div><img src="assets/images/B9lNVh8IAAAWCOt.jpg" alt="Devscola en Geekshubs"></div>
+			  <div><img src="assets/images/B9lNx1CIAAE18Qp.jpg" alt="Devscola en Geekshubs"></div>
+			  <div><img src="assets/images/B-SJ5AUIIAAKMZ3.jpg" alt="Devscola en Geekshubs"></div>
+			  <div><img src="assets/images/HackersUnite.jpg" alt="Devscola en Geekshubs"></div>
+
+			  
 			</div>
+
 		</section>
 
 		<section id="WHO">
@@ -225,8 +235,34 @@
 	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
 	<script>
 		$(document).ready(function(){
-		  	$('.your-class').slick({
-		    
+		  	$('.mycarousel').slick({
+		  	  centerMode: true,
+		  	  centerPadding: '60px',
+		  	  slidesToShow: 3,
+		  	  responsive: [
+		  	    {
+		  	      breakpoint: 768,
+		  	      settings: {
+		  	        arrows: true,
+		  	        centerMode: true,
+		  	        centerPadding: '40px',
+		  	        slidesToShow: 3,
+		  	        autoplay: true,
+		  	        autoplaySpeed: 3000,
+		  	      }
+		  	    },
+		  	    {
+		  	      breakpoint: 480,
+		  	      settings: {
+		  	        arrows: true,
+		  	        centerMode: true,
+		  	        centerPadding: '40px',
+		  	        slidesToShow: 1,
+		  	        autoplay: true,
+		  	        autoplaySpeed: 3000,
+		  	      }
+		  	    }
+		  	  ]
 		  	});
 		});
 	</script>
