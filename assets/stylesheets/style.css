@@ -98,7 +98,42 @@ img {
 	width: 75%;
 }
 
+button, .button {
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: 'dejavu_sansbook';
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: rem;
+  background-color: #ff4214;
+  border-color: #007095;
+  color: #FFFFFF; }
 
+	button.large, .button.large {
+	    padding-top: 1.125rem;
+	    padding-right: 2.25rem;
+	    padding-bottom: 1.1875rem;
+	    padding-left: 2.25rem;
+	    font-size: 1rem; }
+
+
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #292929; }
+button:hover, button:focus, .button:hover, .button:focus {
+  color: #FFFFFF; }
 /*top bar*/
 
 .logo p{
