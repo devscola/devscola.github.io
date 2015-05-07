@@ -117,9 +117,11 @@
 
 			<!--carousel-->
 
-			<div class=".your-class">
-			  <div><img src="assets/images/B8_93neIMAA779n.jpg" alt="Devscola en Geekshubs"></div>			  
-			  
+			<div class=".center">
+			  <div><img src="assets/images/B8_93neIMAA779n.jpg" alt="Devscola en Geekshubs"></div>			  <div><img src="assets/images/B9lKLjjIYAAm67Q.jpg" alt="Devscola en Geekshubs"></div>
+			  <div><img src="assets/images/B9lNVh8IAAAWCOt.jpg" alt="Devscola en Geekshubs"></div>
+			  <div><img src="assets/images/B-SJ5AUIIAAKMZ3.jpg" alt="Devscola en Geekshubs"></div>
+			  <div><img src="assets/images/HackersUnite.jpg" alt="Devscola en Geekshubs"></div>
 			</div>
 
 
@@ -228,11 +230,33 @@
 	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
 	<script>
 		$(document).ready(function(){
-		  $('.your-class').slick({
-		    
-		  });			
-		});
 		  	
+		  	$('.center').slick({
+		  	  centerMode: true,
+		  	  centerPadding: '60px',
+		  	  slidesToShow: 3,
+		  	  responsive: [
+		  	    {
+		  	      breakpoint: 768,
+		  	      settings: {
+		  	        arrows: false,
+		  	        centerMode: true,
+		  	        centerPadding: '40px',
+		  	        slidesToShow: 3
+		  	      }
+		  	    },
+		  	    {
+		  	      breakpoint: 480,
+		  	      settings: {
+		  	        arrows: false,
+		  	        centerMode: true,
+		  	        centerPadding: '40px',
+		  	        slidesToShow: 1
+		  	      }
+		  	    }
+		  	  ]
+		  	});
+
 	</script>
 
 </body>
