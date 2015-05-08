@@ -195,3 +195,23 @@ img.in_button {
 	word-spacing: -0.025rem;
 
 }
+
+/* carousel*/
+
+.slick-slide img {
+
+padding: 0 0.5rem;
+}
+
+.slick-slide .slick-center img {
+
+ height: 150% !important;
+ width: 150% !important; 
+
+}
+.slick-slide .slick-active .slick-center img  {
+
+ height: 115% !important;
+ width: 115% !important;
+
+}
