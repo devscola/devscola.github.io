@@ -142,6 +142,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 .top-bar-section li.active:not(.has-form) a:not(.button) {
 	background: #ff4214;
 }
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+	background: #fff;
+}
 
 .top-bar-section ul li > a {
 font-family: 'dejavu_sansextralight';
