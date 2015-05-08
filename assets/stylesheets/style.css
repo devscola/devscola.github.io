@@ -143,7 +143,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 	background: #ff4214;
 }
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-	background: #fff;
+	background: #292929;
+	font-family: 'dejavu_sansbook';
 }
 
 .top-bar-section ul li > a {
