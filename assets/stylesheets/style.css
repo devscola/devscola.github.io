@@ -113,6 +113,8 @@ button, .button {
 	    font-size: 1rem; }
 	  button.large.social_button, .button.large.social_button {  
 	  		width: 100%;
+	  		text-align: center;
+	  		line-height: 2rem;
 	  	}
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -121,6 +123,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   color: #FFFFFF; }
 
 /*social*/
+
+#SOCIAL > div.large-4.columns.right_column > {
+
+	
+}
 
 #ASAMBLEAS{
 	margin-top: 23rem;
