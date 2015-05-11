@@ -202,6 +202,44 @@ img.in_button {
 
 	padding: 0 0.5rem;
 }
+
+#owl-landing > div.owl-wrapper-outer.autoHeight > div > div{
+
+	padding: 0!important;
+}
+
+.owl-theme .owl-controls .owl-page span {
+
+	width: 0 !important;
+	height: 0 !important;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+
+	border-radius: 0px !important;
+
+}
+
+.owl-pagination {
+
+	height: 0 !important;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+
+	background: #ff4214 !important;
+	opacity: 1 !important;
+	font-size: 1rem !important;
+	font-family: 'dejavu_sansextralight';
+	padding:0.5rem 0.75rem !important;
+	
+}
+
+.owl-theme .owl-controls .owl-buttons div:hover {
+
+	background: #292929 !important;
+}
+
 /* slick carousel*/
 
 .slick-slide img {

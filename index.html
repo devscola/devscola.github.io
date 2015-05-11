@@ -68,7 +68,7 @@
 	  <div><img src="assets/images/B9lNVh8IAAAWCOt.jpg" alt="Devscola en Geekshubs"></div>
 	  <div><img src="assets/images/B9lNx1CIAAE18Qp.jpg" alt="Devscola en Geekshubs"></div>
 	  <div><img src="assets/images/B-SJ5AUIIAAKMZ3.jpg" alt="Devscola en Geekshubs"></div>
-	  <div><img src="assets/images/HackersUnite.jpg" alt="Devscola en Geekshubs"></div>
+	  
 
 	</div>
 	
@@ -145,7 +145,6 @@
 			  <div><img src="assets/images/B9lNVh8IAAAWCOt.jpg" alt="Devscola en Geekshubs"></div>
 			  <div><img src="assets/images/B9lNx1CIAAE18Qp.jpg" alt="Devscola en Geekshubs"></div>
 			  <div><img src="assets/images/B-SJ5AUIIAAKMZ3.jpg" alt="Devscola en Geekshubs"></div>
-			  <div><img src="assets/images/HackersUnite.jpg" alt="Devscola en Geekshubs"></div>
 
 			</div>
 		
@@ -397,8 +396,8 @@
 	  $("#owl-landing").owlCarousel({
 	    autoPlay : 3000,
 	    stopOnHover : true,
-	    navigation:true,
-	    paginationSpeed : 1000,
+	    navigation: false,
+	    paginationSpeed : 5000,
 	    goToFirstSpeed : 2000,
 	    singleItem : true,
 	    autoHeight : true,
@@ -413,12 +412,14 @@
 	$(document).ready(function() {
 	 
 	  $("#owl-demo").owlCarousel({
-	 
+	  		paginationSpeed : 5000,
+	    	goToFirstSpeed : 2000,
 	    
-	 
+	 	
 	      items : 3,
 	      itemsDesktop : [1199,3],
-	      itemsDesktopSmall : [979,3]
+	      itemsDesktopSmall : [979,3],
+	      navigation: true
 	 
 	  });
 	 
