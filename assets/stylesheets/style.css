@@ -88,14 +88,8 @@ img {
 	width: 100%;
 }
 
-.flex-video {
-	padding-bottom: 25%;
-}
 
-.flex-video.center_video {
 
-	margin: 0 0.5px 0 0.5px;
-}
 
 .logo-track {
 	margin-bottom: 0.5rem;
@@ -125,7 +119,31 @@ button:hover, button:focus, .button:hover, .button:focus {
 button:hover, button:focus, .button:hover, .button:focus {
   color: #FFFFFF; }
 
+/*flex video*/
 
+.flex-video {
+	padding-bottom: 25%;
+}
+
+
+
+#SOCIAL > div> iframe.left{
+
+	padding-left: 0px ;
+    padding-right: 1rem;
+}
+
+#SOCIAL > div> iframe.right{
+
+	padding-left: 1rem ;
+    padding-right: 0px;
+}
+
+#SOCIAL > div> iframe.center{
+
+	padding-left: 0.5rem ;
+    padding-right: 0.5rem;
+}
 /*top bar*/
 
 .logo p{
@@ -205,7 +223,7 @@ img.in_button {
 
 #owl-landing > div.owl-wrapper-outer.autoHeight > div > div{
 
-	padding: 0!important;
+	padding: 0;
 }
 
 .owl-theme .owl-controls .owl-page span {
