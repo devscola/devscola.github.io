@@ -41,10 +41,15 @@ margin-bottom: 2rem
 font-family: 'dejavu_sansbold';
 font-size: 4.2rem;
 line-height: 3.8rem;
-color: #ff4214;
+color: #ffffff;
 margin: 1.4rem 0 0rem 0;
 letter-spacing: -0.2rem;
 word-spacing: -0.2rem;
+}
+
+#inicio > div.large-3.columns.align-left > img {
+	height: 14.7rem;
+	width: auto;
 }
 
 /*grid*/
@@ -54,7 +59,11 @@ word-spacing: -0.2rem;
 }
 
 #inicio {
-margin: 13rem 0 45rem 0;
+
+	position: absolute;
+	top: 28rem;
+	left: 19rem;
+	z-index: 1;
 }
 
 .align-left {
