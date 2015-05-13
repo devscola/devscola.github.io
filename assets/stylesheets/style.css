@@ -151,7 +151,18 @@ button:hover, button:focus, .button:hover, .button:focus {
 	padding-bottom: 25%;
 }
 
+.video_left {
+	margin-right:0.5rem;
+}
 
+.video_right {
+	margin-left:0.5rem;
+}
+
+.video_center {
+	margin-left:0.25rem;
+	margin-right:0.25rem;
+}
 
 #SOCIAL > div> iframe.left{
 
