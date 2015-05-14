@@ -37,7 +37,7 @@ line-height: 1.5rem;
 margin-bottom: 2rem
 }
 
-#claim {
+/*#claim {
 font-family: 'dejavu_sansbold';
 font-size: 4.2rem;
 line-height: 3.8rem;
@@ -51,6 +51,7 @@ word-spacing: -0.2rem;
 	height: 14.7rem;
 	width: auto;
 }
+*/
 
 /*grid*/
 
@@ -61,16 +62,14 @@ word-spacing: -0.2rem;
 #inicio {
 
 	position: absolute;
-	top: 5rem;
-	left: 19rem;
-	
+	top: 2rem;
+	left: 0rem;
 	z-index: 1;
 }
 
 #inicio > div > div > img {
 
-	top: 20rem;
-	left: 19rem;
+	
 
 }
 
