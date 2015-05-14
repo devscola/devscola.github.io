@@ -160,39 +160,11 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .flex-video {
-	padding-bottom: 25%;
+	padding-bottom:25%;
 }
 
-.video_left {
-	margin-right:0.5rem;
-}
 
-.video_right {
-	margin-left:0.5rem;
-}
 
-.video_center {
-	margin-left:0.25rem;
-	margin-right:0.25rem;
-}
-
-#SOCIAL > div> iframe.left{
-
-	padding-left: 0px ;
-    padding-right: 1rem;
-}
-
-#SOCIAL > div> iframe.right{
-
-	padding-left: 1rem ;
-    padding-right: 0px;
-}
-
-#SOCIAL > div> iframe.center{
-
-	padding-left: 0.5rem ;
-    padding-right: 0.5rem;
-}
 /*top bar*/
 
 .logo p{
