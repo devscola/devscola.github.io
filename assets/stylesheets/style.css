@@ -12,8 +12,10 @@ body {
 h2 {
 	font-family: 'dejavu_sansextralight';
 	font-size: 5rem;
-	margin: 2rem 0 1rem 0 !important;
+	margin: 2rem 0 0.5rem 0 !important;
 	line-height: 7rem;
+	letter-spacing: 0.25rem;
+
 }
 
 h3 {
@@ -28,7 +30,17 @@ h4 {
 	font-family: 'dejavu_sansextralight';
 	font-size: 3rem;
 	margin-bottom: 0.3rem;
+	letter-spacing: 0.05rem;
+
 	
+}
+
+h5 {
+	font-size: 1rem;
+	font-family: 'dejavu_sansextralight';
+	letter-spacing: 0.05rem;
+	line-height: 1rem;
+	margin: 0.1rem;
 }
 
 p {
