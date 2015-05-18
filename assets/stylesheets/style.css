@@ -77,16 +77,18 @@ word-spacing: -0.2rem;
 	top: 0rem;
 	left: 0rem;
 	z-index: 1;
+	
 }
+
+.inicio {
+	position:relative;
+}
+
+
 
 #inicio > div > img {
 
-	width: 100%;
-	margin:30% 25% 0% 30%;
-	max-width: 50rem;
-
 	
-
 }
 
 
