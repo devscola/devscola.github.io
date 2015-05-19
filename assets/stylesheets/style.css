@@ -190,6 +190,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
  border-right: solid 1px #ff4214 !important;
+ border-top: solid 1px #ff4214 !important;
 }
 
 .top-bar-section li.active:not(.has-form) a:not(.button) {
