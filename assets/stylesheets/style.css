@@ -181,6 +181,19 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 /*top bar*/
 
+meta.foundation-mq-topbar {
+  font-family: "/only screen and (min-width:880px/";
+  width: 880px;
+}
+
+@media only screen and (min-width: 880px) {
+  .top-bar {
+   
+    *zoom: 1;
+    overflow: visible;
+  }}
+
+
 .logo p{
 	color: #fff;
 	margin: 0.7rem 0 0 0.8rem;
