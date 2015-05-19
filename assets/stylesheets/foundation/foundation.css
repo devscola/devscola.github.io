@@ -2003,7 +2003,7 @@ meta.foundation-mq-topbar {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 40.063em) {
   .top-bar {
     background: #333333;
     overflow: visible; }
