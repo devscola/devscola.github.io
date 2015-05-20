@@ -188,18 +188,16 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 880px) {
   .top-bar {
-   
-    *zoom: 1;
-    overflow: visible;
-  }
-.logo p{
-	color: #fff;
-	margin: 0.7rem 0 0 0.8rem;
-	font-size: 1.2rem;
-}
+    background: #333333;
+    overflow: visible; }
 }
 
-
+  
+  	.logo p{
+  		color: #fff;
+  		margin: 0.7rem 0 0 0.8rem;
+  		font-size: 1.2rem;
+  	}
 
 
 @media only screen and (max-width: 879px) {
