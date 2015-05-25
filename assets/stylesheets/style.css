@@ -49,21 +49,50 @@ line-height: 1.5rem;
 margin-bottom: 2rem
 }
 
-/*#claim {
-font-family: 'dejavu_sansbold';
-font-size: 4.2rem;
-line-height: 3.8rem;
-color: #ffffff;
-margin: 1.4rem 0 0rem 0;
-letter-spacing: -0.2rem;
-word-spacing: -0.2rem;
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+	h2 {
+		font-family: 'dejavu_sansextralight';
+		font-size: 4rem;
+		margin: 2rem 0 0.5rem 0 !important;
+		line-height: 5.5rem;
+		letter-spacing: 0.15rem;
+
+	}
+
+	h3 {
+		font-family: 'dejavu_sansbold';
+		font-size: 1rem;
+		line-height: 0.95rem;
+		letter-spacing: -0.025rem;
+		word-spacing: -0.03rem;
+	}
+
+	h4 {
+		font-family: 'dejavu_sansextralight';
+		font-size: 2.5rem;
+		margin-bottom: 0.2rem;
+		letter-spacing: 0.025rem;
+
+		
+	}
+
+	h5 {
+		font-size: 0.85rem;
+		font-family: 'dejavu_sansextralight';
+		letter-spacing: 0.05rem;
+		line-height: 0.85rem;
+		margin: 0 0 0.1rem 0;
+	}
+
+	p {
+	font-size: 0.85rem;
+	line-height: 1.35rem;
+	margin-bottom: 1.8rem
+	}
 }
 
-#inicio > div.large-3.columns.align-left > img {
-	height: 14.7rem;
-	width: auto;
-}
-*/
 
 /*grid*/
 
@@ -102,11 +131,6 @@ word-spacing: -0.2rem;
 
 
 
-#inicio > div > img {
-
-	
-}
-
 
 .align-left {
   padding-left: 0px;
@@ -140,6 +164,12 @@ img {
 }
 
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+#WHO-PICS > div > div> img {
+	height: 85%;
+	width: 85%;
+}
+}
 
 
 .logo-track {
@@ -173,6 +203,17 @@ button:hover, button:focus, .button:hover, .button:focus {
 button:hover, button:focus, .button:hover, .button:focus {
   color: #FFFFFF; }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+button.large, .button.large {
+		
+	    padding-top: 0.90rem;
+	    padding-right: 1rem;
+	    padding-bottom: 0.90rem;
+	    padding-left: 1rem;
+	    font-size: 0.80rem; }
+	  
+	  }
+
 /*social*/
 
 #SOCIAL > div.large-4.columns.right_column > {
@@ -197,10 +238,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 /*top bar*/
 
-meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:880px/";
-  width: 880px;
-}
+
 
 @media only screen and (min-width: 880px) {
   .top-bar {
@@ -270,6 +308,9 @@ img.foot_logo  {
 
 }
 
+
+
+
 img.in_button {
 
 	margin: 0;
@@ -286,19 +327,36 @@ img.in_button {
 
 .foot_text a {
 	font-family: 'dejavu_sansbold';
-	line-height: 0.2rem;
+	line-height: 0.075rem;
 	font-size: 0.9rem;
 	letter-spacing: -0.025rem;
 	word-spacing: -0.025rem;
-
 }
 
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+.foot_text p {
+
+	font-size:0.8rem;
+	line-height: 0.9rem;
+	}
+
+.foot_text a {
+
+	line-height: 0.05rem;
+	font-size: 0.85rem;
+	
+
+}}
 
 
 
 #MAIL {
 	display:block;
-	margin-top: 0.3rem;
+	margin-top: 0.35rem;
 }
 
 /* owl carousel*/
