@@ -238,7 +238,10 @@ button.large, .button.large {
 
 /*top bar*/
 
-
+meta.foundation-mq-topbar {
+  font-family: "/only screen and (min-width:880px/";
+  width: 880px;
+}
 
 @media only screen and (min-width: 880px) {
   .top-bar {
