@@ -50,7 +50,7 @@ margin-bottom: 2rem
 }
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 
 	h2 {
 		font-family: 'dejavu_sansextralight';
@@ -100,13 +100,13 @@ margin-bottom: 2rem
 	max-width: 75%;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
 .row {
 	max-width: 90%;
 }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 .row {
 	max-width: 90%;
 }
@@ -164,7 +164,7 @@ img {
 }
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 #WHO-PICS > div > div> img {
 	height: 85%;
 	width: 85%;
@@ -203,7 +203,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 button:hover, button:focus, .button:hover, .button:focus {
   color: #FFFFFF; }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 button.large, .button.large {
 		
 	    padding-top: 0.90rem;
@@ -338,7 +338,7 @@ img.in_button {
 
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 
 
 .foot_text p {
