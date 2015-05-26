@@ -50,49 +50,6 @@ margin-bottom: 2rem
 }
 
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-
-	h2 {
-		font-family: 'dejavu_sansextralight';
-		font-size: 4rem;
-		margin: 2rem 0 0.5rem 0 !important;
-		line-height: 5.5rem;
-		letter-spacing: 0.15rem;
-
-	}
-
-	h3 {
-		font-family: 'dejavu_sansbold';
-		font-size: 1rem;
-		line-height: 0.95rem;
-		letter-spacing: -0.025rem;
-		word-spacing: -0.03rem;
-	}
-
-	h4 {
-		font-family: 'dejavu_sansextralight';
-		font-size: 2.5rem;
-		margin-bottom: 0.2rem;
-		letter-spacing: 0.025rem;
-
-		
-	}
-
-	h5 {
-		font-size: 0.85rem;
-		font-family: 'dejavu_sansextralight';
-		letter-spacing: 0.05rem;
-		line-height: 0.85rem;
-		margin: 0 0 0.1rem 0;
-	}
-
-	p {
-	font-size: 0.85rem;
-	line-height: 1.35rem;
-	margin-bottom: 1.8rem
-	}
-}
-
 
 /*grid*/
 
@@ -100,13 +57,13 @@ margin-bottom: 2rem
 	max-width: 75%;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .row {
 	max-width: 90%;
 }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 .row {
 	max-width: 90%;
 }
@@ -119,14 +76,14 @@ margin-bottom: 2rem
 #inicio {
 
 	position: absolute;
-	top: 0rem;
-	left: 0rem;
+	margin:auto;
+	top:40%;
+	left:22.5%;
+	
+	max-width: 50%;
+
 	z-index: 1;
 	
-}
-
-.inicio {
-	position:relative;
 }
 
 
@@ -164,15 +121,10 @@ img {
 }
 
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-#WHO-PICS > div > div> img {
-	height: 85%;
-	width: 85%;
-}
-}
 
 
 .logo-track {
+	
 	margin-top: 3rem;
 	margin-bottom: 0.5rem;
 	height: 75%;
@@ -202,17 +154,6 @@ button:hover, button:focus, .button:hover, .button:focus {
   background-color: #292929; }
 button:hover, button:focus, .button:hover, .button:focus {
   color: #FFFFFF; }
-
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-button.large, .button.large {
-		
-	    padding-top: 0.90rem;
-	    padding-right: 1rem;
-	    padding-bottom: 0.90rem;
-	    padding-left: 1rem;
-	    font-size: 0.80rem; }
-	  
-	  }
 
 /*social*/
 
@@ -311,9 +252,6 @@ img.foot_logo  {
 
 }
 
-
-
-
 img.in_button {
 
 	margin: 0;
@@ -330,39 +268,26 @@ img.in_button {
 
 .foot_text a {
 	font-family: 'dejavu_sansbold';
-	line-height: 0.075rem;
+	line-height: 0.2rem;
 	font-size: 0.9rem;
 	letter-spacing: -0.025rem;
 	word-spacing: -0.025rem;
+
 }
 
-
-
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-
-
-.foot_text p {
-
-	font-size:0.8rem;
-	line-height: 0.9rem;
-	}
-
-.foot_text a {
-
-	line-height: 0.05rem;
-	font-size: 0.85rem;
-	
-
-}}
 
 
 
 #MAIL {
 	display:block;
-	margin-top: 0.35rem;
+	margin-top: 0.3rem;
 }
 
 /* owl carousel*/
+
+.owl-carousel {
+	position: relative;
+}
 
 .owl-carousel .owl-item {
 
@@ -406,22 +331,3 @@ img.in_button {
 	background: #292929 !important;
 }
 
-/* slick carousel*/
-
-.slick-slide img {
-
-padding: 0 0.5rem;
-}
-
-.slick-slide .slick-center img {
-
- height: 150% !important;
- width: 150% !important; 
-
-}
-.slick-slide .slick-active .slick-center img  {
-
- height: 115% !important;
- width: 115% !important;
-
-}
