@@ -93,23 +93,102 @@ margin-bottom: 2rem
 	}
 }
 
+h2 {
+	font-family: 'dejavu_sansextralight';
+	font-size: 5rem;
+	margin: 2rem 0 0.5rem 0 !important;
+	line-height: 7rem;
+	letter-spacing: 0.25rem;
+
+}
+
+h3 {
+	font-family: 'dejavu_sansbold';
+	font-size: 1.1rem;
+	line-height: 1rem;
+	letter-spacing: -0.05rem;
+	word-spacing: -0.03rem;
+}
+
+h4 {
+	font-family: 'dejavu_sansextralight';
+	font-size: 3rem;
+	margin-bottom: 0.3rem;
+	letter-spacing: 0.05rem;
+
+	
+}
+
+h5 {
+	font-size: 1rem;
+	font-family: 'dejavu_sansextralight';
+	letter-spacing: 0.05rem;
+	line-height: 1rem;
+	margin: 0 0 0.1rem 0;
+}
+
+p {
+font-size: 0.9rem;
+line-height: 1.5rem;
+margin-bottom: 2rem
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 640px) {
+
+	h2 {
+		font-family: 'dejavu_sansextralight';
+		font-size: 2rem;
+		margin: 1rem 0 0.5rem 0 !important;
+		line-height: 2.3rem;
+		letter-spacing: 0.05rem;
+
+	}
+
+	h3 {
+		font-family: 'dejavu_sansbold';
+		font-size: 0.9rem;
+		line-height: 0.90rem;
+		letter-spacing: -0.015rem;
+		word-spacing: -0.03rem;
+	}
+
+	h4 {
+		font-family: 'dejavu_sansextralight';
+		font-size: 1.5rem;
+		margin-bottom: 0.2rem;
+		letter-spacing: 0.05rem;
+
+		
+	}
+
+	h5 {
+		font-size: 0.85rem;
+		font-family: 'dejavu_sansextralight';
+		letter-spacing: 0.025rem;
+		line-height: 0.75rem;
+		margin: 0 0 0.1rem 0;
+	}
+
+	p {
+	font-size: 0.75rem;
+	line-height: 1.35rem;
+	margin-bottom: 1.5rem
+	}
+}
+
 /*grid*/
 
 .row {
 	max-width: 75%;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
 .row {
 	max-width: 90%;
 }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-.row {
-	max-width: 90%;
-}
-}
 
 
 
@@ -139,7 +218,7 @@ margin-bottom: 2rem
   padding-right: 0px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+@media only screen and (min-width : 320px) and (max-width : 640px) {
 
 .align-right {
   padding: 0px;
