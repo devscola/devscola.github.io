@@ -323,7 +323,7 @@ footer {
 @media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
 
 	footer {
-		height: 10rem;
+		height: 9rem;
 		margin-top: 2rem;
 
 	}
@@ -338,7 +338,7 @@ img.foot_logo  {
 @media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
 
 img.foot_logo  {
-	margin: 2rem 0 0.25rem 0;
+	margin: 1.2rem 0 0.25rem 0;
 	width: auto !important;
 }
 
@@ -390,15 +390,18 @@ img.in_button {
 }
 
 @media only screen and (min-width : 320px) and (max-width : 360px) {
-.small-left{
-		float: left !important;
+	.small-left{
+	float: left !important;
 	}
+}
 
-.small-right{
-			float: left !important;
-		}
+@media only screen and (min-width : 480px) and (max-width : 640px) {
 
-
+	.small-right{
+	position: relative;
+	margin-left: 10px !important;
+	right: 15%;
+	}
 }
 
 @media only screen and (min-width : 320px) and (max-width : 640px) {
@@ -417,10 +420,13 @@ img.in_button {
 	text-align: center;
 	}
 
-	.foot_text p, .foot_text a {
-	    
-	    color: #FFF;
-	    margin: 0.9rem 0px 0px;
+	.foot_text a {
+	    margin: 0.7rem 0 0;
+	    display:block;
+	}
+
+	.foot_text p {
+	    margin: 0.35rem 0 0;
 	    display:block;
 	}
 
