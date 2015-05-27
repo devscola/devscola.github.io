@@ -208,7 +208,10 @@ margin-bottom: 2rem
 }
 
 
-
+.total-align {
+	padding-left: 0px;
+	padding-right: 0px;
+}
 
 .align-left {
   padding-left: 0px;
@@ -479,7 +482,7 @@ img.in_button {
 	.small-right{
 	position: relative;
 	margin-left: 10px !important;
-	right: 15%;
+	right: 20%;
 	}
 }
 
