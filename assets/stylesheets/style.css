@@ -251,12 +251,36 @@ margin-bottom: 2rem
 
 
 
+#WHO-PICS > div > div.left_column {
+	padding-left: 0px;
+	padding-right: 1%;
+}
+
+#WHO-PICS > div > div.right_column {
+	padding-left: 1%;
+	padding-right: 0px;
+}
+
+#WHO-PICS > div > div.center_column {
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+}
+
+#WHO-PICS > div {
+	margin: 0.9rem 0 0.9rem 0;
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+#WHO-PICS > div {
+	margin: 0.75rem 0 0.75rem 0;
+}
+}
+
 img {
 	height: 100%;
 	width: 100%;
 }
-
-
 
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
@@ -265,6 +289,7 @@ img {
 	width: 85%;
 }
 }
+
 
 
 .logo-track {
