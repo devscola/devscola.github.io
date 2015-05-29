@@ -189,22 +189,88 @@ margin-bottom: 2rem
 }
 }
 
-
-
-
-
-
 #inicio {
 
 	position: absolute;
 	margin:auto;
-	top:40%;
-	left:22.5%;
-	
-	max-width: 50%;
+	top:39%;
+	left:27.5%;
+
 
 	z-index: 1;
 	
+}
+
+
+@media only screen and (min-width : 1025px) and (max-width : 1280px) {
+#inicio {
+
+	top:40%;
+	left:22.5%;
+	max-width: 50%;
+	
+}
+}
+
+@media only screen and (min-width : 981px) and (max-width : 1024px) {
+#inicio {
+
+	top:40%;
+	left:22.5%;
+	max-width: 50%;
+	
+}
+}
+
+@media only screen and (min-width : 801px) and (max-width : 980px) {
+#inicio {
+
+	top:22.5%;
+	left:19%;
+	max-width: 60%;
+	
+}
+}
+
+@media only screen and (min-width : 769px) and (max-width : 800px) {
+#inicio {
+
+	top:20%;
+	left:15%;
+	max-width: 65%;
+	
+}
+}
+
+
+@media only screen and (min-width : 641px) and (max-width : 768px) {
+#inicio {
+
+	top:20%;
+	left:15%;
+	max-width: 65%;
+	
+}
+}
+
+@media only screen and (min-width : 481px) and (max-width : 640px) {
+#inicio {
+
+	top:35%;
+	left:20%;
+	max-width: 60%;
+
+}
+}
+
+@media only screen and (min-width : 361px) and (max-width : 480px) {
+#inicio {
+
+	top:40%;
+	left:16%;
+	max-width: 65%;
+
+}
 }
 
 
@@ -299,7 +365,6 @@ img {
 	height: 75%;
 	width: 75%;
 }
-
 
 
 button, .button {
