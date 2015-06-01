@@ -202,11 +202,22 @@ margin-bottom: 2rem
 }
 
 
+@media only screen and (min-width : 1281px) and (max-width : 1440px) {
+#inicio {
+
+	top:42%;
+	left:25%;
+	max-width: 50%;
+	
+}
+}
+
+
 @media only screen and (min-width : 1025px) and (max-width : 1280px) {
 #inicio {
 
 	top:40%;
-	left:22.5%;
+	left:25%;
 	max-width: 50%;
 	
 }
@@ -222,12 +233,23 @@ margin-bottom: 2rem
 }
 }
 
-@media only screen and (min-width : 801px) and (max-width : 980px) {
+@media only screen and (min-width : 901px) and (max-width : 980px) {
 #inicio {
 
 	top:22.5%;
-	left:19%;
+	left:19.5%;
 	max-width: 60%;
+	
+}
+}
+
+
+@media only screen and (min-width : 801px) and (max-width : 900px) {
+#inicio {
+
+	top:13.5%;
+	left:16%;
+	max-width: 65%;
 	
 }
 }
@@ -243,7 +265,7 @@ margin-bottom: 2rem
 }
 
 
-@media only screen and (min-width : 641px) and (max-width : 768px) {
+@media only screen and (min-width : 601px) and (max-width : 768px) {
 #inicio {
 
 	top:20%;
@@ -253,22 +275,32 @@ margin-bottom: 2rem
 }
 }
 
-@media only screen and (min-width : 481px) and (max-width : 640px) {
+@media only screen and (min-width : 481px) and (max-width : 600px) {
 #inicio {
 
-	top:35%;
-	left:20%;
-	max-width: 60%;
+	top:15%;
+	left:18%;
+	max-width: 65%;
 
 }
 }
 
-@media only screen and (min-width : 361px) and (max-width : 480px) {
+@media only screen and (min-width : 321px) and (max-width : 480px) {
 #inicio {
 
-	top:40%;
+	top:44%;
 	left:16%;
 	max-width: 65%;
+
+}
+}
+
+@media only screen and (max-width : 320px) {
+#inicio {
+
+	top:25%;
+	left:10%;
+	max-width: 79%;
 
 }
 }
