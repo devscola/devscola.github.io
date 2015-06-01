@@ -50,7 +50,7 @@ margin-bottom: 2rem
 }
 
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media only screen and (min-width : 801px) and (max-width : 1024px) {
 
 	h2 {
 		font-family: 'dejavu_sansextralight';
@@ -93,61 +93,22 @@ margin-bottom: 2rem
 	}
 }
 
-h2 {
-	font-family: 'dejavu_sansextralight';
-	font-size: 5rem;
-	margin: 2rem 0 0.5rem 0 !important;
-	line-height: 7rem;
-	letter-spacing: 0.25rem;
-
-}
-
-h3 {
-	font-family: 'dejavu_sansbold';
-	font-size: 1.1rem;
-	line-height: 1rem;
-	letter-spacing: -0.05rem;
-	word-spacing: -0.03rem;
-}
-
-h4 {
-	font-family: 'dejavu_sansextralight';
-	font-size: 3rem;
-	margin-bottom: 0.3rem;
-	letter-spacing: 0.05rem;
-
-	
-}
-
-h5 {
-	font-size: 1rem;
-	font-family: 'dejavu_sansextralight';
-	letter-spacing: 0.05rem;
-	line-height: 1rem;
-	margin: 0 0 0.1rem 0;
-}
-
-p {
-font-size: 0.9rem;
-line-height: 1.5rem;
-margin-bottom: 2rem
-}
 
 
-@media only screen and (min-width : 320px) and (max-width : 640px) {
+
+@media only screen and (min-width : 320px) and (max-width : 800px) {
 
 	h2 {
 		font-family: 'dejavu_sansextralight';
-		font-size: 2rem;
-		margin: 1rem 0 0.5rem 0 !important;
-		line-height: 2.3rem;
-		letter-spacing: 0.05rem;
-
+		font-size: 3.5rem;
+		margin: 2rem 0 0.5rem 0 !important;
+		line-height: 4.35rem;
+		letter-spacing: 0.25rem;
 	}
 
 	h3 {
 		font-family: 'dejavu_sansbold';
-		font-size: 0.9rem;
+		font-size: 1rem;
 		line-height: 0.90rem;
 		letter-spacing: -0.015rem;
 		word-spacing: -0.03rem;
@@ -155,9 +116,10 @@ margin-bottom: 2rem
 
 	h4 {
 		font-family: 'dejavu_sansextralight';
-		font-size: 1.5rem;
+		font-size: 2.3rem;
 		margin-bottom: 0.2rem;
-		letter-spacing: 0.05rem;
+		letter-spacing: 0.020rem;
+
 
 		
 	}
@@ -166,12 +128,12 @@ margin-bottom: 2rem
 		font-size: 0.85rem;
 		font-family: 'dejavu_sansextralight';
 		letter-spacing: 0.025rem;
-		line-height: 0.75rem;
-		margin: 0 0 0.1rem 0;
+		line-height: 0.50rem;
+		margin: 0 0 0.50rem 0;
 	}
 
 	p {
-	font-size: 0.75rem;
+	font-size: 0.80rem;
 	line-height: 1.35rem;
 	margin-bottom: 1.5rem
 	}
@@ -217,8 +179,8 @@ margin-bottom: 2rem
 #inicio {
 
 	top:40%;
-	left:25%;
-	max-width: 50%;
+	left:19.5%;
+	max-width: 60%;
 	
 }
 }
