@@ -362,18 +362,6 @@ margin-bottom: 2rem
   padding-right: 0px;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 640px) {
-
-.align-right {
-  padding: 0px;
-}
-.align-left {
-  padding: 0px;
-}
-}
-
-
-
 
 .columns.left_column {
     padding-left: 0px ;
@@ -388,6 +376,20 @@ margin-bottom: 2rem
 .columns.center_column {
     padding-right: 1%;
     padding-left: 1%;
+  }
+
+
+.small-12.columns.left_column {
+ 	padding-right: 0%
+}
+
+.small-12.columns.right_column {
+	padding-left: 0%
+  }
+
+.small-12.columns.center_column {
+    padding-right: 0%;
+    padding-left: 0%;
   }
 
 
