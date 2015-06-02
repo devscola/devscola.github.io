@@ -36,11 +36,11 @@ h4 {
 }
 
 h5 {
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-family: 'dejavu_sansextralight';
 	letter-spacing: 0.05rem;
 	line-height: 1rem;
-	margin: 0 0 0.1rem 0;
+	margin: -0.2rem 0 0.1rem 0;
 }
 
 p {
@@ -83,7 +83,7 @@ margin-bottom: 2rem
 		font-family: 'dejavu_sansextralight';
 		letter-spacing: 0.05rem;
 		line-height: 0.85rem;
-		margin: 0 0 0.1rem 0;
+		margin: -0.2rem 0 0.2rem 0;
 	}
 
 	p {
@@ -96,14 +96,14 @@ margin-bottom: 2rem
 
 
 
-@media only screen and (min-width : 320px) and (max-width : 800px) {
+@media only screen and (min-width : 600px) and (max-width : 800px) {
 
 	h2 {
 		font-family: 'dejavu_sansextralight';
 		font-size: 3.5rem;
 		margin: 2rem 0 0.5rem 0 !important;
 		line-height: 4.35rem;
-		letter-spacing: 0.25rem;
+		letter-spacing: 0.05rem;
 	}
 
 	h3 {
@@ -134,10 +134,91 @@ margin-bottom: 2rem
 
 	p {
 	font-size: 0.80rem;
-	line-height: 1.35rem;
 	margin-bottom: 1.5rem
 	}
 }
+
+
+@media only screen and (min-width : 321px) and (max-width : 600px) {
+
+	h2 {
+		font-family: 'dejavu_sansextralight';
+		font-size: 3rem;
+		margin: 2rem 0 0.5rem 0 !important;
+		line-height: 4.15rem;
+		letter-spacing: 0.02rem;
+	}
+
+	h3 {
+		font-family: 'dejavu_sansbold';
+		font-size: 1rem;
+		line-height: 0.90rem;
+		letter-spacing: -0.015rem;
+		word-spacing: -0.03rem;
+	}
+
+	h4 {
+		font-family: 'dejavu_sansextralight';
+		font-size: 2.3rem;
+		margin-bottom: 0.2rem;
+		letter-spacing: 0.020rem;
+
+
+		
+	}
+
+	h5 {
+		font-size: 0.85rem;
+		font-family: 'dejavu_sansextralight';
+		letter-spacing: 0.025rem;
+		line-height: 0.50rem;
+		margin: 0 0 0.50rem 0;
+	}
+
+}
+
+@media only screen and (max-width : 320px) {
+
+	h2 {
+		font-family: 'dejavu_sansextralight';
+		font-size: 2rem;
+		margin: 1rem 0 0.5rem 0 !important;
+		line-height: 2rem;
+		letter-spacing: 0.01rem;
+	}
+
+	h3 {
+		font-family: 'dejavu_sansbold';
+		font-size: 0.9rem;
+		line-height: 0.85rem;
+		letter-spacing: -0.01rem;
+		word-spacing: -0.015rem;
+	}
+
+	h4 {
+		font-family: 'dejavu_sansextralight';
+		font-size: 1.5rem;
+		margin-bottom: 0.1rem;
+		letter-spacing: 0.010rem;
+
+
+		
+	}
+
+	h5 {
+		font-size: 0.80rem;
+		letter-spacing: 0.015rem;
+		line-height: 0.70rem;
+		margin-bottom: 0.35rem;
+	}
+
+	p {
+	font-size: 0.75rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.25rem;
+	}
+}
+
 
 /*grid*/
 
