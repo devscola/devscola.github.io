@@ -362,7 +362,15 @@ margin-bottom: 2rem
   padding-right: 0px;
 }
 
+@media only screen and (min-width : 320px) and (max-width : 640px) {
 
+.align-right {
+  padding: 0px;
+}
+.align-left {
+  padding: 0px;
+}
+}
 .columns.left_column {
     padding-left: 0px ;
     padding-right: 2%
@@ -378,6 +386,7 @@ margin-bottom: 2rem
     padding-left: 1%;
   }
 
+@media only screen and (max-width : 600px){
 
 .small-12.columns.left_column {
  	padding-right: 0%
@@ -391,7 +400,7 @@ margin-bottom: 2rem
     padding-right: 0%;
     padding-left: 0%;
   }
-
+}
 
 
 #WHO-PICS > div > div.left_column {
@@ -421,9 +430,26 @@ margin-bottom: 2rem
 }
 
 img {
+
 	height: 100%;
 	width: 100%;
 }
+
+.crop{
+ float:left;
+ position:relative;
+ width:150px;
+ height:90px;
+ border:1px solid #ccc;
+ margin:.5em 10px .5em 0;
+ }
+.crop.square img{
+ margin:0;
+ position:absolute;
+ top:-20px;
+ left:-55px;
+ clip:rect(20px 205px 110px 55px); /* Agujero rectángulo de medida específica */
+ }
 
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
@@ -478,6 +504,27 @@ button.large, .button.large {
 	    padding-left: 1rem;
 	    font-size: 0.80rem; }
 	  
+}
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+	button.large, .button.large {
+			
+		    padding-top: 0.90rem;
+		    padding-right: 1rem;
+		    padding-bottom: 0.90rem;
+		    padding-left: 1rem;
+		    font-size: 0.80rem; }
+	#SPONSOR > div > div > a, #JOIN > div > div > a {
+		width: 100%;
+		}
+	button.large.social_button, .button.large.social_button {
+		padding: 0.65rem 0.5rem 0.5rem 0.5rem;
+		font-size: 0.7rem;
+	  	line-height: 0.9rem;
+	  	}
+	#SOCIAL > div > div > a > div > img {
+		margin-bottom: 0.3rem;
+	}
 }
 
 
