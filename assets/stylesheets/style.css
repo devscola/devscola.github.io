@@ -50,6 +50,11 @@ margin-bottom: 2rem
 }
 
 
+#TRACKS div div p, #TRACKS div div h4 {
+
+	text-align: center;
+}
+
 @media only screen and (min-width : 801px) and (max-width : 1024px) {
 
 	h2 {
@@ -447,14 +452,13 @@ img {
 
 
 
-
-
 .logo-track {
 	
+	
 	margin-top: 3rem;
-	margin-bottom: 0.5rem;
-	height: 75%;
-	width: 75%;
+	height: 100%;
+	width: 100%;
+	padding: 1rem;
 }
 
 
