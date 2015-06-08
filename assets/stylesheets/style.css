@@ -98,13 +98,13 @@ margin-bottom: 2rem
 
 
 
-@media only screen and (min-width : 600px) and (max-width : 800px) {
+@media only screen and (min-width : 640px) and (max-width : 800px) {
 
 	h2 {
 		font-family: 'dejavu_sansextralight';
 		font-size: 3.5rem;
 		margin: 2rem 0 0.5rem 0 !important;
-		line-height: 4.35rem;
+		line-height: 3.15rem;
 		letter-spacing: 0.05rem;
 	}
 
@@ -141,7 +141,7 @@ margin-bottom: 2rem
 }
 
 
-@media only screen and (min-width : 321px) and (max-width : 600px) {
+@media only screen and (min-width : 360px) and (max-width : 640px) {
 
 	h2 {
 		font-family: 'dejavu_sansextralight';
@@ -179,7 +179,7 @@ margin-bottom: 2rem
 
 }
 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 360px) {
 
 	h2 {
 		font-family: 'dejavu_sansextralight';
@@ -295,8 +295,8 @@ margin-bottom: 2rem
 
 	position: absolute;
 	margin:auto;
-	top:39%;
-	left:27.5%;
+	top:44%;
+	left:26%;
 
 
 	z-index: 1;
@@ -304,7 +304,17 @@ margin-bottom: 2rem
 }
 
 
-@media only screen and (min-width : 1281px) and (max-width : 1440px) {
+@media only screen and (min-width : 1440px) and (max-width : 1600px) {
+#inicio {
+
+	top:44%;
+	left:23%;
+	max-width: 50%;
+	
+}
+}
+
+@media only screen and (min-width : 1280px) and (max-width : 1440px) {
 #inicio {
 
 	top:42%;
@@ -315,17 +325,17 @@ margin-bottom: 2rem
 }
 
 
-@media only screen and (min-width : 1025px) and (max-width : 1280px) {
+@media only screen and (min-width : 1024px) and (max-width : 1280px) {
 #inicio {
 
-	top:40%;
-	left:19.5%;
+	top:34%;
+	left:17.5%;
 	max-width: 60%;
 	
 }
 }
 
-@media only screen and (min-width : 981px) and (max-width : 1024px) {
+@media only screen and (min-width : 980px) and (max-width : 1024px) {
 #inicio {
 
 	top:40%;
@@ -335,7 +345,7 @@ margin-bottom: 2rem
 }
 }
 
-@media only screen and (min-width : 901px) and (max-width : 980px) {
+@media only screen and (min-width : 900px) and (max-width : 980px) {
 #inicio {
 
 	top:22.5%;
@@ -346,7 +356,7 @@ margin-bottom: 2rem
 }
 
 
-@media only screen and (min-width : 801px) and (max-width : 900px) {
+@media only screen and (min-width : 800px) and (max-width : 900px) {
 #inicio {
 
 	top:13.5%;
@@ -356,7 +366,7 @@ margin-bottom: 2rem
 }
 }
 
-@media only screen and (min-width : 769px) and (max-width : 800px) {
+@media only screen and (min-width : 768px) and (max-width : 800px) {
 #inicio {
 
 	top:20%;
@@ -367,32 +377,42 @@ margin-bottom: 2rem
 }
 
 
-@media only screen and (min-width : 601px) and (max-width : 768px) {
+@media only screen and (min-width : 640px) and (max-width : 768px) {
 #inicio {
 
-	top:20%;
+	top:18%;
 	left:15%;
 	max-width: 65%;
 	
 }
 }
 
-@media only screen and (min-width : 481px) and (max-width : 600px) {
+@media only screen and (min-width : 480px) and (max-width : 640px) {
 #inicio {
 
-	top:15%;
-	left:18%;
+	top:39%;
+	left:15%;
 	max-width: 65%;
-
+	
 }
 }
 
-@media only screen and (min-width : 321px) and (max-width : 480px) {
+@media only screen and (min-width : 360px) and (max-width : 480px) {
 #inicio {
 
-	top:44%;
+	top:43%;
 	left:16%;
-	max-width: 65%;
+	max-width: 70%;
+
+}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 360px) {
+#inicio {
+
+	top:20%;
+	left:10%;
+	max-width: 79%;
 
 }
 }
@@ -400,7 +420,7 @@ margin-bottom: 2rem
 @media only screen and (max-width : 320px) {
 #inicio {
 
-	top:25%;
+	top:26%;
 	left:10%;
 	max-width: 79%;
 
@@ -504,7 +524,7 @@ img {
 }
 }
 
-@media only screen and (max-width : 1600px) {
+@media only screen and (min-width : 1024px) and (max-width : 1600px) {
 .logo-track {
 	
 	margin-top: 2rem;
@@ -512,7 +532,15 @@ img {
 }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 420px) {
+@media only screen and (min-width : 480px) and (max-width : 1024px) {
+.logo-track {
+	
+	margin-top: 2rem;
+	padding: 0rem 3rem;
+}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
 
 .logo-track {
 	
