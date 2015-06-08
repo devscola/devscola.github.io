@@ -50,10 +50,7 @@ margin-bottom: 2rem
 }
 
 
-#TRACKS div div p, #TRACKS div div h4 {
 
-	text-align: center;
-}
 
 @media only screen and (min-width : 801px) and (max-width : 1024px) {
 
@@ -237,6 +234,63 @@ margin-bottom: 2rem
 }
 }
 
+
+
+
+.total-align {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.align-left {
+  padding-left: 0px;
+}
+
+.align-right {
+  padding-right: 0px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 640px) {
+
+.align-right {
+  padding: 0px;
+}
+.align-left {
+  padding: 0px;
+}
+}
+.columns.left_column {
+    padding-left: 0px ;
+    padding-right: 2%
+}
+
+.columns.right_column {
+    padding-right: 0px;
+    padding-left: 2%
+  }
+
+.columns.center_column {
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+
+@media only screen and (max-width : 600px){
+
+.small-12.columns.left_column {
+ 	padding-right: 0%
+}
+
+.small-12.columns.right_column {
+	padding-left: 0%
+  }
+
+.small-12.columns.center_column {
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
+
+/*INICIO*/
 #inicio {
 
 	position: absolute;
@@ -353,60 +407,15 @@ margin-bottom: 2rem
 }
 }
 
+/*WHO*/
 
-.total-align {
-	padding-left: 0px;
-	padding-right: 0px;
+#WHO-PICS > div> div.large-4 {
+	width: 31.333%;
 }
 
-.align-left {
-  padding-left: 0px;
+#WHO-PICS > div> div.medium-4 {
+	width: 31.333%;
 }
-
-.align-right {
-  padding-right: 0px;
-}
-
-@media only screen and (min-width : 320px) and (max-width : 640px) {
-
-.align-right {
-  padding: 0px;
-}
-.align-left {
-  padding: 0px;
-}
-}
-.columns.left_column {
-    padding-left: 0px ;
-    padding-right: 2%
-}
-
-.columns.right_column {
-    padding-right: 0px;
-    padding-left: 2%
-  }
-
-.columns.center_column {
-    padding-right: 1%;
-    padding-left: 1%;
-  }
-
-@media only screen and (max-width : 600px){
-
-.small-12.columns.left_column {
- 	padding-right: 0%
-}
-
-.small-12.columns.right_column {
-	padding-left: 0%
-  }
-
-.small-12.columns.center_column {
-    padding-right: 0%;
-    padding-left: 0%;
-  }
-}
-
 /*
 #WHO-PICS > div > div.left_column {
 	padding-left: 0px;
@@ -446,7 +455,7 @@ margin-bottom: 2rem
 }
 
 #WHO-PICS > div {
-	margin: 1rem 0;
+	margin: 2rem 0;
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
@@ -472,26 +481,35 @@ img {
 }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+/*@media only screen and (min-width : 768px) and (max-width : 1024px) {
 #WHO-PICS div div img {
 
 	height: 85%;
 	width: 85%;
 }
+}*/
+
+/*TRACKS*/
+
+#TRACKS div div p, #TRACKS div div h4 {
+
+	text-align: center;
 }
 
-@media only screen and (min-width : 1600px) {
+@media only screen and (min-width : 1600px) and (max-width: 1920px){
+.logo-track {
+	
+	margin-top: 3rem;
+	padding: 0rem 6rem;
+}
+}
+
+@media only screen and (max-width : 1600px) {
 .logo-track {
 	
 	margin-top: 2rem;
 	padding: 0rem 3rem;
 }
-}
-
-.logo-track {
-	
-	margin-top: 2rem;
-	padding: 0rem 5rem;
 }
 
 @media only screen and (min-width : 320px) and (max-width : 420px) {
@@ -502,6 +520,8 @@ img {
 	padding: 0rem 5rem;
 }
 }
+
+/*buttons*/
 
 button, .button {
 
