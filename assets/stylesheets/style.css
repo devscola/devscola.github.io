@@ -445,32 +445,7 @@ img {
 }
 }
 
-/*
-.crop{
-	
-	position:relative;
-	height: 100px;
-	
-	
-	}
-.crop img{
-	
-	position:absolute;
-	top:0;
-	left:0;
-	
-	clip:rect(20px 205px 110px 55px);
-	}	
-*/
-.crop { 
-    width: 16.66667%	; 
-    height: 16.6667%; 
-    overflow: hidden !important; 
-}
-.crop img { 
-    width: 100%;
-    margin: -75px 0 0 -100px;
-}
+
 
 
 
