@@ -407,7 +407,7 @@ margin-bottom: 2rem
   }
 }
 
-
+/*
 #WHO-PICS > div > div.left_column {
 	padding-left: 0px;
 	padding-right: 1%;
@@ -422,9 +422,31 @@ margin-bottom: 2rem
 	padding-left: 0.5%;
 	padding-right: 0.5%;
 }
+*/
+
+#WHO-PICS > div > div.left_column {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0;
+	margin-right: 1%;
+}
+
+#WHO-PICS > div > div.right_column {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 1%;
+	margin-right: 0;
+}
+
+#WHO-PICS > div > div.center_column {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+}
 
 #WHO-PICS > div {
-	margin: 0.9rem 0 0.9rem 0;
+	margin: 1rem 0;
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
