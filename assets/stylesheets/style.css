@@ -451,16 +451,20 @@ img {
 }
 
 
+.logo-track {
+	
+	margin-top: 2rem;
+	padding: 0rem 3rem;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 420px) {
 
 .logo-track {
 	
-	
-	margin-top: 3rem;
-	height: 100%;
-	width: 100%;
-	padding: 1rem;
+	margin-top: 2rem;
+	padding: 0rem 5rem;
 }
-
+}
 
 button, .button {
 
