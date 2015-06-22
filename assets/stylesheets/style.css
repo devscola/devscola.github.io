@@ -146,7 +146,7 @@ margin-bottom: 2rem
 	h2 {
 		font-family: 'dejavu_sansextralight';
 		font-size: 3rem;
-		margin: 2rem 0 0.5rem 0 !important;
+		margin: 2rem 0 1rem 0 !important;
 		line-height: 4.15rem;
 		letter-spacing: 0.02rem;
 	}
@@ -184,7 +184,7 @@ margin-bottom: 2rem
 	h2 {
 		font-family: 'dejavu_sansextralight';
 		font-size: 2rem;
-		margin: 1rem 0 0.5rem 0 !important;
+		margin: 1rem 0 1rem 0 !important;
 		line-height: 2rem;
 		letter-spacing: 0.01rem;
 	}
@@ -509,71 +509,87 @@ img {
 
 @media only screen and (min-width : 480px) and (max-width : 640px) {
 
-#WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
-	margin-left: 0;
-}
-
-#WHO-PICS > div {
-	margin: 0px;
-}
-#WHO-PICS div div.medium-2 {
-	width: 28%;
-	margin-right: 2%;
-	margin-bottom: 2%;
-		}
-
-#WHO-PICS div div.medium-4 {
-	width: 70%;
-	float: left !important;
-	margin: 0px;
+	#WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
+		margin-left: 0;
 	}
-#WHO-PICS p {
-	margin-bottom: 2rem;
-}
+
+	#WHO-PICS > div {
+		margin: 0px;
+	}
+	#WHO-PICS div div.medium-2 {
+		width: 28%;
+		margin-right: 2%;
+		margin-bottom: 2%;
+			}
+
+	#WHO-PICS div div.medium-4 {
+		width: 70%;
+		float: left !important;
+		margin: 0px;
+		}
+	#WHO-PICS p {
+		margin-bottom: 2rem;
+	}
 
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
-#WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
-	margin-left: 0;
-}
-
-#WHO-PICS > div {
-	padding: 0px;
-}
-#WHO-PICS div div.medium-2 {
-	width: 100%;
-	margin-right: 0px;
-	margin-bottom: 0px;
-		}
-
-#WHO-PICS div div.medium-4 {
-	width: 100%;
-	float: none !important;
-	margin: 0px;
+	#WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
+		margin-left: 0;
 	}
-#WHO-PICS p {
-	margin-bottom: 2rem;
-}
+
+	#WHO-PICS > div {
+		padding: 0px;
+		margin: 0px;
+	}
+	#WHO-PICS div div.medium-2 {
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 0px;
+			}
+
+	#WHO-PICS div div.medium-4 {
+		width: 100%;
+		float: none !important;
+		margin: 0px;
+		}
+	#WHO-PICS p {
+		margin-bottom: 2rem;
+	}
 
 
-img {
-	padding: 0 25%;
+	#WHO-PICS > div> div.large-2.medium-2.small-4.columns.center_column > img,
+	#WHO-PICS > div > div.large-2.medium-2.small-4.columns.left_column > img {
+		padding: 0 30%;
+		margin-bottom: 1rem;
+		
+	}
+
+	#WHO-PICS > div > div.large-4.medium-4.small-8.columns.center_column, 
+	#WHO-PICS > div > div.large-4.medium-4.small-8.left.columns.right_column {
+
+		text-align: center !important;
+	}
+
+	#WHO-PICS > h2 {
+		text-align: center;
+
+	}
+
 	
 }
 
-#WHO-PICS > div:nth-child(2) > div.large-4.medium-4.small-8.columns.center_column{
 
-	text-align: center !important;
-}
-}
+
+	
 
 @media only screen and (min-width : 1600px) {
-#WHO-PICS > div > div.large-2.medium-2.small-4.columns{
+	#WHO-PICS > div > div.large-2.medium-2.small-4.columns{
 
-	width: 12%;
-}
+		width: 12%;
+	}
+
 }
 
 /*@media only screen and (min-width : 768px) and (max-width : 1024px) {
