@@ -391,7 +391,7 @@ margin-bottom: 2rem
 #inicio {
 
 	top:19%;
-	left:15%;
+	left:15%;<
 	max-width: 65%;
 	
 }
@@ -478,7 +478,7 @@ margin-bottom: 2rem
 	margin: 2rem 0;
 }
 
-@media only screen and (min-width : 640px) and (max-width : 800px) {
+@media only screen and (min-width : 768px) and (max-width : 800px) {
 
 #WHO-PICS > div {
 	margin: 0px;
@@ -498,7 +498,7 @@ margin-bottom: 2rem
 #WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
 	margin-left: 0;
 }
-
+.lil_
 }
 
 img {
@@ -507,67 +507,8 @@ img {
 	width: 100%;
 }
 
-@media only screen and (min-width : 480px) and (max-width : 640px) {
-
-#WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
-	margin-left: 0;
-}
-
-#WHO-PICS > div {
-	margin: 0px;
-}
-#WHO-PICS div div.medium-2 {
-	width: 28%;
-	margin-right: 2%;
-	margin-bottom: 2%;
-		}
-
-#WHO-PICS div div.medium-4 {
-	width: 70%;
-	float: left !important;
-	margin: 0px;
-	}
-#WHO-PICS p {
-	margin-bottom: 2rem;
-}
-
-}
-
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-
-#WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
-	margin-left: 0;
-}
-
-#WHO-PICS > div {
-	padding: 0px;
-}
-#WHO-PICS div div.medium-2 {
-	width: 100%;
-	margin-right: 0px;
-	margin-bottom: 0px;
-		}
-
-#WHO-PICS div div.medium-4 {
-	width: 100%;
-	float: none !important;
-	margin: 0px;
-	}
-#WHO-PICS p {
-	margin-bottom: 2rem;
-}
 
 
-img {
-	padding: 0 25%;
-	
-}
-
-#WHO-PICS > div:nth-child(2) > div.large-4.medium-4.small-8.columns.center_column{
-
-	text-align: center !important;
-}
-}
 
 @media only screen and (min-width : 1600px) {
 #WHO-PICS > div > div.large-2.medium-2.small-4.columns{
