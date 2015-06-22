@@ -772,6 +772,17 @@ meta.foundation-mq-topbar {
 }
 
 
+@media only screen and (max-width: 360px) {
+	.logo p{
+		
+		
+		padding: 0.7rem 0 1rem 0.8rem;
+		
+	}
+}
+
+
+
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
  border-right: solid 1px #ff4214 !important;
