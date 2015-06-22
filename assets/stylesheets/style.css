@@ -103,7 +103,7 @@ margin-bottom: 2rem
 	h2 {
 		font-family: 'dejavu_sansextralight';
 		font-size: 3.5rem;
-		margin: 2rem 0 0.5rem 0 !important;
+		margin: 2rem 0 1rem 0 !important;
 		line-height: 3.15rem;
 		letter-spacing: 0.05rem;
 	}
@@ -349,7 +349,7 @@ margin-bottom: 2rem
 #inicio {
 
 	top:22.5%;
-	left:19.5%;
+	left:18%;
 	max-width: 60%;
 	
 }
@@ -390,8 +390,8 @@ margin-bottom: 2rem
 @media only screen and (min-width : 480px) and (max-width : 640px) {
 #inicio {
 
-	top:39%;
-	left:15%;
+	top:19%;
+	left:15%;<
 	max-width: 65%;
 	
 }
@@ -481,7 +481,7 @@ margin-bottom: 2rem
 @media only screen and (min-width : 768px) and (max-width : 800px) {
 
 #WHO-PICS > div {
-	margin: 0.75rem 0 0.75rem 0;
+	margin: 0px;
 	}
 
 #WHO-PICS div div.medium-2 {
@@ -498,9 +498,7 @@ margin-bottom: 2rem
 #WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
 	margin-left: 0;
 }
-#WHO-PICS > div {
-	margin-bottom: 0;
-}
+.lil_
 }
 
 img {
