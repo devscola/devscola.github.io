@@ -11,18 +11,65 @@ Plugin URI: http://en.blog.wordpress.com/2010/08/24/more-ways-to-share/
 require_once plugin_dir_path( __FILE__ ).'sharing.php';
 
 function sharing_email_send_post( $data ) {
-	$content  = sprintf( __( '%1$s (%2$s) thinks you may be interested in the following post:', 'jetpack' ), $data['name'], $data['source'] );
-	$content .= "\n\n";
-	$content .= $data['post']->post_title."\n";
-	$content .= get_permalink( $data['post']->ID )."\n";
 
+	$content = sharing_email_send_post_content( $data );
 	$headers[] = sprintf( 'From: %1$s <%2$s>', $data['name'], $data['source'] );
 
 	wp_mail( $data['target'], '['.__( 'Shared Post', 'jetpack' ).'] '.$data['post']->post_title, $content, $headers );
 }
 
+
+/* Checks for spam using akismet if available. */
+/* Return $data as it if email about to be send out is not spam. */
+function sharing_email_check_for_spam_via_akismet( $data ) {
+
+	if ( ! function_exists( 'akismet_http_post' ) && ! method_exists( 'Akismet', 'http_post' ) )
+		return $data;
+
+	// Prepare the body_request for akismet
+	$body_request = array(
+		'blog'                  => get_option( 'home' ),
+		'permalink'             => get_permalink( $data['post']->ID ),
+		'comment_type'          => 'share',
+		'comment_author'        => $data['name'],
+		'comment_author_email'  => $data['source'],
+		'comment_content'       => sharing_email_send_post_content( $data ),
+		'user_agent'            => ( isset( $_SERVER['HTTP_USER_AGENT'] ) ? $_SERVER['HTTP_USER_AGENT'] : null ),
+		);
+
+	if ( method_exists( 'Akismet', 'http_post' ) ) {
+		$body_request['user_ip']	= Akismet::get_ip_address();
+		$response = Akismet::http_post( build_query( $body_request ), 'comment-check' );
+	} else {
+		global $akismet_api_host, $akismet_api_port;
+		$body_request['user_ip'] 	= ( isset( $_SERVER['REMOTE_ADDR'] ) ? $_SERVER['REMOTE_ADDR'] : null );
+		$response = akismet_http_post( build_query( $body_request ), $akismet_api_host, '/1.1/comment-check', $akismet_api_port );
+	}
+
+	// The Response is spam lets not send the email.
+	if ( ! empty( $response ) && isset( $response[1] ) && 'true' == trim( $response[1] ) ) { // 'true' is spam
+		return false; // don't send the email
+	}
+	return $data;
+}
+
+function sharing_email_send_post_content( $data ) {
+	$content  = sprintf( __( '%1$s (%2$s) thinks you may be interested in the following post:', 'jetpack' ), $data['name'], $data['source'] );
+	$content .= "\n\n";
+	$content .= $data['post']->post_title."\n";
+	$content .= get_permalink( $data['post']->ID )."\n";
+	return $content;
+}
+
 function sharing_add_meta_box() {
 	$post_types = get_post_types( array( 'public' => true ) );
+	/**
+	 * Filter the Sharing Meta Box title.
+	 *
+	 * @since 2.2.0
+	 *
+	 * @param string $var Sharing Meta Box title. Default is "Sharing".
+	 */
 	$title = apply_filters( 'sharing_meta_box_title', __( 'Sharing', 'jetpack' ) );
 	foreach( $post_types as $post_type ) {
 		add_meta_box( 'sharing_meta', $title, 'sharing_meta_box_content', $post_type, 'advanced', 'high' );
@@ -30,6 +77,13 @@ function sharing_add_meta_box() {
 }
 
 function sharing_meta_box_content( $post ) {
+	/**
+	 * Fires before the sharing meta box content.
+	 *
+	 * @since 2.2.0
+	 *
+	 * @param WP_Post $post The post to share.
+	 */
 	do_action( 'start_sharing_meta_box_content', $post );
 
 	$disabled = get_post_meta( $post->ID, 'sharing_disabled', true ); ?>
@@ -43,6 +97,13 @@ function sharing_meta_box_content( $post ) {
 	</p>
 
 	<?php
+	/**
+	 * Fires after the sharing meta box content.
+	 *
+	 * @since 2.2.0
+	 *
+	 * @param WP_Post $post The post to share.
+	*/
 	do_action( 'end_sharing_meta_box_content', $post );
 }
 
@@ -142,6 +203,7 @@ add_action( 'init', 'sharing_init' );
 add_action( 'admin_init', 'sharing_add_meta_box' );
 add_action( 'save_post', 'sharing_meta_box_save' );
 add_action( 'sharing_email_send_post', 'sharing_email_send_post' );
+add_filter( 'sharing_email_can_send', 'sharing_email_check_for_spam_via_akismet' );
 add_action( 'sharing_global_options', 'sharing_global_resources', 30 );
 add_action( 'sharing_admin_update', 'sharing_global_resources_save' );
 add_filter( 'sharing_services', 'sharing_restrict_to_single' );

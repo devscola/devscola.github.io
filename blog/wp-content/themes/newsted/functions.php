@@ -120,7 +120,7 @@ add_action('widgets_init', 'newsted_widgets_init');
 
 // excerpts
 function newsted_excerpt($more) {
-	return '...<p><a href="'. get_permalink( get_the_ID() ) . '">' . __('Seguir leyendo &raquo;', 'newsted') . '</a></p>';
+	return '...<p><a href="'. get_permalink( get_the_ID() ) . '">' . __('Continue Reading &raquo;', 'newsted') . '</a></p>';
 }
 add_filter('excerpt_more', 'newsted_excerpt');
 
@@ -170,14 +170,16 @@ function newsted_customize_register($wp_customize) {
 	    }
 	}	
 	$wp_customize->add_setting('hero_text',  array(        
-        'sanitize_callback' => 'newsted_sanitize_text',
+        'sanitize_callback' => 'newsted_sanitize_text'
     )); 
 	$wp_customize->add_control(new Customize_Textarea_Control($wp_customize, 'hero_text', array(
 	    'label'   => __('Text', 'newsted'),
 	    'section' => 'header_content',
 	    'settings'   => 'hero_text',
 	)));
-	$wp_customize->add_setting('hero_url_text'); 	
+	$wp_customize->add_setting('hero_url_text', array(
+		'sanitize_callback' => 'newsted_sanitize_text'
+	)); 	
 	$wp_customize->add_control(
 	    'hero_url_text', array(
 	        'label' => __('Button Text', 'newsted'),
@@ -185,7 +187,9 @@ function newsted_customize_register($wp_customize) {
 	        'type' => 'text',
 	    )
 	);
-	$wp_customize->add_setting('hero_url'); 	
+	$wp_customize->add_setting('hero_url', array(
+		'sanitize_callback' => 'esc_url_raw'
+	)); 	
 	$wp_customize->add_control(
 	    'hero_url', array(
 	        'label' => __('Button URL', 'newsted'),
@@ -195,9 +199,31 @@ function newsted_customize_register($wp_customize) {
 	);
 	function newsted_sanitize_text($input) {
     	return wp_kses_post(force_balance_tags($input));
-	}	
+	}
+	// custom color
+	$wp_customize->add_setting('link_color', array(        
+        'default' => '#20b2aa',
+	    'sanitize_callback' => 'sanitize_hex_color'
+    )); 	
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'links', array(
+		'label' => __('Link Color', 'newsted'),        
+        'section' => 'colors',
+        'settings' => 'link_color'
+    )));
 }
 add_action('customize_register', 'newsted_customize_register');
+
+// customizer CSS
+function newsted_customize_css() {
+    ?>
+     <style type="text/css">
+        a:hover, a:focus {color:<?php echo get_theme_mod('link_color'); ?>;}
+        header nav li.current-menu-item a {border-color:<?php echo get_theme_mod('link_color'); ?>;}
+        header nav .sub-menu li a:hover, #hero-text a {background-color:<?php echo get_theme_mod('link_color'); ?>;}
+     </style>
+    <?php
+}
+add_action('wp_head', 'newsted_customize_css');
 
 // custom header image
 $header_img = array(
@@ -206,6 +232,12 @@ $header_img = array(
 	'header-text' => false
 );
 add_theme_support('custom-header', $header_img);
+
+// custom background
+$background = array(
+	'default-color' => '#f9f9f9'
+);
+add_theme_support('custom-background', $background);
 
 // comments
 if (!function_exists('newsted_comment')) :

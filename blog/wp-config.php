@@ -16,15 +16,6 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-<<<<<<< HEAD
-define('DB_NAME', 'devscola');
-
-/** MySQL database username */
-define('DB_USER', 'root');
-
-/** MySQL database password */
-define('DB_PASSWORD', 'root');
-=======
 define('DB_NAME', 'devscola_wp');
 
 /** MySQL database username */
@@ -32,7 +23,6 @@ define('DB_USER', 'devscola_admin');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'Ondevf22');
->>>>>>> c9c0b3ebd9194353b101a53640a5bebc6fd77138
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

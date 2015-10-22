@@ -4,8 +4,8 @@ Description: Newsted is a responsive, two column multi-purpose theme suitable fo
 Author: Michael Burrows  
 Author URI: http://www.wpmultiverse.com/
 Theme URI: http://www.wpmultiverse.com/themes/newsted/
-Tags: black, gray, dark, light, two-columns, right-sidebar, responsive-layout, custom-header, custom-menu, editor-style, featured-images, sticky-post, theme-options  
-Version: 1.0.0
+Tags: black, gray, dark, light, two-columns, right-sidebar, responsive-layout, custom-header, custom-background, custom-menu, editor-style, featured-images, sticky-post, theme-options  
+Version: 1.0.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html 
 Newsted WordPress Theme, Copyright 2014 wpmultiverse.com
@@ -13,16 +13,15 @@ Newsted WordPress Theme is distributed under the terms of the GNU GPL
 Text Domain: newsted
 */ 
 
-body {font-family:'Open Sans',sans-serif; background-color:#f9f9f9; color:#555;}
+body {font-family:'Open Sans',sans-serif; background-color:#f9f9f9; color:#555; word-wrap:break-word;}
 a {color:#333;}
-a:hover, a:focus {text-decoration:none; color:#ff3d00;}
+a:hover, a:focus {text-decoration:none; color:lightseagreen;}
 h1,h2,h3,h4,h5,h6 {color:#1a1a1a; font-weight:800;}
 
 /* ----- header ----- */
 header {background-color:#000;}
 header #header-top {width:100%; background-color:#1a1a1a; padding:10px 0 8px 0;}
 header #logo {margin-top:8px; float:left;}
-header #logo img{width: 35%;}
 header #header-top #site-name {color:#fff; font-size:32px; color:#fff; font-family:'Damion',cursive;}
 header nav {float:right; display:block; margin-top:15px;}
 header nav ul {position:relative; padding:0; margin:0;}
@@ -30,18 +29,18 @@ header nav li {display:inline-block; margin-left:20px;}
 header nav li a {display:block; color:#ccc; font-weight:700; text-transform:uppercase;}
 header nav li a:hover, .sub-active a {color:#fff;}
 header nav li.menu-item-has-children a {padding-bottom:20px;}
-header nav li.current-menu-item a {color:#fff; border-bottom:2px solid #ff3d00;}
+header nav li.current-menu-item a {color:#fff; border-bottom:2px solid lightseagreen;}
 header nav .sub-menu {display:none; position:absolute; z-index:9999; background-color:#1a1a1a; text-align:left; padding:0; margin:0;}
 header nav .sub-menu:hover {color:red;}
 header nav .sub-menu li {display:block; white-space:nowrap; font-size:14px; text-transform:none; padding:0; border:0; margin:0;}
 header nav .sub-menu li a {width:100%; display:block; padding:6px 16px; font-weight:normal; text-transform:none; color:#fff; font-size:13px;}
-header nav .sub-menu li a:hover {background-color:#ff3d00; color:#fff;}
+header nav .sub-menu li a:hover {background-color:lightseagreen; color:#fff;}
 .home #header-active {height:480px; overflow:hidden;} 
 #hero-img {background-repeat:no-repeat; background-position:center; background-size:cover; height:435px; opacity:0.5;}
 #hero-text {position: relative; top:-440px;}
 #hero-text h1 {font-size:48px; color:#fff; text-transform:uppercase; font-weight:800;}
 #hero-text p {font-size:24px; color:#fff; margin-bottom:60px; padding-right:300px;}
-#hero-text a {background-color:#ff3d00; padding:15px; font-size:18px; color:#fff; font-weight:700; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
+#hero-text a {background-color:lightseagreen; padding:15px; font-size:18px; color:#fff; font-weight:700; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
 #hero-text a:hover {opacity:0.8;}
 
 /* ----- footer ----- */
@@ -54,10 +53,10 @@ footer nav li a:hover {color:#fff;}
 
 /* ----- widgets ----- */
 #widgets-home {background-color:#eee; padding:30px 0;}
-#widgets-home .widget-title {text-transform:uppercase; font-weight:800; font-size:20px; margin-top:0; color:#ff3d00;}
+#widgets-home .widget-title {text-transform:uppercase; font-weight:800; font-size:20px; margin-top:0;}
 #primary-sidebar {margin:45px 0;}
 #primary-sidebar .widget {margin-bottom:30px;}
-#primary-sidebar .widget-title {font-weight:700; font-size:21px; margin-top:0; color:#ff3d00 !important;}
+#primary-sidebar .widget-title {font-weight:700; font-size:15px; margin-top:0;}
 .widget {line-height:1.65em;}
 .widget ul, .widget ol {padding:0 0 0 15px;}
 .widget li {margin-bottom:5px;}
@@ -71,7 +70,7 @@ footer nav li a:hover {color:#fff;}
 .widget_recent_entries a, .widget_recent_comments a {font-weight:bold;}
 .widget_recent_entries .post-date {width:100%; display:block;}
 .widget_tag_cloud a {display:inline-block; padding:3px 7px; background-color:#1a1a1a; color:#fff; margin:0 6px 6px 0; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px; font-size:13px!important;}
-.widget_tag_cloud a:hover {background-color:#ff3d00;}
+.widget_tag_cloud a:hover {background-color:#555; color:#fff!important;}
 .widget_calendar table {width:100%;}
 .widget_calendar table td, .widget_calendar table th {padding:3px; background-color:#eee; text-align:center;}
 .widget_calendar table th {border-bottom:1px solid #ccc;}
@@ -127,8 +126,8 @@ article dd {margin:0 0 8px 0;}
 /* ----- teasers & posts ----- */
 #main-holder {margin:45px 0; border:1px solid #eee; padding:30px; background-color:#fff;}
 .attachment-featured {max-width:100%; height:auto; display:inline-block; margin-bottom:20px; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
-.date-author {text-transform:uppercase; font-size:13px; color:#ff3d00; font-weight:700; margin:0 0 12px 0;}
-.date-author span {text-transform:none; color:#000;}
+.date-author {text-transform:uppercase; font-size:13px; color:#777; font-weight:700; margin:0 0 12px 0;}
+.date-author span {text-transform:none; color:#aaa;}
 .pager {text-align:center;}
 .pager .page-numbers {background-color:#1a1a1a; color:#fff; padding:1px 8px; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;}
 .pager .current {background-color:#999;}
@@ -173,6 +172,7 @@ input[type=password] {width:50%;}
 	#hero-text p {font-size:16px; margin-bottom:26px;}
 	#hero-text a {padding:8px; font-size:12px;}
 	#widgets-home {margin-bottom:-45px;}
+	#main-holder {margin-top:0;}
 	.teaser-title {padding-right:0;}
 	.sticky .sticky-txt {margin:0; position:relative; top:6px; white-space:nowrap;}
 	footer nav {float:left;}

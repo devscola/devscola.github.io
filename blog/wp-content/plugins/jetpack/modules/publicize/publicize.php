@@ -84,6 +84,7 @@ abstract class Publicize_Base {
 	abstract function get_connection( $service, $id, $_blog_id = false, $_user_id = false );
 	abstract function flag_post_for_publicize( $new_status, $old_status, $post );
 	abstract function test_connection( $service_name, $connection );
+	abstract function disconnect( $service, $connection_id, $_blog_id = false, $_user_id = false, $force_delete = false );
 
 	/**
 	* Shared Functions
@@ -96,15 +97,18 @@ abstract class Publicize_Base {
 		$cmeta = $this->get_connection_meta( $c );
 
 		if ( isset( $cmeta['connection_data']['meta']['link'] ) ) {
+			if ( 'facebook' == $service_name && 0 === strpos( parse_url( $cmeta['connection_data']['meta']['link'], PHP_URL_PATH ), '/app_scoped_user_id/' ) ) {
+				// App-scoped Facebook user IDs are not usable profile links
+				return false;
+			}
+
 			return $cmeta['connection_data']['meta']['link'];
 		} elseif ( 'facebook' == $service_name && isset( $cmeta['connection_data']['meta']['facebook_page'] ) ) {
-			return 'http://facebook.com/' . $cmeta['connection_data']['meta']['facebook_page'];
-		} elseif ( 'facebook' == $service_name ) {
-			return 'http://www.facebook.com/' . $cmeta['external_id'];
+			return 'https://www.facebook.com/' . $cmeta['connection_data']['meta']['facebook_page'];
 		} elseif ( 'tumblr' == $service_name && isset( $cmeta['connection_data']['meta']['tumblr_base_hostname'] ) ) {
 			 return 'http://' . $cmeta['connection_data']['meta']['tumblr_base_hostname'];
 		} elseif ( 'twitter' == $service_name ) {
-			return 'http://twitter.com/' . substr( $cmeta['external_display'], 1 ); // Has a leading '@'
+			return 'https://twitter.com/' . substr( $cmeta['external_display'], 1 ); // Has a leading '@'
 		} elseif ( 'google_plus' == $service_name && isset( $cmeta['connection_data']['meta']['google_plus_page'] ) ) {
 			return 'https://plus.google.com/' . $cmeta['connection_data']['meta']['google_plus_page'];
 		} elseif ( 'google_plus' == $service_name ) {
@@ -313,6 +317,9 @@ abstract class Publicize_Base {
 
 				// This was a wp-admin request, so we need to check the state of checkboxes
 				if ( $from_web ) {
+					// delete stray service-based post meta
+					delete_post_meta( $post_id, $this->POST_SKIP . $service_name );
+	
 					// We *unchecked* this stream from the admin page, or it's set to readonly, or it's a new addition
 					if ( empty( $_POST[$this->ADMIN_PAGE]['submit'][$unique_id] ) ) {
 						// Also make sure that the service-specific input isn't there.
@@ -322,6 +329,9 @@ abstract class Publicize_Base {
 							// Nothing seems to be checked, so we're going to mark this one to be skipped
 							update_post_meta( $post_id, $this->POST_SKIP . $unique_id, 1 );
 							continue;
+						} else {
+							// clean up any stray post meta
+							delete_post_meta( $post_id, $this->POST_SKIP . $unique_id );
 						}
 					} else {
 						// The checkbox for this connection is explicitly checked -- make sure we DON'T skip it

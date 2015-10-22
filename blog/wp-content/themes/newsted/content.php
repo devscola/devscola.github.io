@@ -1,7 +1,7 @@
 <?php if (is_single()) : ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php the_post_thumbnail('featured'); ?>
-		<p class="date-author"><?php the_time(get_option('date_format')); ?> <span><?php _e('publicado por', 'newsted'); ?></span> <?php the_author(); ?></p>	
+		<p class="date-author"><?php the_time(get_option('date_format')); ?> <span><?php _e('by', 'newsted'); ?></span> <?php the_author(); ?></p>	
 		<div id="post-content">			
 			<?php the_title('<h1 id="post-title">', '</h1>'); ?>
 			<?php the_content() ?>

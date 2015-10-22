@@ -1,25 +1,11 @@
 <?php
 /**
  * Plugin Name: Twitter Tweets
- * Version: 0.4
+ * Version: 0.9
  * Description: Display latest tweets on WordPress blog from Twitter account.
  * Author: WebLizar
  * Author URI: http://www.weblizar.com
  * Plugin URI: http://www.weblizar.com/plugins/
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
 /**
@@ -29,11 +15,7 @@ define("WEBLIZAR_TWITTER_PLUGIN_URL", plugin_dir_url(__FILE__));
 define("WEBLIZAR_TWITTER_TEXT_DOMAIN", "weblizar_twitter");
 
 /**
- * Widget Code
- */
-
-/**
- * Adds Foo_Widget widget.
+ * Widget Code.
  */
 class WeblizarTwitter extends WP_Widget {
 
@@ -57,6 +39,15 @@ class WeblizarTwitter extends WP_Widget {
      * @param array $instance Saved values from database.
      */
     public function widget( $args, $instance ) {
+		// Outputs the content of the widget
+		extract($args); // Make before_widget, etc available.
+		
+		$title = apply_filters('title', $instance['title']);		
+		
+		echo $before_widget;
+		
+		if (!empty($title)) {	echo $before_title . $title . $after_title;	}
+		
         $TwitterUserName    =   apply_filters( 'weblizar_twitter_user_name', $instance['TwitterUserName'] );
         $Theme              =   apply_filters( 'weblizar_twitter_theme', $instance['Theme'] );
         $Height             =   apply_filters( 'weblizar_twitter_height', $instance['Height'] );
@@ -66,27 +57,17 @@ class WeblizarTwitter extends WP_Widget {
         $AutoExpandPhotos   =   apply_filters( 'weblizar_twitter_auto_expand_photo', $instance['AutoExpandPhotos'] );
         $TwitterWidgetId    =   apply_filters( 'weblizar_twitter_widget_id', $instance['TwitterWidgetId'] );
         ?>
-        <!--generated code-->
-        <!--<a class="twitter-timeline"  href="https://twitter.com/weblizar"  data-widget-id="462084801944485888">Tweets by @weblizar</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
-
-        <!--default development code-->
-        <!--<a class="twitter-timeline"
-        href="https://twitter.com/weblizar"
-        data-screen-name="weblizar"
-        data-widget-id="462084801944485888"
-        data-related="twitterapi,twitter"
-        data-aria-polite="assertive"
-        data-tweet-limit="5"
-        lang="EN">Tweets by @weblizar</a>-->
-
-        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/<?php echo $TwitterUserName; ?>" min-width="<?php echo $Width; ?>" height="<?php echo $Height; ?>" data-theme="<?php echo $Theme; ?>" data-link-color="<?php echo $LinkColor; ?>px" data-widget-id="<?php echo $TwitterWidgetId; ?>">Twitter Tweets</a>
-        <script>
-            !function(d,s,id) {
-                var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}
-            } (document,"script","twitter-wjs");
-        </script>
+        
+		<div style="display:block;width:100%;float:left;overflow:hidden">
+			<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/<?php echo $TwitterUserName; ?>" min-width="<?php echo $Width; ?>" height="<?php echo $Height; ?>" data-theme="<?php echo $Theme; ?>" data-link-color="<?php echo $LinkColor; ?>px" data-widget-id="<?php echo $TwitterWidgetId; ?>">Twitter Tweets</a>
+			<script>
+				!function(d,s,id) {
+					var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}
+				} (document,"script","twitter-wjs");
+			</script>
+		</div>
         <?php
+		echo $after_widget;
     }
 
     /**
@@ -143,8 +124,19 @@ class WeblizarTwitter extends WP_Widget {
         } else {
             $TwitterWidgetId = "462084801944485888";
         }
-        ?>
-
+       
+		if ( isset( $instance[ 'title' ] ) ) {
+			 $title = $instance[ 'title' ];
+		}
+		else {
+			 $title = __( 'Tweets', 'weblizar' );
+		}
+		?>
+		<p>
+		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+		</p>
+	
         <p>
             <label for="<?php echo $this->get_field_id( 'TwitterUserName' ); ?>"><?php _e( 'Twitter Username' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'TwitterUserName' ); ?>" name="<?php echo $this->get_field_name( 'TwitterUserName' ); ?>" type="text" value="<?php echo esc_attr( $TwitterUserName ); ?>">
@@ -211,6 +203,7 @@ class WeblizarTwitter extends WP_Widget {
      */
     public function update( $new_instance, $old_instance ) {
         $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : 'Tweets';
         $instance['TwitterUserName'] = ( ! empty( $new_instance['TwitterUserName'] ) ) ? strip_tags( $new_instance['TwitterUserName'] ) : 'weblizar';
         $instance['Theme'] = ( ! empty( $new_instance['Theme'] ) ) ? strip_tags( $new_instance['Theme'] ) : 'light';
         $instance['Height'] = ( ! empty( $new_instance['Height'] ) ) ? strip_tags( $new_instance['Height'] ) : '450';

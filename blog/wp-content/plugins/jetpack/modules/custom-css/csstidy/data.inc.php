@@ -64,7 +64,7 @@ $GLOBALS['csstidy']['units'] = array('in','cm','mm','pt','pc','px','rem','em','%
  * @global array $GLOBALS['csstidy']['at_rules']
  * @version 1.0
  */
-$GLOBALS['csstidy']['at_rules'] = array('page' => 'is','font-face' => 'is','charset' => 'iv', 'import' => 'iv','namespace' => 'iv','media' => 'at','keyframes' => 'at');
+$GLOBALS['csstidy']['at_rules'] = array('page' => 'is','font-face' => 'is','charset' => 'iv', 'import' => 'iv','namespace' => 'iv','media' => 'at','keyframes' => 'at', 'supports' => 'at');
 
  /**
  * Properties that need a value with unit
@@ -75,7 +75,7 @@ $GLOBALS['csstidy']['at_rules'] = array('page' => 'is','font-face' => 'is','char
  * @version 1.2
  */
 $GLOBALS['csstidy']['unit_values'] = array ('background', 'background-position', 'background-size', 'border', 'border-top', 'border-right', 'border-bottom', 'border-left', 'border-width',
-                                            'border-top-width', 'border-right-width', 'border-left-width', 'border-bottom-width', 'bottom', 'border-spacing', 'column-gap', 'column-width',
+											'border-top-width', 'border-right-width', 'border-left-width', 'border-bottom-width', 'bottom', 'border-spacing', 'column-gap', 'column-width',
 											'font-size', 'height', 'left', 'margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left', 'max-height',
 											'max-width', 'min-height', 'min-width', 'outline', 'outline-width', 'padding', 'padding-top', 'padding-right',
 											'padding-bottom', 'padding-left', 'perspective', 'right', 'top', 'text-indent', 'letter-spacing', 'word-spacing', 'width');
@@ -293,6 +293,7 @@ $GLOBALS['csstidy']['shorthands']['-moz-border-radius'] = 0;
  * @version 1.0
  * @see csstidy::property_is_next()
  */
+$GLOBALS['csstidy']['all_properties']['align-items'] = 'CSS3.0';
 $GLOBALS['csstidy']['all_properties']['alignment-adjust'] = 'CSS3.0';
 $GLOBALS['csstidy']['all_properties']['alignment-baseline'] = 'CSS3.0';
 $GLOBALS['csstidy']['all_properties']['animation'] = 'CSS3.0';
@@ -428,6 +429,7 @@ $GLOBALS['csstidy']['all_properties']['image-orientation'] = 'CSS3.0';
 $GLOBALS['csstidy']['all_properties']['image-rendering'] = 'CSS3.0';
 $GLOBALS['csstidy']['all_properties']['image-resolution'] = 'CSS3.0';
 $GLOBALS['csstidy']['all_properties']['inline-box-align'] = 'CSS3.0';
+$GLOBALS['csstidy']['all_properties']['justify-content'] = 'CSS3.0';
 $GLOBALS['csstidy']['all_properties']['left'] = 'CSS2.0,CSS2.1,CSS3.0';
 $GLOBALS['csstidy']['all_properties']['letter-spacing'] = 'CSS1.0,CSS2.0,CSS2.1,CSS3.0';
 $GLOBALS['csstidy']['all_properties']['line-break'] = 'CSS3.0';

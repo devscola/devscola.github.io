@@ -2,9 +2,9 @@
 Contributors: sunny_johal, amit_kayasth
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=28M8NWPHVQNYU
 Tags: WordPress Google Fonts Plugin, Google Webfonts, Google Fonts WordPress, Typography, Webfonts, WordPress Webfonts, Fonts, WordPress Fonts, Theme Fonts, Theme Fonts Plugin
-Requires at least: 4.0
-Tested up to: 4.0
-Stable tag: 1.3.2
+Requires at least: 4.1
+Tested up to: 4.1
+Stable tag: 1.3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,7 +56,7 @@ It also allows you to create custom theme specific font controls in the admin se
 **Please note:** We are currently working on producing in-depth documentation for theme developers which will be available shortly. 
 
 * **Cross Browser and Backwards Browser Compatible** (Tested in all major browsers).
-* Already tested and works in WordPress 3.7.
+* Already tested and works in WordPress 4.1.
 * **Uses Action Hooks and Filters:** For advanced integration.
 * **Seamless WordPress Integration:**  Live preview is integrated into the WordPress Customizer and the settings page follows core WordPress design guidelines.
 * Uses the WordPress **Options API** to store and retrieve options.
@@ -75,9 +75,9 @@ This section describes how to install the plugin and get it working.
 
 e.g.
 
-1. Download the plugin
-1. Unzip the package and upload to your /wp-content/plugins/ directory or upload in the admin area.
-1. Log into WordPress and navigate to the "Plugins" panel.
+1. From your WordPress Admin Dashboard go to: Plugins > Add New
+1. Search for "Easy Google Fonts"
+1. Locate the "Easy Google Fonts" plugin by Titanium Themes and click the Install Now button.
 1. Activate the plugin labeled "Easy Google Fonts".
 1. You're done!
 
@@ -94,6 +94,26 @@ e.g.
 9. View and manage all of your custom controls in the admin area.
 
 == Changelog ==
+= 1.3.6 - Updated Stylesheet Enqueue =
+* Addressed issue on certain servers where a 400 error was being returned when making a http request to google.
+
+= 1.3.5 - Changed Stylesheet Enqueue =
+* Removed esc_url_raw() as it was causing a 404 error when fetching the stylesheet from google.
+
+= 1.3.4 - Customizer js API Update =
+* Implemented font search to make it easier to browse google fonts (using the chosen js plugin).
+* Implemented border controls.
+* Implemented border radius controls.
+* Completely rewritten the control javascript to utilise the new customizer js api (using backbone and underscore templates).
+* Preview performance enhancement: Completely rewritten the preview javascript to utilise the new customizer js api.
+* Performance update: Each font control now only registers one setting per control.
+* Performance update: The functionality for each font control is lazy loaded to increase the customizer load speed.
+* All settings for each font controls are handled by json objects (removed any hidden inputs and json2 library dependancy).
+
+= 1.3.3 - WordPress 4.1+ Update =
+* Added patch for WordPress 4.1
+* The code is going to be rewritten in Backbone for future releases.
+
 = 1.3.2 - Big Update =
 * Now combining all of the font requests from google fonts in a single http request.
 * Introducing Panels: A new customizer feature in WordPress 4.0 that makes it easier to manage alot of font controls. Our plugin creates a new panel called Typography. 
