@@ -15,10 +15,6 @@ $(document).ready(function() {
     transitionStyle:"fade"
   });
 
-});
-
-$(document).ready(function() {
-
   $("#owl-demo").owlCarousel({
     paginationSpeed : 5000,
     goToFirstSpeed : 2000,
