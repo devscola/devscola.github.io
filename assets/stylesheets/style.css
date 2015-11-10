@@ -533,6 +533,18 @@ width: 85%;
   text-align: center;
 }
 
+.logo-track {
+  position: relative;
+  top: 3.5rem;
+  left: 6.5rem;
+}
+
+img.logo-track {
+  width: 45%;
+  height: 45%;
+  margin: 0;
+}
+
 @media only screen and (min-width : 1600px) and (max-width: 1920px){
   .logo-track {
     margin-top: 3rem;
