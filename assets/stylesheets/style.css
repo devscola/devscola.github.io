@@ -368,73 +368,73 @@ p {
 
 /* WHO */
 
-#WHO-PICS > div> div.large-4 {
+#quienes > div> div.large-4 {
   width: 31.333%;
 }
 
-#WHO-PICS > div> div.medium-4 {
+#quienes > div> div.medium-4 {
   width: 31.333%;
 }
 
 /*
-#WHO-PICS > div > div.left_column {
+#quienes > div > div.left_column {
 padding-left: 0px;
 padding-right: 1%;
 }
 
-#WHO-PICS > div > div.right_column {
+#quienes > div > div.right_column {
 padding-left: 1%;
 padding-right: 0px;
 }
 
-#WHO-PICS > div > div.center_column {
+#quienes > div > div.center_column {
 padding-left: 0.5%;
 padding-right: 0.5%;
 }
  */
 
-#WHO-PICS > div > div.left_column {
+#quienes > div > div.left_column {
   padding-left: 0px;
   padding-right: 0px;
   margin-left: 0;
   margin-right: 1%;
 }
 
-#WHO-PICS > div > div.right_column {
+#quienes > div > div.right_column {
   padding-left: 0px;
   padding-right: 0px;
   margin-left: 1%;
   margin-right: 0;
 }
 
-#WHO-PICS > div > div.center_column {
+#quienes > div > div.center_column {
   padding-left: 0px;
   padding-right: 0px;
   margin-left: 0.5%;
   margin-right: 0.5%;
 }
 
-#WHO-PICS > div {
+#quienes > div {
   margin: 2rem 0;
 }
 
 @media only screen and (min-width : 640px) and (max-width : 800px) {
-  #WHO-PICS > div {
+  #quienes > div {
     margin: 0px;
   }
 
-  #WHO-PICS div div.medium-2 {
+  #quienes div div.medium-2 {
     width: 23%;
     margin-right: 2%;
     margin-bottom: 2%;
   }
 
-  #WHO-PICS div div.medium-4 {
+  #quienes div div.medium-4 {
     width: 75%;
     float: left !important;
     margin: 0 0 6% 0;
   }
-  #WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
+  #quienes div div.large-2.medium-2.small-4.columns.center_column {
     margin-left: 0;
   }
 }
@@ -445,81 +445,81 @@ img {
 }
 
 @media only screen and (min-width : 480px) and (max-width : 640px) {
-  #WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
+  #quienes div div.large-2.medium-2.small-4.columns.center_column {
     margin-left: 0;
   }
 
-  #WHO-PICS > div {
+  #quienes > div {
     margin: 0px;
   }
 
-  #WHO-PICS div div.medium-2 {
+  #quienes div div.medium-2 {
     width: 28%;
     margin-right: 2%;
     margin-bottom: 2%;
   }
 
-  #WHO-PICS div div.medium-4 {
+  #quienes div div.medium-4 {
     width: 70%;
     float: left !important;
     margin: 0px;
   }
 
-  #WHO-PICS p {
+  #quienes p {
     margin-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-  #WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
+  #quienes div div.large-2.medium-2.small-4.columns.center_column {
     margin-left: 0;
   }
 
-  #WHO-PICS > div {
+  #quienes > div {
     padding: 0px;
     margin: 0px;
   }
 
-  #WHO-PICS div div.medium-2 {
+  #quienes div div.medium-2 {
     width: 100%;
     margin-right: 0px;
     margin-bottom: 0px;
   }
 
-  #WHO-PICS div div.medium-4 {
+  #quienes div div.medium-4 {
     width: 100%;
     float: none !important;
     margin: 0px;
   }
 
-  #WHO-PICS p {
+  #quienes p {
     margin-bottom: 2rem;
   }
 
-  #WHO-PICS > div> div.large-2.medium-2.small-4.columns.center_column > img,
-  #WHO-PICS > div > div.large-2.medium-2.small-4.columns.left_column > img {
+  #quienes > div> div.large-2.medium-2.small-4.columns.center_column > img,
+  #quienes > div > div.large-2.medium-2.small-4.columns.left_column > img {
     padding: 0 30%;
     margin-bottom: 1rem;
   }
 
-  #WHO-PICS > div > div.large-4.medium-4.small-8.columns.center_column,
-  #WHO-PICS > div > div.large-4.medium-4.small-8.left.columns.right_column {
+  #quienes > div > div.large-4.medium-4.small-8.columns.center_column,
+  #quienes > div > div.large-4.medium-4.small-8.left.columns.right_column {
     text-align: center !important;
   }
 
-  #WHO-PICS > h2 {
+  #quienes > h2 {
     text-align: center;
   }
 }
 
 @media only screen and (min-width : 1600px) {
-  #WHO-PICS > div > div.large-2.medium-2.small-4.columns{
+  #quienes > div > div.large-2.medium-2.small-4.columns{
     width: 12%;
   }
 }
 
 /*@media only screen and (min-width : 768px) and (max-width : 1024px) {
-#WHO-PICS div div img {
+#quienes div div img {
 
 height: 85%;
 width: 85%;
