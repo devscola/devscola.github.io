@@ -366,9 +366,9 @@ p {
 }
 
 
-/* WHO */
+/* QUIENES */
 
-#quienes > div> div.large-4 {
+/*#quienes > div> div.large-4 {
   width: 31.333%;
 }
 
@@ -376,7 +376,7 @@ p {
   width: 31.333%;
 }
 
-/*
+
 #quienes > div > div.left_column {
 padding-left: 0px;
 padding-right: 1%;
@@ -391,7 +391,7 @@ padding-right: 0px;
 padding-left: 0.5%;
 padding-right: 0.5%;
 }
- */
+
 
 #quienes > div > div.left_column {
   padding-left: 0px;
@@ -439,10 +439,7 @@ padding-right: 0.5%;
   }
 }
 
-img {
-  height: 100%;
-  width: 100%;
-}
+
 
 @media only screen and (min-width : 480px) and (max-width : 640px) {
   #quienes div div.large-2.medium-2.small-4.columns.center_column {
@@ -518,13 +515,45 @@ img {
   }
 }
 
-/*@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 #quienes div div img {
 
 height: 85%;
 width: 85%;
 }
 }*/
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+#quienes img {
+  border-radius: 100%;
+  
+}
+
+#quienes h3, #quienes h5, 
+#quienes > div > div.large-4.medium-4.small-12 > p {
+  text-align: center !important;
+}
+
+#quienes > div > div > img {
+  margin-bottom:1.3rem;
+}
+
+
+@media only screen and (max-width: 40em) {
+  #quienes > div > div.large-4.medium-4.small-12.columns.left_column > img {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  #quienes > div > p {
+    margin-bottom: 0rem;
+  }
+}
 
 
 /*TRACKS*/
