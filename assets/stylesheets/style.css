@@ -527,64 +527,66 @@ width: 85%;
 }*/
 
 
-/* TRACKS */
+/*TRACKS*/
 
-#TRACKS div div p, #TRACKS div div h4 {
+
+
+#contenido > div > div > p,
+#contenido > div > div > h4 {
   text-align: center;
 }
 
-.logo-track {
-  position: relative;
-  top: 3.5rem;
-  left: 6.5rem;
-}
-
-img.logo-track {
-  width: 45%;
-  height: 45%;
-  margin: 0;
+#contenido > div > div > h4 {
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width : 1600px) and (max-width: 1920px){
-  .logo-track {
-    margin-top: 3rem;
-    padding: 0rem 6rem;
-  }
+.logo-track {
+  
+  margin-top: 2.5rem;
+  padding: 0rem 6rem;
+}
 }
 
 @media only screen and (min-width : 1024px) and (max-width : 1600px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 3rem;
-  }
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 3rem;
+}
 }
 
 @media only screen and (min-width : 640px) and (max-width : 1024px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 3rem;
-  }
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 3rem;
+}
 }
 
 @media only screen and (min-width : 480px) and (max-width : 640px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 10rem;
-  }
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 12rem;
+}
 }
 
 @media only screen and (min-width : 360px) and (max-width : 480px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 7rem;
-  }
-}
 
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 9rem;
+}
+}
 @media only screen and (min-width : 320px) and (max-width : 360px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 4rem;
-  }
+
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 6rem;
+}
 }
 
 
