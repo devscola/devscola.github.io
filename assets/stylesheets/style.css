@@ -10,7 +10,7 @@ h2 {
   font-family: 'dejavu_sansextralight';
   font-size: 5rem;
   margin: 2rem 0 0.5rem 0 !important;
-  line-height: 7rem;
+  line-height: 5rem;
   letter-spacing: 0.25rem;
 }
 
@@ -41,6 +41,24 @@ p {
   font-size: 0.9rem;
   line-height: 1.5rem;
   margin-bottom: 2rem;
+}
+
+strong {
+
+font-family: 'dejavu_sansbold';
+letter-spacing: -0.03rem;
+word-spacing: -0.03rem;
+}
+
+a {
+  color: #ff4214;
+  font-family: 'dejavu_sansbold';
+  letter-spacing: -0.03rem;
+  word-spacing: -0.03rem;
+}
+
+a:hover {
+  color: #292929 ;
 }
 
 @media screen and (min-width : 801px) and (max-width : 1024px) {
@@ -159,7 +177,7 @@ p {
     font-family: 'dejavu_sansextralight';
     font-size: 2rem;
     margin: 1rem 0 1rem 0 !important;
-    line-height: 2rem;
+    line-height: 2.5rem;
     letter-spacing: 0.01rem;
   }
 
