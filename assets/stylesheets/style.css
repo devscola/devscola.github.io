@@ -40,10 +40,10 @@ h5 {
 p {
   font-size: 0.9rem;
   line-height: 1.5rem;
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
-@media only screen and (min-width : 801px) and (max-width : 1024px) {
+@media screen and (min-width : 801px) and (max-width : 1024px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 4rem;
@@ -78,11 +78,11 @@ p {
   p {
     font-size: 0.85rem;
     line-height: 1.35rem;
-    margin-bottom: 1.8rem
+    margin-bottom: 1.8rem;
   }
 }
 
-@media only screen and (min-width : 640px) and (max-width : 800px) {
+@media screen and (min-width : 640px) and (max-width : 800px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 3.5rem;
@@ -120,7 +120,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 360px) and (max-width : 640px) {
+@media screen and (min-width : 360px) and (max-width : 640px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 3rem;
@@ -154,7 +154,7 @@ p {
 }
 
 
-@media only screen and (max-width : 360px) {
+@media screen and (max-width : 360px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 2rem;
@@ -199,42 +199,42 @@ p {
   max-width: 75%;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 1024px) {
+@media screen and (min-width : 320px) and (max-width : 1024px) {
   .row {
     max-width: 90%;
   }
 }
 
 .total-align {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .align-left {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .align-right {
-  padding-right: 0px;
+  padding-right: 0;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 640px) {
+@media screen and (min-width : 320px) and (max-width : 640px) {
 
   .align-right {
-    padding: 0px;
+    padding: 0;
   }
   .align-left {
-    padding: 0px;
+    padding: 0;
   }
 }
 .columns.left_column {
-  padding-left: 0px ;
-  padding-right: 2%
+  padding-left: 0 ;
+  padding-right: 2%;
 }
 
 .columns.right_column {
-  padding-right: 0px;
-  padding-left: 2%
+  padding-right: 0;
+  padding-left: 2%;
 }
 
 .columns.center_column {
@@ -242,19 +242,19 @@ p {
   padding-left: 1%;
 }
 
-@media only screen and (max-width : 600px){
+@media screen and (max-width : 600px){
 
   .small-12.columns.left_column {
-    padding-right: 0%
+    padding-right: 0;
   }
 
   .small-12.columns.right_column {
-    padding-left: 0%
+    padding-left: 0;
   }
 
   .small-12.columns.center_column {
-    padding-right: 0%;
-    padding-left: 0%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -269,7 +269,7 @@ p {
   z-index: 1;
 }
 
-@media only screen and (min-width : 1440px) and (max-width : 1600px) {
+@media screen and (min-width : 1440px) and (max-width : 1600px) {
   #inicio {
     top:44%;
     left:23%;
@@ -277,7 +277,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 1280px) and (max-width : 1440px) {
+@media screen and (min-width : 1280px) and (max-width : 1440px) {
   #inicio {
     top:42%;
     left:25%;
@@ -285,7 +285,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 1024px) and (max-width : 1280px) {
+@media screen and (min-width : 1024px) and (max-width : 1280px) {
   #inicio {
     top:34%;
     left:17.5%;
@@ -293,7 +293,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 980px) and (max-width : 1024px) {
+@media screen and (min-width : 980px) and (max-width : 1024px) {
   #inicio {
     top:40%;
     left:22.5%;
@@ -301,7 +301,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 900px) and (max-width : 980px) {
+@media screen and (min-width : 900px) and (max-width : 980px) {
   #inicio {
     top:22.5%;
     left:18%;
@@ -309,7 +309,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 800px) and (max-width : 900px) {
+@media screen and (min-width : 800px) and (max-width : 900px) {
   #inicio {
     top:13.5%;
     left:16%;
@@ -317,7 +317,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 800px) {
+@media screen and (min-width : 768px) and (max-width : 800px) {
   #inicio {
     top:20%;
     left:15%;
@@ -325,7 +325,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 640px) and (max-width : 768px) {
+@media screen and (min-width : 640px) and (max-width : 768px) {
   #inicio {
     top:18%;
     left:15%;
@@ -333,7 +333,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 480px) and (max-width : 640px) {
+@media screen and (min-width : 480px) and (max-width : 640px) {
   #inicio {
     top:19%;
     left:15%;
@@ -341,7 +341,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 360px) and (max-width : 480px) {
+@media screen and (min-width : 360px) and (max-width : 480px) {
   #inicio {
     top:43%;
     left:16%;
@@ -349,7 +349,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 360px) {
+@media screen and (min-width : 320px) and (max-width : 360px) {
   #inicio {
     top:20%;
     left:10%;
@@ -357,7 +357,7 @@ p {
   }
 }
 
-@media only screen and (max-width : 320px) {
+@media screen and (max-width : 320px) {
   #inicio {
     top:26%;
     left:10%;
@@ -378,13 +378,13 @@ p {
 
 
 #quienes > div > div.left_column {
-padding-left: 0px;
+padding-left: 0;
 padding-right: 1%;
 }
 
 #quienes > div > div.right_column {
 padding-left: 1%;
-padding-right: 0px;
+padding-right: 0;
 }
 
 #quienes > div > div.center_column {
@@ -394,22 +394,22 @@ padding-right: 0.5%;
 
 
 #quienes > div > div.left_column {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   margin-left: 0;
   margin-right: 1%;
 }
 
 #quienes > div > div.right_column {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   margin-left: 1%;
   margin-right: 0;
 }
 
 #quienes > div > div.center_column {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   margin-left: 0.5%;
   margin-right: 0.5%;
 }
@@ -418,9 +418,9 @@ padding-right: 0.5%;
   margin: 2rem 0;
 }
 
-@media only screen and (min-width : 640px) and (max-width : 800px) {
+@media screen and (min-width : 640px) and (max-width : 800px) {
   #quienes > div {
-    margin: 0px;
+    margin: 0;
   }
 
   #quienes div div.medium-2 {
@@ -441,13 +441,13 @@ padding-right: 0.5%;
 
 
 
-@media only screen and (min-width : 480px) and (max-width : 640px) {
+@media screen and (min-width : 480px) and (max-width : 640px) {
   #quienes div div.large-2.medium-2.small-4.columns.center_column {
     margin-left: 0;
   }
 
   #quienes > div {
-    margin: 0px;
+    margin: 0;
   }
 
   #quienes div div.medium-2 {
@@ -459,7 +459,7 @@ padding-right: 0.5%;
   #quienes div div.medium-4 {
     width: 70%;
     float: left !important;
-    margin: 0px;
+    margin: 0;
   }
 
   #quienes p {
@@ -467,26 +467,26 @@ padding-right: 0.5%;
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media screen and (min-width : 320px) and (max-width : 480px) {
   #quienes div div.large-2.medium-2.small-4.columns.center_column {
     margin-left: 0;
   }
 
   #quienes > div {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   #quienes div div.medium-2 {
     width: 100%;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   #quienes div div.medium-4 {
     width: 100%;
     float: none !important;
-    margin: 0px;
+    margin: 0;
   }
 
   #quienes p {
@@ -509,13 +509,13 @@ padding-right: 0.5%;
   }
 }
 
-@media only screen and (min-width : 1600px) {
+@media screen and (min-width : 1600px) {
   #quienes > div > div.large-2.medium-2.small-4.columns{
     width: 12%;
   }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media screen and (min-width : 768px) and (max-width : 1024px) {
 #quienes div div img {
 
 height: 85%;
@@ -529,8 +529,7 @@ img {
 }
 
 #quienes img {
-  border-radius: 100%;
-  
+  border-radius: 100%; 
 }
 
 #quienes h3, #quienes h5, 
@@ -543,13 +542,13 @@ img {
 }
 
 
-@media only screen and (max-width: 40em) {
+@media screen and (max-width: 40em) {
   #quienes > div > div.large-4.medium-4.small-12.columns.left_column > img {
     margin-top: 0;
   }
 }
 
-@media only screen and (min-width: 40.063em) {
+@media screen and (min-width: 40.063em) {
   #quienes > div > p {
     margin-bottom: 0rem;
   }
@@ -569,7 +568,7 @@ img {
   margin-top: 1rem;
 }
 
-@media only screen and (min-width : 1600px) and (max-width: 1920px){
+@media screen and (min-width : 1600px) and (max-width: 1920px){
 .logo-track {
   
   margin-top: 2.5rem;
@@ -577,7 +576,7 @@ img {
 }
 }
 
-@media only screen and (min-width : 1024px) and (max-width : 1600px) {
+@media screen and (min-width : 1024px) and (max-width : 1600px) {
 .logo-track {
   
   margin-top: 2rem;
@@ -585,7 +584,7 @@ img {
 }
 }
 
-@media only screen and (min-width : 640px) and (max-width : 1024px) {
+@media screen and (min-width : 640px) and (max-width : 1024px) {
 .logo-track {
   
   margin-top: 2rem;
@@ -593,7 +592,7 @@ img {
 }
 }
 
-@media only screen and (min-width : 480px) and (max-width : 640px) {
+@media screen and (min-width : 480px) and (max-width : 640px) {
 .logo-track {
   
   margin-top: 2rem;
@@ -601,7 +600,7 @@ img {
 }
 }
 
-@media only screen and (min-width : 360px) and (max-width : 480px) {
+@media screen and (min-width : 360px) and (max-width : 480px) {
 
 .logo-track {
   
@@ -609,7 +608,7 @@ img {
   padding: 0rem 9rem;
 }
 }
-@media only screen and (min-width : 320px) and (max-width : 360px) {
+@media screen and (min-width : 320px) and (max-width : 360px) {
 
 .logo-track {
   
@@ -624,7 +623,8 @@ img {
 button, .button {
   background-color: #ff4214;
   border-color: #007095;
-color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
 button.large, .button.large {
   padding-top: 1.125rem;
@@ -648,7 +648,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   color: #FFFFFF;
 }
 
-@media only screen and (min-width : 480px) and (max-width : 1024px) {
+@media screen and (min-width : 480px) and (max-width : 1024px) {
   button.large, .button.large {
     padding-top: 0.90rem;
     padding-right: 1rem;
@@ -658,7 +658,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media screen and (min-width : 320px) and (max-width : 480px) {
   button.large, .button.large {
     padding-top: 0.90rem;
     padding-right: 1rem;
@@ -685,8 +685,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 /* social */
 
-#SOCIAL > div.large-4.columns.right_column > {
-}
+
 
 #SOCIAL > div > h4 {
   margin-top: 3rem;
@@ -708,14 +707,14 @@ meta.foundation-mq-topbar {
   width: 880px;
 }
 
-@media only screen and (min-width: 880px) {
+@media screen and (min-width: 880px) {
   .top-bar {
     background: #333333;
     overflow: visible;
   }
 }
 
-@media only screen and (min-width: 880px) {
+@media screen and (min-width: 880px) {
   .logo p {
     color: #fff;
     margin: 0.7rem 0 0 0.8rem;
@@ -723,7 +722,7 @@ meta.foundation-mq-topbar {
   }
 }
 
-@media only screen and (max-width: 879px) {
+@media screen and (max-width: 879px) {
   .logo p {
     color: #fff;
     margin:0;
@@ -732,7 +731,7 @@ meta.foundation-mq-topbar {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .logo p {
     padding: 0.7rem 0 1rem 0.8rem;
   }
@@ -772,7 +771,7 @@ footer {
   margin-top: 0.3rem;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 640px) {
   footer {
     height: 9rem;
     margin-top: 2rem;
@@ -784,7 +783,7 @@ img.foot_logo  {
   width: auto !important;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 640px) {
   img.foot_logo  {
     margin: 1.2rem 0 0.25rem 0;
     width: auto !important;
@@ -805,7 +804,7 @@ img.in_button {
 
 .foot_text p {
   font-size:0.9rem;
-  font-family: 'dejavu_sansextralight'
+  font-family: 'dejavu_sansextralight';
 }
 
 .foot_text a {
@@ -816,7 +815,7 @@ img.in_button {
   word-spacing: -0.025rem;
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media screen and (min-width : 768px) and (max-width : 1024px) {
   .foot_text p {
     line-height: 0.5rem;
   }
@@ -827,13 +826,13 @@ img.in_button {
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 360px) {
+@media screen and (min-width : 320px) and (max-width : 360px) {
   .small-left{
     float: left !important;
   }
 }
 
-@media only screen and (min-width : 480px) and (max-width : 640px) {
+@media screen and (min-width : 480px) and (max-width : 640px) {
   .small-right{
     position: relative;
     margin-left: 10px !important;
@@ -841,7 +840,7 @@ img.in_button {
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 640px) {
+@media screen and (min-width : 320px) and (max-width : 640px) {
   .foot_text p {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -890,7 +889,7 @@ img.in_button {
 }
 
 .owl-theme .owl-controls .owl-buttons div {
-  border-radius: 0px !important;
+  border-radius: 0 !important;
 }
 
 .owl-pagination {
