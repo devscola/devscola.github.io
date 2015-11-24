@@ -353,9 +353,9 @@ a:hover {
 
 @media screen and (min-width : 480px) and (max-width : 640px) {
   #inicio {
-    top:19%;
-    left:15%;
-    max-width: 65%;
+   top: 38%;
+   left: 17%;
+   max-width: 65%;
   }
 }
 
@@ -369,7 +369,7 @@ a:hover {
 
 @media screen and (min-width : 320px) and (max-width : 360px) {
   #inicio {
-    top:20%;
+    top:18%;
     left:10%;
     max-width: 79%;
   }
@@ -377,7 +377,7 @@ a:hover {
 
 @media screen and (max-width : 320px) {
   #inicio {
-    top:26%;
+    top:24%;
     left:10%;
     max-width: 79%;
   }
@@ -729,6 +729,10 @@ meta.foundation-mq-topbar {
   }
 }
 
+.logo p {
+  font-family: 'dejavu_sansbook';
+}
+
 @media screen and (min-width: 880px) {
   .logo p {
     color: #fff;
@@ -742,13 +746,17 @@ meta.foundation-mq-topbar {
     color: #fff;
     margin:0;
     padding: 0.7rem 0 0.7rem 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 360px) {
   .logo p {
     padding: 0.7rem 0 1rem 0.8rem;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a {
+    height:30px;
   }
 }
 
