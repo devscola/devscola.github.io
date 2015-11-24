@@ -807,12 +807,7 @@ footer {
   color: #292929;
 }
 
-/*@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
-  footer {
-    height: 9rem;
-    margin-top: 2rem;
-  }
-}*/
+
 
 img.foot_logo  {
 
@@ -824,7 +819,7 @@ img.foot_logo  {
 }
 
 
-@media only screen and (max-device-width : 360px) {
+@media screen and (max-device-width : 360px) {
   img.foot_logo  {
 
   padding: 0px 42%;
@@ -836,86 +831,6 @@ img.foot_logo  {
 
 
 
-
-/*.foot_text p, .foot_text a {
-  line-height: 0.8rem;
-  color:#fff;
-  margin: 2.2rem 0 0 0 ;
-}
-
-img.in_button {
-  margin: 0;
-  height: 2rem;
-  width: auto ;
-}
-
-.foot_text p {
-  font-size:0.9rem;
-  font-family: 'dejavu_sansextralight'
-}
-
-.foot_text a {
-  font-family: 'dejavu_sansbold';
-  line-height: 0.2rem;
-  font-size: 0.9rem;
-  letter-spacing: -0.025rem;
-  word-spacing: -0.025rem;
-}
-*/
-
-
-/*@media only screen and (min-width : 768px) and (max-width : 1024px) {
-  .foot_text p {
-    line-height: 0.5rem;
-  }
-
-  .foot_text a {
-    line-height: 0.05rem;
-    font-size: 0.85rem;
-  }
-}
-
-@media only screen and (min-width : 320px) and (max-width : 360px) {
-  .small-left{
-    float: left !important;
-  }
-}
-
-@media only screen and (min-width : 480px) and (max-width : 640px) {
-  .small-right{
-    position: relative;
-    margin-left: 10px !important;
-    right: 20%;
-  }
-}
-
-@media only screen and (min-width : 320px) and (max-width : 640px) {
-  .foot_text p {
-    font-size: 0.75rem;
-    line-height: 1rem;
-    text-align: center;
-  }
-
-  .foot_text a {
-    line-height: 0.05rem;
-    font-size: 0.90rem;
-    text-align: center;
-  }
-
-  .foot_text a {
-    margin: 0.7rem 0 0;
-    display:block;
-  }
-
-  .foot_text p {
-    margin: 0.35rem 0 0;
-    display:block;
-  }
-
-  #MAIL {
-    margin-top: -0.3rem;
-  }
-}*/
 
 
 /* owl carousel */
