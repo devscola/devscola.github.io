@@ -10,7 +10,7 @@ h2 {
   font-family: 'dejavu_sansextralight';
   font-size: 5rem;
   margin: 2rem 0 0.5rem 0 !important;
-  line-height: 7rem;
+  line-height: 5rem;
   letter-spacing: 0.25rem;
 }
 
@@ -40,10 +40,28 @@ h5 {
 p {
   font-size: 0.9rem;
   line-height: 1.5rem;
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
-@media only screen and (min-width : 801px) and (max-width : 1024px) {
+strong {
+
+font-family: 'dejavu_sansbold';
+letter-spacing: -0.03rem;
+word-spacing: -0.03rem;
+}
+
+a {
+  color: #ff4214;
+  font-family: 'dejavu_sansbold';
+  letter-spacing: -0.03rem;
+  word-spacing: -0.03rem;
+}
+
+a:hover {
+  color: #292929 ;
+}
+
+@media screen and (min-width : 801px) and (max-width : 1024px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 4rem;
@@ -78,11 +96,11 @@ p {
   p {
     font-size: 0.85rem;
     line-height: 1.35rem;
-    margin-bottom: 1.8rem
+    margin-bottom: 1.8rem;
   }
 }
 
-@media only screen and (min-width : 640px) and (max-width : 800px) {
+@media screen and (min-width : 640px) and (max-width : 800px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 3.5rem;
@@ -120,7 +138,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 360px) and (max-width : 640px) {
+@media screen and (min-width : 360px) and (max-width : 640px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 3rem;
@@ -154,12 +172,12 @@ p {
 }
 
 
-@media only screen and (max-width : 360px) {
+@media screen and (max-width : 360px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 2rem;
     margin: 1rem 0 1rem 0 !important;
-    line-height: 2rem;
+    line-height: 2.5rem;
     letter-spacing: 0.01rem;
   }
 
@@ -199,42 +217,42 @@ p {
   max-width: 75%;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 1024px) {
+@media screen and (min-width : 320px) and (max-width : 1024px) {
   .row {
     max-width: 90%;
   }
 }
 
 .total-align {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .align-left {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .align-right {
-  padding-right: 0px;
+  padding-right: 0;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 640px) {
+@media screen and (min-width : 320px) and (max-width : 640px) {
 
   .align-right {
-    padding: 0px;
+    padding: 0;
   }
   .align-left {
-    padding: 0px;
+    padding: 0;
   }
 }
 .columns.left_column {
-  padding-left: 0px ;
-  padding-right: 2%
+  padding-left: 0 ;
+  padding-right: 2%;
 }
 
 .columns.right_column {
-  padding-right: 0px;
-  padding-left: 2%
+  padding-right: 0;
+  padding-left: 2%;
 }
 
 .columns.center_column {
@@ -242,19 +260,19 @@ p {
   padding-left: 1%;
 }
 
-@media only screen and (max-width : 600px){
+@media screen and (max-width : 600px){
 
   .small-12.columns.left_column {
-    padding-right: 0%
+    padding-right: 0;
   }
 
   .small-12.columns.right_column {
-    padding-left: 0%
+    padding-left: 0;
   }
 
   .small-12.columns.center_column {
-    padding-right: 0%;
-    padding-left: 0%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -269,7 +287,7 @@ p {
   z-index: 1;
 }
 
-@media only screen and (min-width : 1440px) and (max-width : 1600px) {
+@media screen and (min-width : 1440px) and (max-width : 1600px) {
   #inicio {
     top:44%;
     left:23%;
@@ -277,7 +295,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 1280px) and (max-width : 1440px) {
+@media screen and (min-width : 1280px) and (max-width : 1440px) {
   #inicio {
     top:42%;
     left:25%;
@@ -285,7 +303,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 1024px) and (max-width : 1280px) {
+@media screen and (min-width : 1024px) and (max-width : 1280px) {
   #inicio {
     top:34%;
     left:17.5%;
@@ -293,7 +311,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 980px) and (max-width : 1024px) {
+@media screen and (min-width : 980px) and (max-width : 1024px) {
   #inicio {
     top:40%;
     left:22.5%;
@@ -301,7 +319,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 900px) and (max-width : 980px) {
+@media screen and (min-width : 900px) and (max-width : 980px) {
   #inicio {
     top:22.5%;
     left:18%;
@@ -309,7 +327,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 800px) and (max-width : 900px) {
+@media screen and (min-width : 800px) and (max-width : 900px) {
   #inicio {
     top:13.5%;
     left:16%;
@@ -317,7 +335,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 800px) {
+@media screen and (min-width : 768px) and (max-width : 800px) {
   #inicio {
     top:20%;
     left:15%;
@@ -325,7 +343,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 640px) and (max-width : 768px) {
+@media screen and (min-width : 640px) and (max-width : 768px) {
   #inicio {
     top:18%;
     left:15%;
@@ -333,7 +351,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 480px) and (max-width : 640px) {
+@media screen and (min-width : 480px) and (max-width : 640px) {
   #inicio {
     top:19%;
     left:15%;
@@ -341,7 +359,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 360px) and (max-width : 480px) {
+@media screen and (min-width : 360px) and (max-width : 480px) {
   #inicio {
     top:43%;
     left:16%;
@@ -349,7 +367,7 @@ p {
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 360px) {
+@media screen and (min-width : 320px) and (max-width : 360px) {
   #inicio {
     top:20%;
     left:10%;
@@ -357,7 +375,7 @@ p {
   }
 }
 
-@media only screen and (max-width : 320px) {
+@media screen and (max-width : 320px) {
   #inicio {
     top:26%;
     left:10%;
@@ -366,225 +384,254 @@ p {
 }
 
 
-/* WHO */
+/* QUIENES */
 
-#WHO-PICS > div> div.large-4 {
+/*#quienes > div> div.large-4 {
   width: 31.333%;
 }
 
-#WHO-PICS > div> div.medium-4 {
+#quienes > div> div.medium-4 {
   width: 31.333%;
 }
 
-/*
-#WHO-PICS > div > div.left_column {
-padding-left: 0px;
+
+#quienes > div > div.left_column {
+padding-left: 0;
 padding-right: 1%;
 }
 
-#WHO-PICS > div > div.right_column {
+#quienes > div > div.right_column {
 padding-left: 1%;
-padding-right: 0px;
+padding-right: 0;
 }
 
-#WHO-PICS > div > div.center_column {
+#quienes > div > div.center_column {
 padding-left: 0.5%;
 padding-right: 0.5%;
 }
- */
 
-#WHO-PICS > div > div.left_column {
-  padding-left: 0px;
-  padding-right: 0px;
+
+#quienes > div > div.left_column {
+  padding-left: 0;
+  padding-right: 0;
   margin-left: 0;
   margin-right: 1%;
 }
 
-#WHO-PICS > div > div.right_column {
-  padding-left: 0px;
-  padding-right: 0px;
+#quienes > div > div.right_column {
+  padding-left: 0;
+  padding-right: 0;
   margin-left: 1%;
   margin-right: 0;
 }
 
-#WHO-PICS > div > div.center_column {
-  padding-left: 0px;
-  padding-right: 0px;
+#quienes > div > div.center_column {
+  padding-left: 0;
+  padding-right: 0;
   margin-left: 0.5%;
   margin-right: 0.5%;
 }
 
-#WHO-PICS > div {
+#quienes > div {
   margin: 2rem 0;
 }
 
-@media only screen and (min-width : 640px) and (max-width : 800px) {
-  #WHO-PICS > div {
-    margin: 0px;
+@media screen and (min-width : 640px) and (max-width : 800px) {
+  #quienes > div {
+    margin: 0;
   }
 
-  #WHO-PICS div div.medium-2 {
+  #quienes div div.medium-2 {
     width: 23%;
     margin-right: 2%;
     margin-bottom: 2%;
   }
 
-  #WHO-PICS div div.medium-4 {
+  #quienes div div.medium-4 {
     width: 75%;
     float: left !important;
     margin: 0 0 6% 0;
   }
-  #WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
+  #quienes div div.large-2.medium-2.small-4.columns.center_column {
     margin-left: 0;
   }
 }
 
-img {
-  height: 100%;
-  width: 100%;
-}
 
-@media only screen and (min-width : 480px) and (max-width : 640px) {
-  #WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
+@media screen and (min-width : 480px) and (max-width : 640px) {
+  #quienes div div.large-2.medium-2.small-4.columns.center_column {
     margin-left: 0;
   }
 
-  #WHO-PICS > div {
-    margin: 0px;
+  #quienes > div {
+    margin: 0;
   }
 
-  #WHO-PICS div div.medium-2 {
+  #quienes div div.medium-2 {
     width: 28%;
     margin-right: 2%;
     margin-bottom: 2%;
   }
 
-  #WHO-PICS div div.medium-4 {
+  #quienes div div.medium-4 {
     width: 70%;
     float: left !important;
-    margin: 0px;
+    margin: 0;
   }
 
-  #WHO-PICS p {
+  #quienes p {
     margin-bottom: 2rem;
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-  #WHO-PICS div div.large-2.medium-2.small-4.columns.center_column {
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  #quienes div div.large-2.medium-2.small-4.columns.center_column {
     margin-left: 0;
   }
 
-  #WHO-PICS > div {
-    padding: 0px;
-    margin: 0px;
+  #quienes > div {
+    padding: 0;
+    margin: 0;
   }
 
-  #WHO-PICS div div.medium-2 {
+  #quienes div div.medium-2 {
     width: 100%;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
-  #WHO-PICS div div.medium-4 {
+  #quienes div div.medium-4 {
     width: 100%;
     float: none !important;
-    margin: 0px;
+    margin: 0;
   }
 
-  #WHO-PICS p {
+  #quienes p {
     margin-bottom: 2rem;
   }
 
-  #WHO-PICS > div> div.large-2.medium-2.small-4.columns.center_column > img,
-  #WHO-PICS > div > div.large-2.medium-2.small-4.columns.left_column > img {
+  #quienes > div> div.large-2.medium-2.small-4.columns.center_column > img,
+  #quienes > div > div.large-2.medium-2.small-4.columns.left_column > img {
     padding: 0 30%;
     margin-bottom: 1rem;
   }
 
-  #WHO-PICS > div > div.large-4.medium-4.small-8.columns.center_column,
-  #WHO-PICS > div > div.large-4.medium-4.small-8.left.columns.right_column {
+  #quienes > div > div.large-4.medium-4.small-8.columns.center_column,
+  #quienes > div > div.large-4.medium-4.small-8.left.columns.right_column {
     text-align: center !important;
   }
 
-  #WHO-PICS > h2 {
+  #quienes > h2 {
     text-align: center;
   }
 }
 
-@media only screen and (min-width : 1600px) {
-  #WHO-PICS > div > div.large-2.medium-2.small-4.columns{
+@media screen and (min-width : 1600px) {
+  #quienes > div > div.large-2.medium-2.small-4.columns{
     width: 12%;
   }
 }
 
-/*@media only screen and (min-width : 768px) and (max-width : 1024px) {
-#WHO-PICS div div img {
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+#quienes div div img {
 
 height: 85%;
 width: 85%;
 }
 }*/
 
+img {
+  height: 100%;
+  width: 100%;
+}
 
-/* TRACKS */
+#quienes img {
+  border-radius: 100%; 
+}
 
-#TRACKS div div p, #TRACKS div div h4 {
+#quienes h3, #quienes h5, 
+#quienes > div > div.large-4.medium-4.small-12 > p {
+  text-align: center !important;
+}
+
+#quienes > div > div > img {
+  margin-bottom:1.3rem;
+}
+
+
+@media screen and (max-width: 40em) {
+  #quienes > div > div.large-4.medium-4.small-12.columns.left_column > img {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 40.063em) {
+  #quienes > div > p {
+    margin-bottom: 0rem;
+  }
+}
+
+
+/*TRACKS*/
+
+
+
+#contenido > div > div > p,
+#contenido > div > div > h4 {
   text-align: center;
 }
 
+#contenido > div > div > h4 {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width : 1600px) and (max-width: 1920px){
 .logo-track {
-  position: relative;
-  top: 3.5rem;
-  left: 6.5rem;
+  
+  margin-top: 2.5rem;
+  padding: 0rem 6rem;
+}
 }
 
-img.logo-track {
-  width: 45%;
-  height: 45%;
-  margin: 0;
+@media screen and (min-width : 1024px) and (max-width : 1600px) {
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 3rem;
+}
 }
 
-@media only screen and (min-width : 1600px) and (max-width: 1920px){
-  .logo-track {
-    margin-top: 3rem;
-    padding: 0rem 6rem;
-  }
+@media screen and (min-width : 640px) and (max-width : 1024px) {
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 3rem;
+}
 }
 
-@media only screen and (min-width : 1024px) and (max-width : 1600px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 3rem;
-  }
+@media screen and (min-width : 480px) and (max-width : 640px) {
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 12rem;
+}
 }
 
-@media only screen and (min-width : 640px) and (max-width : 1024px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 3rem;
-  }
-}
+@media screen and (min-width : 360px) and (max-width : 480px) {
 
-@media only screen and (min-width : 480px) and (max-width : 640px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 10rem;
-  }
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 9rem;
 }
-
-@media only screen and (min-width : 360px) and (max-width : 480px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 7rem;
-  }
 }
+@media screen and (min-width : 320px) and (max-width : 360px) {
 
-@media only screen and (min-width : 320px) and (max-width : 360px) {
-  .logo-track {
-    margin-top: 2rem;
-    padding: 0rem 4rem;
-  }
+.logo-track {
+  
+  margin-top: 2rem;
+  padding: 0rem 6rem;
+}
 }
 
 
@@ -593,7 +640,8 @@ img.logo-track {
 button, .button {
   background-color: #ff4214;
   border-color: #007095;
-color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
 button.large, .button.large {
   padding-top: 1.125rem;
@@ -617,7 +665,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   color: #FFFFFF;
 }
 
-@media only screen and (min-width : 480px) and (max-width : 1024px) {
+@media screen and (min-width : 480px) and (max-width : 1024px) {
   button.large, .button.large {
     padding-top: 0.90rem;
     padding-right: 1rem;
@@ -627,7 +675,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media screen and (min-width : 320px) and (max-width : 480px) {
   button.large, .button.large {
     padding-top: 0.90rem;
     padding-right: 1rem;
@@ -654,9 +702,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 /* social */
 
-#SOCIAL > div.large-4.columns.right_column > {
-}
-
 #SOCIAL > div > h4 {
   margin-top: 3rem;
 }
@@ -677,14 +722,14 @@ meta.foundation-mq-topbar {
   width: 880px;
 }
 
-@media only screen and (min-width: 880px) {
+@media screen and (min-width: 880px) {
   .top-bar {
     background: #333333;
     overflow: visible;
   }
 }
 
-@media only screen and (min-width: 880px) {
+@media screen and (min-width: 880px) {
   .logo p {
     color: #fff;
     margin: 0.7rem 0 0 0.8rem;
@@ -692,7 +737,7 @@ meta.foundation-mq-topbar {
   }
 }
 
-@media only screen and (max-width: 879px) {
+@media screen and (max-width: 879px) {
   .logo p {
     color: #fff;
     margin:0;
@@ -701,7 +746,7 @@ meta.foundation-mq-topbar {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .logo p {
     padding: 0.7rem 0 1rem 0.8rem;
   }
@@ -741,7 +786,7 @@ footer {
   margin-top: 0.3rem;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 640px) {
   footer {
     height: 9rem;
     margin-top: 2rem;
@@ -753,7 +798,7 @@ img.foot_logo  {
   width: auto !important;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 640px) {
   img.foot_logo  {
     margin: 1.2rem 0 0.25rem 0;
     width: auto !important;
@@ -774,7 +819,7 @@ img.in_button {
 
 .foot_text p {
   font-size:0.9rem;
-  font-family: 'dejavu_sansextralight'
+  font-family: 'dejavu_sansextralight';
 }
 
 .foot_text a {
@@ -785,7 +830,7 @@ img.in_button {
   word-spacing: -0.025rem;
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media screen and (min-width : 768px) and (max-width : 1024px) {
   .foot_text p {
     line-height: 0.5rem;
   }
@@ -796,13 +841,13 @@ img.in_button {
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 360px) {
+@media screen and (min-width : 320px) and (max-width : 360px) {
   .small-left{
     float: left !important;
   }
 }
 
-@media only screen and (min-width : 480px) and (max-width : 640px) {
+@media screen and (min-width : 480px) and (max-width : 640px) {
   .small-right{
     position: relative;
     margin-left: 10px !important;
@@ -810,7 +855,7 @@ img.in_button {
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 640px) {
+@media screen and (min-width : 320px) and (max-width : 640px) {
   .foot_text p {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -859,7 +904,7 @@ img.in_button {
 }
 
 .owl-theme .owl-controls .owl-buttons div {
-  border-radius: 0px !important;
+  border-radius: 0 !important;
 }
 
 .owl-pagination {
