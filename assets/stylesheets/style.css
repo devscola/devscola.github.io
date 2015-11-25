@@ -50,9 +50,7 @@ p {
   font-size: 0.9rem;
   line-height: 1.6rem;
   margin-bottom: 2rem;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
+ 
 }
 
 strong {
@@ -90,6 +88,12 @@ a:hover {
 
   h2.paragraph.with_opening {
     margin-bottom: 0.7rem !important;
+  }
+
+  p {
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
   }
 
 }
@@ -140,13 +144,15 @@ a:hover {
     font-size: 0.85rem;
     line-height: 1.55rem;
     margin-bottom: 1.8rem;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
   }
 
   strong {
   font-size: inherit;
   }
 }
-
 
 @media screen and (min-width : 640px) and (max-width : 800px) {
   h2 {
@@ -192,7 +198,10 @@ a:hover {
 
   p {
     font-size: 0.8rem;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
   }
 
   strong {
@@ -247,6 +256,9 @@ a:hover {
     font-size: 0.85rem;
     margin-bottom: 1.5rem;
     line-height: 1.65rem;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
   }
 
   strong {
@@ -298,6 +310,9 @@ a:hover {
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
     line-height: 1.5rem;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
   }
 
   strong {
