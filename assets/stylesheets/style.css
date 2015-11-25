@@ -10,8 +10,17 @@ h2 {
   font-family: 'dejavu_sansextralight';
   font-size: 5rem;
   margin: 2rem 0 0.5rem 0 !important;
-  line-height: 5rem;
+  line-height: 7rem;
   letter-spacing: 0.25rem;
+}
+
+h2.paragraph {
+ margin-bottom: 1.5rem 0 !important;
+ line-height: 5.5rem;
+}
+
+h2.paragraph.with_opening {
+ margin-bottom: 0.5rem !important;
 }
 
 h3 {
@@ -39,35 +48,67 @@ h5 {
 
 p {
   font-size: 0.9rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   margin-bottom: 2rem;
 }
 
 strong {
-
+font-size: inherit;
 font-family: 'dejavu_sansbold';
-letter-spacing: -0.03rem;
-word-spacing: -0.03rem;
+letter-spacing: -0.01rem;
+word-spacing: -0.08rem;
 }
 
 a {
   color: #ff4214;
   font-family: 'dejavu_sansbold';
   letter-spacing: -0.03rem;
-  word-spacing: -0.03rem;
+  word-spacing: -0.08rem;
 }
 
 a:hover {
   color: #292929 ;
 }
 
-@media screen and (min-width : 801px) and (max-width : 1024px) {
+@media screen and (min-width : 1024px) and (max-width : 1600px) {
+
+  h2 {
+    font-family: 'dejavu_sansextralight';
+    font-size: 4.5rem;
+    margin: 2rem 0 0.5rem 0 !important;
+    line-height: 6rem;
+    letter-spacing: 0.25rem;
+    }
+  }
+
+  h2.paragraph {
+    margin-bottom: 1.3rem !important;
+    line-height: 5rem;
+  }
+
+  h2.paragraph.with_opening {
+    margin-bottom: 0.7rem !important;
+  }
+
+}
+
+@media screen and (min-width : 800px) and (max-width : 1024px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 4rem;
     margin: 2rem 0 0.5rem 0 !important;
     line-height: 5.5rem;
     letter-spacing: 0.15rem;
+  }
+
+  h2.paragraph {
+    margin-bottom: 1.3rem !important;
+    line-height: 4rem;
+  }
+
+
+  h2.paragraph.with_opening {
+    margin-bottom: 0.7rem !important;
   }
 
   h3 {
@@ -95,10 +136,15 @@ a:hover {
 
   p {
     font-size: 0.85rem;
-    line-height: 1.35rem;
+    line-height: 1.55rem;
     margin-bottom: 1.8rem;
   }
+
+  strong {
+  font-size: inherit;
+  }
 }
+
 
 @media screen and (min-width : 640px) and (max-width : 800px) {
   h2 {
@@ -107,6 +153,69 @@ a:hover {
     margin: 2rem 0 1rem 0 !important;
     line-height: 3.15rem;
     letter-spacing: 0.05rem;
+  }
+
+  h2.paragraph {
+    margin-bottom: 0.6rem !important;
+    line-height: 3.7rem;
+  }
+
+  h2.paragraph.with_opening {
+    margin-bottom: 0.5rem !important;
+  }
+
+
+  h3 {
+    font-family: 'dejavu_sansbold';
+    font-size: 1rem;
+    line-height: 0.90rem;
+    letter-spacing: -0.015rem;
+    word-spacing: -0.03rem;
+  }
+
+  h4 {
+    font-family: 'dejavu_sansextralight';
+    font-size: 2.3rem;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.020rem;
+  }
+
+  h5 {
+    font-size: 0.85rem;
+    font-family: 'dejavu_sansextralight';
+    letter-spacing: 0.025rem;
+    line-height: 0.50rem;
+    margin: 0 0 0.50rem 0;
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem
+  }
+
+  strong {
+  font-size: 0.85rem;
+  letter-spacing: 0.01rem;
+  word-spacing: -0.08rem;
+  }
+}
+
+@media screen and (min-width : 360px) and (max-width : 640px) {
+  h2 {
+   font-family: "dejavu_sansextralight";
+   font-size: 2.5rem;
+   margin: 2rem 0px 0.7rem !important;
+   line-height: 3rem;
+   letter-spacing: 0.02rem;;
+  }
+
+  h2.paragraph {
+    margin-bottom: 0.6rem !important;
+    line-height: 2.8rem;
+  }
+
+  h2.paragraph.with_opening {
+    margin-bottom: 0.5rem !important;
   }
 
   h3 {
@@ -133,57 +242,37 @@ a:hover {
   }
 
   p {
-    font-size: 0.80rem;
-    margin-bottom: 1.5rem
-  }
-}
-
-@media screen and (min-width : 360px) and (max-width : 640px) {
-  h2 {
-    font-family: 'dejavu_sansextralight';
-    font-size: 3rem;
-    margin: 2rem 0 1rem 0 !important;
-    line-height: 4.15rem;
-    letter-spacing: 0.02rem;
-  }
-
-  h3 {
-    font-family: 'dejavu_sansbold';
-    font-size: 1rem;
-    line-height: 0.90rem;
-    letter-spacing: -0.015rem;
-    word-spacing: -0.03rem;
-  }
-
-  h4 {
-    font-family: 'dejavu_sansextralight';
-    font-size: 2.3rem;
-    margin-bottom: 0.2rem;
-    letter-spacing: 0.020rem;
-  }
-
-  h5 {
     font-size: 0.85rem;
-    font-family: 'dejavu_sansextralight';
-    letter-spacing: 0.025rem;
-    line-height: 0.50rem;
-    margin: 0 0 0.50rem 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.65rem;
+  }
+
+  strong {
+  font-size: inherit;
   }
 }
-
 
 @media screen and (max-width : 360px) {
   h2 {
     font-family: 'dejavu_sansextralight';
     font-size: 2rem;
-    margin: 1rem 0 1rem 0 !important;
+    margin: 1rem 0 0.5rem 0 !important;
     line-height: 2.5rem;
     letter-spacing: 0.01rem;
   }
 
+  h2.paragraph {
+    margin-bottom: 0.6rem !important;
+    line-height: 2.3rem;
+  }
+
+  h2.paragraph.with_opening {
+    margin-bottom: 0.5rem !important;
+  }
+
   h3 {
     font-family: 'dejavu_sansbold';
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 0.85rem;
     letter-spacing: -0.01rem;
     word-spacing: -0.015rem;
@@ -204,9 +293,13 @@ a:hover {
   }
 
   p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin-bottom: 1.5rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  strong {
+  font-size: inherit;
   }
 }
 
@@ -817,12 +910,14 @@ meta.foundation-mq-topbar {
   }
 }
 
-.logo p {
+.logo a p {
   font-family: 'dejavu_sansbook';
+  letter-spacing: 0;
+  word-spacing: 0;
 }
 
 @media screen and (min-width: 880px) {
-  .logo p {
+.logo a p {
     color: #fff;
     margin: 0.7rem 0 0 0.8rem;
     font-size: 1.2rem;
@@ -830,7 +925,7 @@ meta.foundation-mq-topbar {
 }
 
 @media screen and (max-width: 879px) {
-  .logo p {
+  .logo a p {
     color: #fff;
     margin:0;
     padding: 0.7rem 0 0.7rem 0.8rem;
@@ -839,7 +934,7 @@ meta.foundation-mq-topbar {
 }
 
 @media screen and (max-width: 360px) {
-  .logo p {
+  .logo a p {
     padding: 0.7rem 0 1rem 0.8rem;
   }
 
@@ -865,6 +960,8 @@ meta.foundation-mq-topbar {
 
 .top-bar-section ul li > a {
   font-family: 'dejavu_sansextralight';
+  letter-spacing: 0;
+  word-spacing:0;
 }
 
 
