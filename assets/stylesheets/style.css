@@ -50,6 +50,9 @@ p {
   font-size: 0.9rem;
   line-height: 1.6rem;
   margin-bottom: 2rem;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
 }
 
 strong {
