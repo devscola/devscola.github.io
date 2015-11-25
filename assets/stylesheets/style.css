@@ -408,7 +408,8 @@ a:hover {
 @media screen and (min-width : 481px) and (max-width : 600px){
   #inicio {
     top: 13%;
-    left: 7;
+    left: 7%;
+    max-width: 85%;
 
   }
 }
