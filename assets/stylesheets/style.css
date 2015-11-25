@@ -813,11 +813,6 @@ img.foot_logo  {
   }
 }
 
-
-
-
-
-
 /* owl carousel */
 
 .owl-carousel {
@@ -855,4 +850,10 @@ img.foot_logo  {
 
 .owl-theme .owl-controls .owl-buttons div:hover {
   background: #292929 !important;
+}
+
+@media screen and (min-device-width : 641px) and (max-device-width : 800px) {
+#owl-landing.owl-carousel {
+  top: -1%;
+}
 }
