@@ -386,6 +386,11 @@ a:hover {
   }
 }
 
+span.avoid_hyphen {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+       hyphens: none;
+}
 
 /* INICIO */
 
