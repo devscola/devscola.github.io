@@ -327,6 +327,12 @@ a:hover {
   max-width: 75%;
 }
 
+@media screen and (min-width : 1920px) {
+  .row {
+    max-width: 60%;
+  }
+}
+
 @media screen and (min-width : 320px) and (max-width : 1024px) {
   .row {
     max-width: 90%;
@@ -550,6 +556,14 @@ img {
   margin-top: 1rem;
 }
 
+@media screen and (min-width : 1920px){
+.logo-track {
+  
+  margin-top: 2.5rem;
+  padding: 0rem 8rem;
+}
+}
+
 @media screen and (min-width : 1600px) and (max-width: 1920px){
 .logo-track {
   
@@ -720,6 +734,7 @@ meta.foundation-mq-topbar {
 @media screen and (max-width: 360px) {
   .logo a p {
     padding: 0.7rem 0 1rem 0.8rem;
+    font-size: 0.7rem;
   }
 
   .top-bar .toggle-topbar.menu-icon a {
