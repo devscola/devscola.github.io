@@ -50,7 +50,7 @@ p {
   font-size: 0.9rem;
   line-height: 1.6rem;
   margin-bottom: 2rem;
- 
+
 }
 
 strong {
@@ -80,7 +80,7 @@ a:hover {
     line-height: 6rem;
     letter-spacing: 0.25rem;
     }
-  
+
   h2.paragraph {
     margin-bottom: 1.3rem !important;
     line-height: 5rem;
@@ -430,7 +430,7 @@ span.avoid_hyphen {
     top: 39%;
     left: 7%;
     max-width: 85%;
-    
+
   }
 }
 
@@ -454,7 +454,7 @@ span.avoid_hyphen {
 
 @media screen and (min-width : 641px) and (max-width : 768px){
   #inicio {
-    top: 19%;
+    top: 8%;
     left: 7.5%;
     max-width: 85%;
 
@@ -463,7 +463,7 @@ span.avoid_hyphen {
 
 @media screen and (min-width : 769px) and (max-width : 800px){
   #inicio {
-    top: 16%;
+    top: 6%;
     left: 7.5%;
     max-width: 85%;
   }
@@ -471,7 +471,7 @@ span.avoid_hyphen {
 
 @media screen and (min-width : 801px) and (max-width : 900px){
   #inicio {
-    top: 14%;
+    top: 8%;
     left: 8%;
     max-width: 80%;
   }
@@ -479,7 +479,7 @@ span.avoid_hyphen {
 
 @media screen and (min-width : 901px) and (max-width : 1024px){
   #inicio {
-    top: 35%;
+    top: 9%;
     left: 10%;
     max-width: 80%;
   }
@@ -487,14 +487,14 @@ span.avoid_hyphen {
 
 @media screen and (min-width : 1025px) and (max-width : 1280px){
   #inicio {
-    top: 45%;
+    top: 32%;
     left: 16%;
   }
 }
 
 @media screen and (min-width : 1281px) and (max-width : 1600px){
   #inicio {
-    top: 40%;
+    top: 33%;
     left: 22%;
     max-width: 95%;
   }
@@ -517,10 +517,10 @@ img {
 }
 
 #quienes img {
-  border-radius: 100%; 
+  border-radius: 100%;
 }
 
-#quienes h3, #quienes h5, 
+#quienes h3, #quienes h5,
 #quienes > div > div.large-4.medium-4.small-12 > p {
   text-align: center !important;
 }
@@ -558,7 +558,7 @@ img {
 
 @media screen and (min-width : 1920px){
 .logo-track {
-  
+
   margin-top: 2.5rem;
   padding: 0rem 8rem;
 }
@@ -566,7 +566,7 @@ img {
 
 @media screen and (min-width : 1600px) and (max-width: 1920px){
 .logo-track {
-  
+
   margin-top: 2.5rem;
   padding: 0rem 6rem;
 }
@@ -574,7 +574,7 @@ img {
 
 @media screen and (min-width : 1024px) and (max-width : 1600px) {
 .logo-track {
-  
+
   margin-top: 2rem;
   padding: 0rem 3rem;
 }
@@ -582,7 +582,7 @@ img {
 
 @media screen and (min-width : 640px) and (max-width : 1024px) {
 .logo-track {
-  
+
   margin-top: 2rem;
   padding: 0rem 3rem;
 }
@@ -590,7 +590,7 @@ img {
 
 @media screen and (min-width : 480px) and (max-width : 640px) {
 .logo-track {
-  
+
   margin-top: 2rem;
   padding: 0rem 12rem;
 }
@@ -599,7 +599,7 @@ img {
 @media screen and (min-width : 360px) and (max-width : 480px) {
 
 .logo-track {
-  
+
   margin-top: 2rem;
   padding: 0rem 9rem;
 }
@@ -607,7 +607,7 @@ img {
 @media screen and (min-width : 320px) and (max-width : 360px) {
 
 .logo-track {
-  
+
   margin-top: 2rem;
   padding: 0rem 6rem;
 }
@@ -774,7 +774,7 @@ footer {
 }
 
 #MAIL {
-  text-align: center; 
+  text-align: center;
   display:block;
   margin-top: 0.5rem;
   line-height: 0.8rem;
