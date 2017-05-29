@@ -15,12 +15,12 @@ h2 {
 }
 
 h2.paragraph {
- margin-bottom: 1.5rem 0 !important;
- line-height: 5.5rem;
+  margin-bottom: 1.5rem 0 !important;
+  line-height: 5.5rem;
 }
 
 h2.paragraph.with_opening {
- margin-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 h3 {
@@ -50,14 +50,17 @@ p {
   font-size: 0.9rem;
   line-height: 1.6rem;
   margin-bottom: 2rem;
+}
 
+.alumni p {
+  margin-bottom: 1rem;
 }
 
 strong {
-font-size: inherit;
-font-family: 'dejavu_sansbold';
-letter-spacing: -0.01rem;
-word-spacing: -0.08rem;
+  font-size: inherit;
+  font-family: 'dejavu_sansbold';
+  letter-spacing: -0.01rem;
+  word-spacing: -0.08rem;
 }
 
 a {
@@ -79,7 +82,7 @@ a:hover {
     margin: 2rem 0 0.5rem 0 !important;
     line-height: 6rem;
     letter-spacing: 0.25rem;
-    }
+  }
 
   h2.paragraph {
     margin-bottom: 1.3rem !important;
@@ -92,8 +95,8 @@ a:hover {
 
   p {
     -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-            hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
   }
 
 }
@@ -145,12 +148,12 @@ a:hover {
     line-height: 1.55rem;
     margin-bottom: 1.8rem;
     -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-            hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
   }
 
   strong {
-  font-size: inherit;
+    font-size: inherit;
   }
 }
 
@@ -200,24 +203,24 @@ a:hover {
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
     -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-            hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
   }
 
   strong {
-  font-size: 0.85rem;
-  letter-spacing: 0.01rem;
-  word-spacing: -0.08rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.01rem;
+    word-spacing: -0.08rem;
   }
 }
 
 @media screen and (min-width : 360px) and (max-width : 640px) {
   h2 {
-   font-family: "dejavu_sansextralight";
-   font-size: 2.5rem;
-   margin: 2rem 0px 0.7rem !important;
-   line-height: 3rem;
-   letter-spacing: 0.02rem;;
+    font-family: "dejavu_sansextralight";
+    font-size: 2.5rem;
+    margin: 2rem 0px 0.7rem !important;
+    line-height: 3rem;
+    letter-spacing: 0.02rem;;
   }
 
   h2.paragraph {
@@ -257,12 +260,12 @@ a:hover {
     margin-bottom: 1.5rem;
     line-height: 1.65rem;
     -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-            hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
   }
 
   strong {
-  font-size: inherit;
+    font-size: inherit;
   }
 }
 
@@ -310,13 +313,13 @@ a:hover {
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
     line-height: 1.5rem;
-     -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
   }
 
   strong {
-  font-size: inherit;
+    font-size: inherit;
   }
 }
 
@@ -395,7 +398,7 @@ a:hover {
 span.avoid_hyphen {
   -webkit-hyphens: none;
   -moz-hyphens: none;
-       hyphens: none;
+  hyphens: none;
 }
 
 /* INICIO */
@@ -557,60 +560,60 @@ img {
 }
 
 @media screen and (min-width : 1920px){
-.logo-track {
+  .logo-track {
 
-  margin-top: 2.5rem;
-  padding: 0rem 8rem;
-}
+    margin-top: 2.5rem;
+    padding: 0rem 8rem;
+  }
 }
 
 @media screen and (min-width : 1600px) and (max-width: 1920px){
-.logo-track {
+  .logo-track {
 
-  margin-top: 2.5rem;
-  padding: 0rem 6rem;
-}
+    margin-top: 2.5rem;
+    padding: 0rem 6rem;
+  }
 }
 
 @media screen and (min-width : 1024px) and (max-width : 1600px) {
-.logo-track {
+  .logo-track {
 
-  margin-top: 2rem;
-  padding: 0rem 3rem;
-}
+    margin-top: 2rem;
+    padding: 0rem 3rem;
+  }
 }
 
 @media screen and (min-width : 640px) and (max-width : 1024px) {
-.logo-track {
+  .logo-track {
 
-  margin-top: 2rem;
-  padding: 0rem 3rem;
-}
+    margin-top: 2rem;
+    padding: 0rem 3rem;
+  }
 }
 
 @media screen and (min-width : 480px) and (max-width : 640px) {
-.logo-track {
+  .logo-track {
 
-  margin-top: 2rem;
-  padding: 0rem 12rem;
-}
+    margin-top: 2rem;
+    padding: 0rem 12rem;
+  }
 }
 
 @media screen and (min-width : 360px) and (max-width : 480px) {
 
-.logo-track {
+  .logo-track {
 
-  margin-top: 2rem;
-  padding: 0rem 9rem;
-}
+    margin-top: 2rem;
+    padding: 0rem 9rem;
+  }
 }
 @media screen and (min-width : 320px) and (max-width : 360px) {
 
-.logo-track {
+  .logo-track {
 
-  margin-top: 2rem;
-  padding: 0rem 6rem;
-}
+    margin-top: 2rem;
+    padding: 0rem 6rem;
+  }
 }
 
 
@@ -715,7 +718,7 @@ meta.foundation-mq-topbar {
 }
 
 @media screen and (min-width: 880px) {
-.logo a p {
+  .logo a p {
     color: #fff;
     margin: 0.7rem 0 0 0.8rem;
     font-size: 1.2rem;
@@ -804,50 +807,50 @@ img.foot_logo  {
 
 @media screen and (max-device-width : 360px) {
   img.foot_logo  {
-  padding: 0px 42%;
-  margin: 1.5rem 0 0.3rem 0;
+    padding: 0px 42%;
+    margin: 1.5rem 0 0.3rem 0;
   }
 }
 
 @media screen and (min-device-width : 361px) and (max-device-width : 480px) {
   img.foot_logo  {
-  padding: 0px 43%;
-  margin: 1.5rem 0 0.3rem 0;
+    padding: 0px 43%;
+    margin: 1.5rem 0 0.3rem 0;
   }
 }
 
 @media screen and (min-device-width : 481px) and (max-device-width : 640px) {
   img.foot_logo  {
-  padding: 0px 45%;
-  margin: 1.5rem 0 0.3rem 0;
+    padding: 0px 45%;
+    margin: 1.5rem 0 0.3rem 0;
   }
 }
 
 @media screen and (min-device-width : 641px) and (max-device-width : 800px) {
   img.foot_logo  {
-  padding: 0px 46%;
-  margin: 1.5rem 0 0.3rem 0;
+    padding: 0px 46%;
+    margin: 1.5rem 0 0.3rem 0;
   }
 }
 
 @media screen and (min-device-width : 801px) and (max-device-width : 900px) {
   img.foot_logo  {
-  padding: 0px 46.5%;
-  margin: 1.5rem 0 0.3rem 0;
+    padding: 0px 46.5%;
+    margin: 1.5rem 0 0.3rem 0;
   }
 }
 
 @media screen and (min-device-width : 901px) and (max-device-width : 1280px) {
   img.foot_logo  {
-  padding: 0px 47%;
-  margin: 1.5rem 0 0.3rem 0;
+    padding: 0px 47%;
+    margin: 1.5rem 0 0.3rem 0;
   }
 }
 
 @media screen and (min-device-width : 1281px) and (max-device-width : 1600px) {
   img.foot_logo  {
-  padding: 0px 47.5%;
-  margin: 1.5rem 0 0.3rem 0;
+    padding: 0px 47.5%;
+    margin: 1.5rem 0 0.3rem 0;
   }
 }
 
@@ -891,7 +894,7 @@ img.foot_logo  {
 }
 
 @media screen and (min-device-width : 641px) and (max-device-width : 800px) {
-#owl-landing.owl-carousel {
-  top: -1%;
-}
+  #owl-landing.owl-carousel {
+    top: -1%;
+  }
 }
