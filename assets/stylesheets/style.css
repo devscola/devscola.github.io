@@ -513,7 +513,6 @@ span.avoid_hyphen {
 
 /* QUIENES */
 
-
 img {
   height: 100%;
   width: 100%;
@@ -547,8 +546,6 @@ img {
 
 
 /*TRACKS*/
-
-
 
 #contenido > div > div > p,
 #contenido > div > div > h4 {
@@ -794,8 +791,6 @@ footer {
   color: #292929;
 }
 
-
-
 img.foot_logo  {
 
   text-align: center;
@@ -897,4 +892,22 @@ img.foot_logo  {
   #owl-landing.owl-carousel {
     top: -1%;
   }
+}
+
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+  padding-left: -1rem !important;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
