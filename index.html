@@ -248,7 +248,21 @@
             <h2>PARTICIPA</h2>
             <p>Ven a alguno de nuestros Katayunos o alguna de nuestras charlas. También puedes venir a visitarnos a la <a href="https://www.google.es/maps/place/La+Cueva+de+Benimaclet/@39.4884056,-0.3603075,15z/data=!4m5!3m4!1s0x0:0x222937f5f19cee7b!8m2!3d39.4884056!4d-0.3603075" target="_blank"> Cova de Benimaclet</a> o escribirnos a <a>hola@devscola.org</a></p>
         </p>
-    </section>
+        </section>
+
+        <section id="contacta" class="row">
+            <h2>CONTACTA CON NOSOTROS</h2>
+            <form method="POST" onsubmit="return callToAction(this)">
+                <label for="firstname">Nombre:</label>
+                <input type="text" name="firstname" required>
+                <label for="email">Email:</label>
+                <input type="text" name="email" required>
+                <label for="comments">Comentario:</label>
+                <textarea rows="10" name="comments" required></textarea>
+
+                <button type="submit" value="Submit">Enviar</button>
+            </form>
+        </section>
 
     <!--footer-->
 
@@ -275,5 +289,7 @@
         <script src="assets/scripts/foundation/foundation.min.js"></script>
         <script src="assets/owl/owl-carousel/owl.carousel.js"> </script>
         <script src="assets/scripts/main.js" type="text/javascript"></script>
+        <script src="assets/scripts/contact.js" type="text/javascript"></script>
+        
     </body>
 </html>
