@@ -11,15 +11,16 @@ function callToAction(form) {
     }
   
     this.post(JSON.stringify(payload))
+    this.reset(form)
     return false
   }
   function post(data) {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://hooks.slack.com/services/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');
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            alert('Enviado!')
-        }
-    };
     xhr.send(data)
+  }
+  function reset(form) {
+      form.firstname.value = ''
+      form.email.value = ''
+      form.comments.value = ''
   }
