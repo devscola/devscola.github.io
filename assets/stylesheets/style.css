@@ -401,6 +401,54 @@ span.avoid_hyphen {
   hyphens: none;
 }
 
+/* CAROUSEL */
+
+.slideshow_wrapper {
+  width:100vw;
+  height:calc(100vw * 0.55);
+  overflow: hidden;
+}
+
+.slideshow {
+  width: calc(100vw * 3);
+  height: auto;
+  margin: 0 0 0 calc(100vw * -2);
+  position: relative;
+  animation-name: slide_animation;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+.slide {
+  width:100vw;
+  height: auto;
+  position:relative;
+  float:left;
+  overflow:hidden;
+}
+
+.slideshow img{
+  height:auto;
+  width:100vw;
+}
+
+@keyframes slide_animation {
+  0% {left:calc(100vw * 2);}
+  10% {left:calc(100vw * 2);}
+  20% {left:calc(100vw * 2);}
+  30% {left:100vw;}
+  40% {left:100vw;}
+  50% {left:100vw;}
+  60% {left:100vw;}
+  70% {left:100vw;}
+  80% {left:0;}
+  90% {left:0;}
+  100% {left:0;}
+}
+
+
 /* INICIO */
 
 #inicio {
