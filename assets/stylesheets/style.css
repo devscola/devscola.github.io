@@ -1,8 +1,15 @@
+/* variables */
+:root{
+  --bg-color: #FFF7F5;
+  --main-color: #ff4214;
+  --text-color: #292929;
+}
+
 /* typography */
 
 body {
-  background: #FFF7F5;
-  color: #292929;
+  background: var(--bg-color);
+  color: var(--text-color);
   font-family: 'dejavu_sansbook';
 }
 
@@ -64,14 +71,14 @@ strong {
 }
 
 a {
-  color: #ff4214;
+  color: var(--main-color);
   font-family: 'dejavu_sansbold';
   letter-spacing: -0.03rem;
   word-spacing: -0.08rem;
 }
 
 a:hover {
-  color: #292929 ;
+  color: var(--text-color) ;
 }
 
 @media screen and (min-width : 1024px) and (max-width : 1600px) {
@@ -594,13 +601,22 @@ img {
 
 
 /*TRACKS*/
+#contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  -ms-align-items: baseline;
+  align-items: baseline;
+  max-width: 75%;
+  margin: 0 auto;
+}
 
-#contenido > div > div > p,
-#contenido > div > div > h4 {
+#contenido > div > h4 {
+  margin-top: 1rem;
   text-align: center;
 }
 
-#contenido > div > div > h4 {
+#contenido > div > p {
   margin-top: 1rem;
 }
 
@@ -665,7 +681,7 @@ img {
 /* buttons */
 
 button, .button {
-  background-color: #ff4214;
+  background-color: var(--main-color);
   border-color: #007095;
   color: #FFFFFF;
 }
@@ -685,7 +701,7 @@ button.large.social_button, .button.large.social_button {
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #292929;
+  background-color: var(--text-color);
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -792,16 +808,16 @@ meta.foundation-mq-topbar {
 
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-right: solid 1px #ff4214 !important;
-  border-top: solid 1px #ff4214 !important;
+  border-right: solid 1px var(--main-color) !important;
+  border-top: solid 1px var(--main-color) !important;
 }
 
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-  background: #ff4214;
+  background: var(--main-color);
 }
 
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-  background: #292929;
+  background: var(--text-color);
   font-family: 'dejavu_sansbook';
 }
 
@@ -811,11 +827,17 @@ meta.foundation-mq-topbar {
   word-spacing:0;
 }
 
+.top-bar-js-breakpoint {
+  width: 48em !important;
+}
 
+@media only screen and (min-width: 54em) {
+
+}
 /* footer */
 
 footer {
-  background: #ff4214;
+  background: var(--main-color);
   height: auto;
   margin-top: 3rem;
   line-height: 1.2rem;
@@ -836,7 +858,7 @@ footer {
 
 #MAIL:hover, #MAIL:focus {
 
-  color: #292929;
+  color: var(--text-color);
 }
 
 img.foot_logo  {
@@ -897,51 +919,6 @@ img.foot_logo  {
   }
 }
 
-/* owl carousel */
-
-.owl-carousel {
-  position: relative;
-}
-
-.owl-carousel .owl-item {
-  padding: 0 0.5rem;
-}
-
-#owl-landing > div.owl-wrapper-outer.autoHeight > div > div{
-  padding: 0;
-}
-
-.owl-theme .owl-controls .owl-page span {
-  width: 0 !important;
-  height: 0 !important;
-}
-
-.owl-theme .owl-controls .owl-buttons div {
-  border-radius: 0 !important;
-}
-
-.owl-pagination {
-  height: 0 !important;
-}
-
-.owl-theme .owl-controls .owl-buttons div {
-  background: #ff4214 !important;
-  opacity: 1 !important;
-  font-size: 1rem !important;
-  font-family: 'dejavu_sansextralight';
-  padding:0.5rem 0.75rem !important;
-}
-
-.owl-theme .owl-controls .owl-buttons div:hover {
-  background: #292929 !important;
-}
-
-@media screen and (min-device-width : 641px) and (max-device-width : 800px) {
-  #owl-landing.owl-carousel {
-    top: -1%;
-  }
-}
-
 
 .video-container {
   position: relative;
@@ -968,11 +945,15 @@ summary {
   font-size: 1rem;
   color: black;
 }
+details .question:focus {
+  outline: none;
+}
 .answer {
   border: dashed 2px black;
   padding: 0.5rem;
   font-size: 1rem;
   color: black;
+  margin-top: -1em;
 }
 details > summary::-webkit-details-marker {
   display: none;
