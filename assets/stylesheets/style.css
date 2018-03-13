@@ -475,20 +475,11 @@ span.avoid_hyphen {
   }
 }
 
-@media screen and (min-width : 321px) and (max-width : 360px){
+@media screen and (min-width : 321px) and (max-width : 480px){
   #inicio {
     top: 17%;
     left: 5%;
     max-width: 90%;
-  }
-}
-
-@media screen and (min-width : 361px) and (max-width : 480px){
-  #inicio {
-    top: 39%;
-    left: 7%;
-    max-width: 85%;
-
   }
 }
 
@@ -503,7 +494,7 @@ span.avoid_hyphen {
 
 @media screen and (min-width : 601px) and (max-width : 640px){
   #inicio {
-    top: 36%;
+    top: 17%;
     left: 7%;
     max-width: 85%;
 
@@ -622,58 +613,60 @@ img {
 
 @media screen and (min-width : 1920px){
   .logo-track {
-
     margin-top: 2.5rem;
     padding: 0rem 8rem;
   }
+
 }
 
 @media screen and (min-width : 1600px) and (max-width: 1920px){
   .logo-track {
-
     margin-top: 2.5rem;
     padding: 0rem 6rem;
   }
+
 }
 
 @media screen and (min-width : 1024px) and (max-width : 1600px) {
   .logo-track {
-
     margin-top: 2rem;
     padding: 0rem 3rem;
   }
+
 }
 
 @media screen and (min-width : 640px) and (max-width : 1024px) {
   .logo-track {
-
     margin-top: 2rem;
     padding: 0rem 3rem;
   }
+
 }
 
 @media screen and (min-width : 480px) and (max-width : 640px) {
+  #contenido {
+    max-width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
   .logo-track {
-
     margin-top: 2rem;
     padding: 0rem 12rem;
   }
+
 }
 
-@media screen and (min-width : 360px) and (max-width : 480px) {
+@media screen and (min-width : 320px) and (max-width : 480px) {
 
-  .logo-track {
-
-    margin-top: 2rem;
-    padding: 0rem 9rem;
+  #contenido {
+    max-width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
   }
-}
-@media screen and (min-width : 320px) and (max-width : 360px) {
 
   .logo-track {
-
     margin-top: 2rem;
-    padding: 0rem 6rem;
+    padding: 0rem 8rem;
   }
 }
 
