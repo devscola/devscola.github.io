@@ -15,7 +15,7 @@ body {
 
 h2 {
   font-family: 'dejavu_sansextralight';
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 2rem 0 0.5rem 0 !important;
   line-height: 7rem;
   letter-spacing: 0.25rem;
@@ -40,7 +40,7 @@ h3 {
 
 h4 {
   font-family: 'dejavu_sansextralight';
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0.3rem;
   letter-spacing: 0.05rem;
 }
@@ -137,7 +137,7 @@ a:hover {
 
   h4 {
     font-family: 'dejavu_sansextralight';
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.2rem;
     letter-spacing: 0.025rem;
   }
@@ -193,7 +193,7 @@ a:hover {
 
   h4 {
     font-family: 'dejavu_sansextralight';
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-bottom: 0.2rem;
     letter-spacing: 0.020rem;
   }
@@ -249,7 +249,7 @@ a:hover {
 
   h4 {
     font-family: 'dejavu_sansextralight';
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-bottom: 0.2rem;
     letter-spacing: 0.020rem;
   }
@@ -333,18 +333,27 @@ a:hover {
 
 /* grid */
 
-.row {
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.row, #contenido{
   max-width: 75%;
 }
 
 @media screen and (min-width : 1920px) {
-  .row {
+  .row, #contenido {
     max-width: 60%;
   }
 }
 
 @media screen and (min-width : 320px) and (max-width : 1024px) {
-  .row {
+  .row, #contenido {
     max-width: 90%;
   }
 }
@@ -593,13 +602,12 @@ img {
 
 /*TRACKS*/
 #contenido {
+  align-items: baseline;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
-  -ms-align-items: baseline;
-  align-items: baseline;
-  max-width: 75%;
   margin: 0 auto;
+  -ms-align-items: baseline;
 }
 
 #contenido > div > h4 {
@@ -645,7 +653,6 @@ img {
 
 @media screen and (min-width : 480px) and (max-width : 640px) {
   #contenido {
-    max-width: 90%;
     grid-template-columns: 1fr;
     grid-gap: 0;
   }
@@ -659,7 +666,6 @@ img {
 @media screen and (min-width : 320px) and (max-width : 480px) {
 
   #contenido {
-    max-width: 90%;
     grid-template-columns: 1fr;
     grid-gap: 0;
   }
