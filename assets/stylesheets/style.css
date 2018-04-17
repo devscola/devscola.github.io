@@ -602,7 +602,7 @@ img {
 
 /*TRACKS*/
 #contenido {
-  align-items: baseline;
+  align-items: flex-start;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
