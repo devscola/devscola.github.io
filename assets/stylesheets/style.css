@@ -766,32 +766,31 @@ meta.foundation-mq-topbar {
     overflow: visible;
   }
 }
-
-.logo a p {
+.logo{
+  padding: 0.6rem 0 0.6rem 0.8rem;
+}
+.logo a >*{
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2rem;
   font-family: 'dejavu_sansbook';
+  margin: 0;
   letter-spacing: 0;
   word-spacing: 0;
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (max-width: 940px) {
   .logo a p {
-    color: #fff;
-    margin: 0.7rem 0 0 0.8rem;
-    font-size: 1.2rem;
+    font-size: .8rem;
   }
 }
-
-@media screen and (max-width: 879px) {
+@media screen and (max-width: 830px) {
   .logo a p {
-    color: #fff;
-    margin:0;
-    padding: 0.7rem 0 0.7rem 0.8rem;
-    font-size: 1rem;
+    display: none;
   }
 }
-
 @media screen and (max-width: 360px) {
-  .logo a p {
+  .logo a >* {
     padding: 0.7rem 0 1rem 0.8rem;
     font-size: 0.7rem;
   }
