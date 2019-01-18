@@ -53,13 +53,13 @@ h5 {
   margin: -0.2rem 0 0.1rem 0;
 }
 
-p {
+p, ul {
   font-size: 0.9rem;
   line-height: 1.6rem;
   margin-bottom: 2rem;
 }
 
-.alumni p {
+.alumni p, .katayuno p {
   margin-bottom: 1rem;
 }
 
