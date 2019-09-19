@@ -909,3 +909,19 @@ details > summary::-webkit-details-marker {
   padding: 1rem;
   color: black;
 }
+
+#contact-feedback {
+  font-size: 1rem;
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
