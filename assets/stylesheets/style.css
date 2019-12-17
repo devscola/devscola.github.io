@@ -1,7 +1,7 @@
 /* variables */
 :root{
   --bg-color: #FFF;
-  --main-color: #ff4214;
+  --main-color: #333333;
   --text-color: #292929;
 }
 
@@ -10,15 +10,16 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
-  font-family: 'dejavu_sansbook';
+  font-family: 'Helvetica Neue';
 }
 
 h2 {
-  font-family: 'dejavu_sansextralight';
+  font-family: 'Helvetica Neue';
   font-size: 3rem;
   margin: 2rem 0 0.5rem 0 !important;
   line-height: 7rem;
   letter-spacing: 0.25rem;
+  font-weight: bold;
 }
 
 h2.paragraph {
@@ -39,7 +40,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'dejavu_sansextralight';
+  font-family: 'Helvetica Neue';
   font-size: 2rem;
   margin-bottom: 0.3rem;
   letter-spacing: 0.05rem;
@@ -47,14 +48,14 @@ h4 {
 
 h5 {
   font-size: 0.9rem;
-  font-family: 'dejavu_sansextralight';
+  font-family: 'Helvetica Neue';
   letter-spacing: 0.05rem;
   line-height: 1rem;
   margin: -0.2rem 0 0.1rem 0;
 }
 
 p, ul {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.6rem;
   margin-bottom: 2rem;
 }
@@ -84,7 +85,8 @@ a:hover {
 @media screen and (min-width : 1024px) and (max-width : 1600px) {
 
   h2 {
-    font-family: 'dejavu_sansextralight';
+    text-align: center;
+    font-family: 'Helvetica Neue';
     font-size: 2.5rem;
     margin: 2rem 0 0.5rem 0 !important;
     line-height: 6rem;
@@ -110,7 +112,7 @@ a:hover {
 
 @media screen and (min-width : 800px) and (max-width : 1024px) {
   h2 {
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     font-size: 2rem;
     margin: 2rem 0 0.5rem 0 !important;
     line-height: 5.5rem;
@@ -136,7 +138,7 @@ a:hover {
   }
 
   h4 {
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     font-size: 2rem;
     margin-bottom: 0.2rem;
     letter-spacing: 0.025rem;
@@ -144,7 +146,7 @@ a:hover {
 
   h5 {
     font-size: 0.85rem;
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     letter-spacing: 0.05rem;
     line-height: 0.85rem;
     margin: -0.2rem 0 0.2rem 0;
@@ -166,7 +168,7 @@ a:hover {
 
 @media screen and (min-width : 640px) and (max-width : 800px) {
   h2 {
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     font-size: 2rem;
     margin: 2rem 0 1rem 0 !important;
     line-height: 3.15rem;
@@ -192,7 +194,7 @@ a:hover {
   }
 
   h4 {
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     font-size: 2rem;
     margin-bottom: 0.2rem;
     letter-spacing: 0.020rem;
@@ -200,7 +202,7 @@ a:hover {
 
   h5 {
     font-size: 0.85rem;
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     letter-spacing: 0.025rem;
     line-height: 0.50rem;
     margin: 0 0 0.50rem 0;
@@ -223,7 +225,7 @@ a:hover {
 
 @media screen and (min-width : 360px) and (max-width : 640px) {
   h2 {
-    font-family: "dejavu_sansextralight";
+    font-family: "Helvetica Neue";
     font-size: 1.5rem;
     margin: 2rem 0px 0.7rem !important;
     line-height: 3rem;
@@ -248,7 +250,7 @@ a:hover {
   }
 
   h4 {
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     font-size: 2rem;
     margin-bottom: 0.2rem;
     letter-spacing: 0.020rem;
@@ -256,7 +258,7 @@ a:hover {
 
   h5 {
     font-size: 0.85rem;
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     letter-spacing: 0.025rem;
     line-height: 0.50rem;
     margin: 0 0 0.50rem 0;
@@ -278,7 +280,7 @@ a:hover {
 
 @media screen and (max-width : 360px) {
   h2 {
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     font-size: 1rem;
     margin: 1rem 0 0.5rem 0 !important;
     line-height: 2.5rem;
@@ -303,7 +305,7 @@ a:hover {
   }
 
   h4 {
-    font-family: 'dejavu_sansextralight';
+    font-family: 'Helvetica Neue';
     font-size: 1.5rem;
     margin-bottom: 0.1rem;
     letter-spacing: 0.010rem;
@@ -773,7 +775,7 @@ meta.foundation-mq-topbar {
   color: #fff;
   display: inline-block;
   font-size: 1.2rem;
-  font-family: 'dejavu_sansbook';
+  font-family: 'Helvetica Neue';
   margin: 0;
   letter-spacing: 0;
   word-spacing: 0;
@@ -812,11 +814,11 @@ meta.foundation-mq-topbar {
 
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
   background: var(--text-color);
-  font-family: 'dejavu_sansbook';
+  font-family: 'Helvetica Neue';
 }
 
 .top-bar-section ul li > a {
-  font-family: 'dejavu_sansextralight';
+  font-family: 'Helvetica Neue';
   letter-spacing: 0;
   word-spacing:0;
 }
@@ -875,10 +877,17 @@ summary {
   padding: 0.5rem;
   font-size: 1rem;
   color: black;
+  font-weight: bold;
 }
 details .question:focus {
   outline: none;
 }
+
+.presentation {
+  font-size: 1rem;
+  text-align: center;
+}
+
 .answer {
   border: dashed 2px black;
   padding: 0.5rem;
