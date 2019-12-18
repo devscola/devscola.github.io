@@ -14,6 +14,7 @@ body {
 }
 
 h2 {
+  text-align: center;
   font-family: 'Helvetica Neue';
   font-size: 3rem;
   margin: 2rem 0 0.5rem 0 !important;
@@ -85,7 +86,6 @@ a:hover {
 @media screen and (min-width : 1024px) and (max-width : 1600px) {
 
   h2 {
-    text-align: center;
     font-family: 'Helvetica Neue';
     font-size: 2.5rem;
     margin: 2rem 0 0.5rem 0 !important;
