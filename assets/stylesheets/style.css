@@ -10,16 +10,12 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Helvetica Neue';
+  font-family: "apercu", sans-serif;
 }
 
 h2 {
-  text-align: center;
-  font-family: 'Helvetica Neue';
-  font-size: 3rem;
-  margin: 2rem 0 0.5rem 0 !important;
-  line-height: 7rem;
-  letter-spacing: 0.25rem;
+  font-family: "apercu", sans-serif;
+  line-height: 5rem;
   font-weight: bold;
 }
 
@@ -33,11 +29,12 @@ h2.paragraph.with_opening {
 }
 
 h3 {
-  font-family: 'dejavu_sansbold';
+  font-family: "apercu", sans-serif;
   font-size: 1.1rem;
   line-height: 1rem;
   letter-spacing: -0.05rem;
   word-spacing: -0.03rem;
+  font-weight: bold;
 }
 
 h4 {
@@ -53,6 +50,10 @@ h5 {
   letter-spacing: 0.05rem;
   line-height: 1rem;
   margin: -0.2rem 0 0.1rem 0;
+}
+
+p {
+  text-align: justify;
 }
 
 p, ul {
@@ -610,7 +611,7 @@ span.avoid_hyphen {
 
 #contenido > div > h4 {
   margin-top: 1rem;
-  text-align: center;
+  text-align: justify;
 }
 
 #contenido > div > p {
@@ -693,7 +694,7 @@ button.large, .button.large {
 
 button.large.social_button, .button.large.social_button {
   width: 100%;
-  text-align: center;
+  text-align: justify;
   line-height: 2rem;
 }
 
@@ -775,7 +776,7 @@ meta.foundation-mq-topbar {
   color: #fff;
   display: inline-block;
   font-size: 1.2rem;
-  font-family: 'Helvetica Neue';
+  font-family: "apercu", sans-serif;
   margin: 0;
   letter-spacing: 0;
   word-spacing: 0;
@@ -884,8 +885,8 @@ details .question:focus {
 }
 
 .presentation {
-  font-size: 1rem;
-  text-align: center;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 .answer {
